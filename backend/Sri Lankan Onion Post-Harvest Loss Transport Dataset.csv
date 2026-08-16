@@ -1,0 +1,1001 @@
+route,season,quantity_kg,distance_km,vehicle_type,road_condition,packaging_type,temperature_c,humidity_pct,transit_hours,days_to_spoil,spoilage_loss_pct
+Dambulla - Colombo,Dry,713,95,Open Truck,Poor,Ventilated Box,30.4,66.6,4.2,6.4,16.97
+Dambulla - Colombo,Wet,560,128,Open Truck,Good,Ventilated Box,31.7,91.2,6.6,1.5,24.12
+Dambulla - Colombo,Dry,323,135,Covered Truck,Moderate,Cardboard Box,29.6,68.7,5.3,13.1,12.07
+Dambulla - Colombo,Dry,437,98,Open Truck,Moderate,Cardboard Box,29.7,68,3.9,2.5,18.23
+Dambulla - Colombo,Dry,751,92,Open Truck,Poor,Cardboard Box,32.8,69,4.5,1.5,23.08
+Dambulla - Colombo,Dry,570,99,Covered Truck,Poor,Cardboard Box,28.2,68.8,3.8,7.8,15.97
+Dambulla - Colombo,Dry,82,91,Open Truck,Moderate,Plastic Crate,28.9,66.1,4,7.5,15.58
+Dambulla - Colombo,Dry,552,98,Covered Truck,Good,Plastic Crate,28.4,67.5,5,9.6,14.22
+Dambulla - Colombo,Dry,534,136,Open Truck,Moderate,Plastic Crate,31.2,66.2,6.2,10.1,13.35
+Dambulla - Colombo,Wet,389,90,Three-Wheeler,Moderate,Plastic Crate,29.3,88.9,3.7,4.2,22.16
+Dambulla - Colombo,Wet,460,125,Three-Wheeler,Good,Plastic Crate,31.2,80.2,4.8,11.6,15.26
+Dambulla - Colombo,Dry,435,133,Open Truck,Good,Cardboard Box,28.6,76.4,5.4,11.7,13.08
+Dambulla - Colombo,Wet,733,85,Covered Truck,Moderate,Sack,27.8,80.6,3.6,9,19.61
+Dambulla - Colombo,Dry,250,95,Open Truck,Poor,Ventilated Box,34.5,76.4,5.2,6.5,17.27
+Dambulla - Colombo,Dry,689,116,Covered Truck,Good,Sack,27.1,68.4,7.2,3.9,18.57
+Dambulla - Colombo,Wet,621,100,Open Truck,Poor,Sack,25.4,86.4,4.6,3.4,22.91
+Dambulla - Colombo,Dry,469,117,Covered Truck,Moderate,Plastic Crate,30.3,74.4,3.8,6.5,17.48
+Dambulla - Colombo,Dry,210,138,Three-Wheeler,Poor,Sack,31.4,60.7,7.4,1.5,25.5
+Dambulla - Colombo,Dry,279,139,Refrigerated Van,Good,Cardboard Box,30.4,63.5,6.6,14.4,11.14
+Dambulla - Colombo,Wet,98,132,Covered Truck,Moderate,Plastic Crate,24.5,81.8,4.6,10,14.37
+Dambulla - Colombo,Dry,240,115,Covered Truck,Good,Cardboard Box,32.5,56.3,5.7,1.9,20.66
+Dambulla - Colombo,Dry,153,111,Open Truck,Moderate,Plastic Crate,28.1,76.3,4.8,8.3,17.63
+Dambulla - Colombo,Dry,449,129,Open Truck,Moderate,Sack,32.3,91.1,4.8,6.3,20.6
+Dambulla - Colombo,Dry,493,126,Open Truck,Moderate,Plastic Crate,30,71.6,4.6,11.3,14.51
+Dambulla - Colombo,Dry,318,119,Covered Truck,Good,Ventilated Box,30.1,60.3,5.7,3.9,15.62
+Dambulla - Colombo,Dry,562,96,Open Truck,Good,Ventilated Box,30.7,63.2,3.8,9.6,11.53
+Dambulla - Colombo,Dry,125,89,Refrigerated Van,Good,Cardboard Box,36.3,69.4,4.1,8.4,14.81
+Dambulla - Colombo,Dry,72,120,Open Truck,Good,Ventilated Box,32.7,71.6,5.7,6.7,17.19
+Dambulla - Colombo,Dry,209,100,Covered Truck,Poor,Ventilated Box,33.4,77.3,3.1,9,16.28
+Dambulla - Colombo,Dry,334,117,Open Truck,Poor,Plastic Crate,30.6,71.5,4.1,3.4,18.22
+Dambulla - Colombo,Dry,425,137,Refrigerated Van,Good,Plastic Crate,29.4,65.9,7.3,12.8,11.65
+Dambulla - Colombo,Dry,712,102,Covered Truck,Moderate,Plastic Crate,30.9,68.7,5.4,10.1,15.01
+Dambulla - Colombo,Wet,494,143,Covered Truck,Moderate,Cardboard Box,26.7,87.7,5.5,4.1,19.72
+Dambulla - Colombo,Wet,200,136,Covered Truck,Moderate,Ventilated Box,28.5,77.2,6.2,3.6,20.12
+Dambulla - Colombo,Wet,683,124,Refrigerated Van,Moderate,Ventilated Box,27.4,89.1,7.2,6.6,15.62
+Dambulla - Colombo,Wet,494,120,Covered Truck,Poor,Plastic Crate,28.5,87,4.2,7,17.77
+Dambulla - Colombo,Dry,50,92,Covered Truck,Good,Cardboard Box,35,70.8,5.5,2.9,21.35
+Dambulla - Colombo,Dry,198,129,Open Truck,Poor,Sack,34.4,66.3,3.5,3.6,19.85
+Dambulla - Colombo,Wet,785,107,Covered Truck,Moderate,Sack,25.8,91.2,5.1,4.5,19.42
+Dambulla - Colombo,Dry,551,121,Open Truck,Moderate,Sack,29.1,62.7,6.2,8.1,17.21
+Dambulla - Colombo,Dry,291,109,Three-Wheeler,Poor,Sack,35.2,57.6,6.4,6.7,19.73
+Dambulla - Colombo,Dry,510,109,Refrigerated Van,Poor,Ventilated Box,34.4,63.9,5.5,4,20.25
+Dambulla - Colombo,Dry,50,103,Three-Wheeler,Moderate,Ventilated Box,33.3,72.9,5,7.9,18.63
+Dambulla - Colombo,Dry,355,118,Refrigerated Van,Good,Plastic Crate,31.8,63.5,6.3,8.4,15.12
+Dambulla - Colombo,Wet,787,135,Refrigerated Van,Moderate,Plastic Crate,31.7,87.3,5.5,5.1,20.2
+Dambulla - Colombo,Dry,187,139,Refrigerated Van,Moderate,Ventilated Box,29.8,76,6.4,15.1,10.44
+Dambulla - Colombo,Dry,232,95,Three-Wheeler,Moderate,Ventilated Box,31.9,59.8,4.1,8.8,15.65
+Dambulla - Colombo,Wet,452,116,Open Truck,Good,Plastic Crate,28.1,88.4,4.8,1.8,18.53
+Dambulla - Colombo,Dry,288,110,Open Truck,Moderate,Sack,28,61,5,1.5,21.67
+Dambulla - Colombo,Dry,523,131,Open Truck,Poor,Ventilated Box,31.4,68.2,5.8,4.9,19.44
+Dambulla - Colombo,Wet,555,127,Open Truck,Good,Plastic Crate,30.2,84.8,4.2,8.8,15.19
+Dambulla - Colombo,Wet,629,109,Open Truck,Good,Plastic Crate,28.2,76.7,4.8,4.3,18.48
+Dambulla - Colombo,Wet,787,121,Covered Truck,Moderate,Ventilated Box,23,88.4,6,1.5,20.88
+Dambulla - Colombo,Wet,292,114,Open Truck,Good,Plastic Crate,31,81.8,6.9,5.8,19.83
+Dambulla - Colombo,Wet,484,86,Refrigerated Van,Good,Cardboard Box,30,85.4,4.5,14.8,11.49
+Dambulla - Colombo,Wet,739,120,Open Truck,Moderate,Cardboard Box,28,76.7,5.9,3.8,22.11
+Dambulla - Colombo,Dry,144,108,Open Truck,Good,Ventilated Box,32.3,76.6,5.7,9.4,14.95
+Dambulla - Colombo,Dry,340,125,Three-Wheeler,Moderate,Cardboard Box,30.7,68.7,6,7.9,18.29
+Dambulla - Colombo,Wet,686,123,Three-Wheeler,Good,Sack,31,79.6,6.3,10.5,18.08
+Dambulla - Colombo,Dry,228,135,Covered Truck,Moderate,Ventilated Box,31.6,72.6,5.3,5.1,16.57
+Dambulla - Colombo,Wet,338,117,Covered Truck,Moderate,Plastic Crate,26.8,84.4,5.8,6.7,19.42
+Dambulla - Colombo,Wet,734,89,Open Truck,Moderate,Plastic Crate,31.2,79.3,4.2,4.6,21.95
+Dambulla - Colombo,Dry,412,92,Covered Truck,Poor,Sack,31.4,73,4,7.5,17.52
+Dambulla - Colombo,Dry,176,88,Open Truck,Moderate,Plastic Crate,31.3,72.4,2.7,4.4,18.54
+Dambulla - Colombo,Wet,469,130,Open Truck,Good,Ventilated Box,27.8,86.7,5.1,1.5,26.01
+Dambulla - Colombo,Dry,524,95,Refrigerated Van,Good,Ventilated Box,33.1,54.1,4.1,9.4,13.81
+Dambulla - Colombo,Dry,711,108,Three-Wheeler,Good,Ventilated Box,24.3,67.7,6.1,3.7,16.55
+Dambulla - Colombo,Dry,190,124,Three-Wheeler,Good,Sack,31.3,74.8,5.7,4,19.09
+Dambulla - Colombo,Wet,224,103,Open Truck,Good,Ventilated Box,30.7,79.6,6.4,2.2,22.61
+Dambulla - Colombo,Dry,429,94,Open Truck,Good,Ventilated Box,31.3,66.9,5.3,5.9,17.01
+Dambulla - Colombo,Dry,467,135,Refrigerated Van,Good,Sack,33,56.7,4.7,15.4,12.06
+Dambulla - Colombo,Wet,196,94,Refrigerated Van,Good,Plastic Crate,26.5,80.5,4.3,7,15.37
+Dambulla - Colombo,Wet,305,139,Refrigerated Van,Good,Sack,26.9,88.5,6.6,6.3,16.35
+Dambulla - Colombo,Wet,575,116,Refrigerated Van,Good,Sack,30.4,81.8,3.9,5.7,20.8
+Dambulla - Colombo,Dry,91,121,Refrigerated Van,Poor,Sack,31.7,71.7,7.5,4.1,20.43
+Dambulla - Colombo,Wet,450,141,Covered Truck,Moderate,Ventilated Box,32.1,91.4,6.1,2.7,20.69
+Dambulla - Colombo,Dry,725,105,Three-Wheeler,Good,Ventilated Box,27.4,71.5,4.3,5.4,16.05
+Dambulla - Colombo,Wet,293,120,Covered Truck,Poor,Sack,25.9,86.2,4.2,9.4,18.93
+Dambulla - Colombo,Dry,180,127,Covered Truck,Good,Cardboard Box,30.9,78.6,5.2,10,13.78
+Dambulla - Colombo,Wet,710,100,Open Truck,Poor,Plastic Crate,25.8,82.3,5,4.2,21.73
+Dambulla - Colombo,Wet,135,116,Covered Truck,Good,Sack,28.4,79.7,6.2,9.2,16.47
+Dambulla - Colombo,Wet,201,126,Refrigerated Van,Moderate,Cardboard Box,26.8,87.3,5.7,14.9,11.44
+Dambulla - Colombo,Wet,157,102,Covered Truck,Poor,Cardboard Box,26.4,88.3,4.5,3.4,20.31
+Dambulla - Colombo,Wet,426,141,Open Truck,Good,Ventilated Box,26.7,67.1,5,9.5,11.55
+Dambulla - Colombo,Wet,634,121,Open Truck,Moderate,Cardboard Box,25.5,75.7,4.8,1.5,22.89
+Dambulla - Colombo,Wet,620,118,Refrigerated Van,Good,Sack,30.1,83.2,7.3,8.9,17.01
+Dambulla - Colombo,Wet,148,138,Open Truck,Good,Sack,29.2,85,6.3,1.5,24.03
+Dambulla - Colombo,Dry,406,131,Refrigerated Van,Good,Cardboard Box,36.6,64,7.8,11.9,12.25
+Dambulla - Colombo,Wet,87,143,Three-Wheeler,Good,Plastic Crate,29.6,94.1,5.6,5.8,21.43
+Dambulla - Colombo,Dry,372,116,Open Truck,Poor,Ventilated Box,31,75.1,6.4,1.8,20.65
+Dambulla - Colombo,Wet,606,143,Refrigerated Van,Moderate,Cardboard Box,30.3,84.5,6.2,9.9,18.34
+Dambulla - Colombo,Wet,307,114,Three-Wheeler,Poor,Ventilated Box,27.1,77,3.1,11.8,14.88
+Dambulla - Colombo,Dry,516,108,Covered Truck,Moderate,Cardboard Box,32.9,59.9,3.5,4.1,21.78
+Dambulla - Colombo,Wet,450,111,Covered Truck,Good,Ventilated Box,26.9,83.2,6.4,10.2,14.58
+Dambulla - Colombo,Dry,695,96,Three-Wheeler,Moderate,Cardboard Box,29.6,70.3,3.9,10.5,16.3
+Dambulla - Colombo,Dry,179,113,Covered Truck,Good,Ventilated Box,31.2,75,4,13.3,10.92
+Dambulla - Colombo,Dry,502,121,Three-Wheeler,Good,Cardboard Box,32.1,69.5,4.8,8.7,17.33
+Dambulla - Colombo,Wet,109,99,Refrigerated Van,Good,Ventilated Box,24.9,90.7,4.9,14.5,11.4
+Dambulla - Colombo,Wet,504,130,Covered Truck,Good,Ventilated Box,28.5,86.3,4.1,3.2,21.31
+Dambulla - Colombo,Dry,323,95,Open Truck,Moderate,Ventilated Box,33.1,64.1,3.1,6.2,16.91
+Dambulla - Colombo,Wet,721,125,Open Truck,Moderate,Ventilated Box,30.3,87.1,7.4,1.5,23.66
+Dambulla - Colombo,Dry,735,123,Covered Truck,Moderate,Ventilated Box,29.8,74.5,6.3,10.5,14.43
+Dambulla - Colombo,Dry,419,93,Open Truck,Moderate,Plastic Crate,31.5,73.3,5.3,3.8,19.94
+Dambulla - Colombo,Wet,63,87,Open Truck,Poor,Cardboard Box,31.4,84.8,4,10.1,15.78
+Dambulla - Colombo,Wet,763,116,Open Truck,Good,Sack,25.7,86.5,5.1,9.7,15.52
+Dambulla - Colombo,Dry,581,121,Covered Truck,Poor,Plastic Crate,33.8,66.4,5.2,12.2,16.62
+Dambulla - Colombo,Dry,420,120,Covered Truck,Moderate,Cardboard Box,34.8,77.8,4.7,4.6,18.28
+Dambulla - Colombo,Dry,383,114,Covered Truck,Moderate,Plastic Crate,29.8,76.3,4.9,10.8,11.01
+Dambulla - Colombo,Dry,77,104,Open Truck,Poor,Plastic Crate,34.9,78.8,3.7,3.5,21.26
+Dambulla - Colombo,Dry,410,138,Open Truck,Poor,Plastic Crate,32.1,66.2,6.5,2.3,17.8
+Dambulla - Colombo,Wet,416,133,Open Truck,Moderate,Cardboard Box,27.2,94.5,5.2,3.5,21.44
+Dambulla - Colombo,Dry,61,89,Open Truck,Good,Sack,32.8,67.5,5.2,9.8,15.73
+Dambulla - Colombo,Wet,424,129,Open Truck,Moderate,Plastic Crate,25.8,84.4,7.6,9.4,16.42
+Dambulla - Colombo,Dry,793,102,Three-Wheeler,Good,Sack,30.7,67.8,5.8,2.5,23.47
+Dambulla - Colombo,Wet,753,125,Refrigerated Van,Good,Cardboard Box,29.3,87.9,6.7,5.9,17.13
+Dambulla - Colombo,Wet,531,130,Open Truck,Good,Plastic Crate,27.4,87.8,4.8,4.7,19.8
+Dambulla - Colombo,Wet,522,99,Covered Truck,Good,Plastic Crate,31.3,91.5,4.2,3.2,21.42
+Dambulla - Colombo,Dry,503,105,Covered Truck,Moderate,Sack,31,77.7,4.5,8.8,15.31
+Dambulla - Colombo,Dry,166,105,Refrigerated Van,Poor,Sack,31.4,78.9,3.9,11.1,15.17
+Dambulla - Colombo,Wet,718,132,Open Truck,Moderate,Plastic Crate,27.9,76.3,6.1,10.6,13.39
+Dambulla - Colombo,Wet,208,115,Covered Truck,Poor,Sack,27.7,81,5.6,8.4,17.05
+Dambulla - Colombo,Dry,167,126,Covered Truck,Good,Sack,29.6,68.4,4.7,4.9,19.61
+Dambulla - Colombo,Wet,99,133,Covered Truck,Moderate,Ventilated Box,28.4,83.6,7,11.7,14.88
+Dambulla - Colombo,Wet,711,128,Covered Truck,Moderate,Sack,26.9,78.5,4.2,9.1,18.34
+Dambulla - Colombo,Dry,603,119,Open Truck,Moderate,Ventilated Box,31.8,68,5.6,8.9,16.23
+Dambulla - Colombo,Wet,790,123,Covered Truck,Poor,Cardboard Box,29.4,91.8,4.3,10.7,15.51
+Dambulla - Colombo,Dry,430,122,Covered Truck,Moderate,Cardboard Box,31.6,58.7,5.7,5.2,16.57
+Dambulla - Colombo,Dry,526,106,Refrigerated Van,Moderate,Sack,26.1,64.2,6.2,7.1,14.07
+Dambulla - Colombo,Dry,328,104,Covered Truck,Poor,Cardboard Box,34.3,60.7,4.5,1.9,21.72
+Dambulla - Colombo,Wet,509,123,Open Truck,Moderate,Cardboard Box,26.1,83.4,5.2,2,19.27
+Dambulla - Colombo,Dry,311,107,Covered Truck,Good,Ventilated Box,28.9,58.4,5.6,7.9,14.95
+Dambulla - Colombo,Wet,511,119,Covered Truck,Moderate,Ventilated Box,28.2,81.4,5.1,7.4,17.05
+Dambulla - Colombo,Dry,338,94,Open Truck,Good,Plastic Crate,31.1,67.9,3.1,7.6,16.53
+Dambulla - Colombo,Wet,586,137,Refrigerated Van,Good,Plastic Crate,25.3,80.2,6.5,3.1,20.47
+Dambulla - Colombo,Wet,394,115,Covered Truck,Good,Sack,23.9,89.5,6.8,2.9,19.12
+Dambulla - Colombo,Dry,429,123,Open Truck,Good,Cardboard Box,31,63.6,5.1,1.5,23.38
+Dambulla - Colombo,Dry,504,91,Refrigerated Van,Poor,Plastic Crate,27.6,66.7,4.4,15.2,10.74
+Dambulla - Colombo,Dry,62,142,Open Truck,Moderate,Sack,33.2,63.2,6.9,9.3,16.49
+Dambulla - Colombo,Dry,643,88,Covered Truck,Moderate,Cardboard Box,30.9,62.4,3.3,4.7,14.27
+Dambulla - Colombo,Dry,291,144,Covered Truck,Poor,Ventilated Box,33.9,61.3,6.3,1.5,24.53
+Dambulla - Colombo,Wet,136,103,Covered Truck,Good,Ventilated Box,28.1,77.5,6.9,7.3,16.04
+Dambulla - Colombo,Dry,589,136,Three-Wheeler,Moderate,Sack,31.6,67.9,5.8,4,19.49
+Dambulla - Colombo,Dry,378,101,Refrigerated Van,Good,Sack,31.1,62.9,5.9,4.4,18.54
+Dambulla - Colombo,Dry,537,134,Open Truck,Good,Ventilated Box,29.5,68.2,4.9,1.5,21.36
+Dambulla - Colombo,Wet,463,144,Open Truck,Good,Ventilated Box,25.4,70.2,5.2,4.1,18.04
+Dambulla - Colombo,Dry,710,131,Open Truck,Poor,Plastic Crate,30.1,71.3,6.8,5.6,17.61
+Dambulla - Colombo,Dry,456,111,Refrigerated Van,Good,Cardboard Box,32,64.1,4.5,5.7,19.44
+Dambulla - Colombo,Dry,278,123,Refrigerated Van,Moderate,Sack,35.5,71.7,6.4,8.7,16.65
+Dambulla - Colombo,Dry,454,126,Refrigerated Van,Poor,Cardboard Box,30.5,62.9,4.6,8.6,16.6
+Dambulla - Colombo,Dry,260,135,Covered Truck,Moderate,Cardboard Box,27.4,61.4,5.1,5.2,18.64
+Dambulla - Colombo,Wet,632,141,Open Truck,Moderate,Sack,24.2,89.6,5.8,6.6,19.34
+Dambulla - Colombo,Wet,368,115,Refrigerated Van,Good,Cardboard Box,30.6,85.6,5.5,13.7,12.28
+Dambulla - Colombo,Wet,677,139,Open Truck,Poor,Plastic Crate,25.1,80.8,4.6,1.5,24.93
+Dambulla - Colombo,Wet,124,99,Covered Truck,Moderate,Cardboard Box,24.7,81.9,5.9,1.5,23.98
+Dambulla - Colombo,Dry,351,135,Open Truck,Poor,Ventilated Box,32.1,69.2,4.3,6.3,16.42
+Dambulla - Colombo,Dry,362,123,Refrigerated Van,Moderate,Ventilated Box,33.3,76.6,6.1,6.4,15.14
+Dambulla - Colombo,Dry,667,94,Refrigerated Van,Poor,Sack,33.2,63.8,5.7,6.8,16.37
+Dambulla - Colombo,Dry,688,134,Open Truck,Good,Sack,26.1,72.7,5.4,2.8,19.15
+Dambulla - Colombo,Dry,630,141,Three-Wheeler,Moderate,Sack,27.1,64.8,7.3,12.2,13.8
+Dambulla - Colombo,Wet,376,134,Covered Truck,Poor,Cardboard Box,26,80.1,5.1,7.2,18.3
+Dambulla - Colombo,Dry,566,130,Refrigerated Van,Good,Sack,36.4,73.6,5.6,8.2,16.41
+Dambulla - Colombo,Dry,610,94,Refrigerated Van,Good,Plastic Crate,34.5,68.3,5,9.4,13.69
+Dambulla - Colombo,Dry,430,106,Refrigerated Van,Poor,Plastic Crate,31.8,66.5,4.7,14.6,11.09
+Dambulla - Colombo,Wet,650,136,Covered Truck,Good,Plastic Crate,28.2,87.3,4.9,11.1,13.64
+Dambulla - Colombo,Dry,287,92,Covered Truck,Good,Cardboard Box,29,73.6,3.9,4.9,15.25
+Dambulla - Colombo,Wet,569,124,Open Truck,Moderate,Ventilated Box,27.3,84.9,5.7,2.8,18.85
+Dambulla - Colombo,Dry,582,100,Three-Wheeler,Poor,Ventilated Box,31.1,76.5,4.2,3.1,22.86
+Dambulla - Colombo,Wet,431,88,Covered Truck,Good,Plastic Crate,26.5,83.7,5.4,9.4,14.9
+Dambulla - Colombo,Dry,525,108,Covered Truck,Moderate,Plastic Crate,27.7,74.5,6,4.3,15.28
+Dambulla - Colombo,Dry,225,102,Open Truck,Good,Cardboard Box,31.6,70.5,5,9.9,16.49
+Dambulla - Colombo,Wet,503,119,Three-Wheeler,Moderate,Cardboard Box,26.8,83.8,3.7,1.8,25.54
+Dambulla - Colombo,Dry,703,119,Covered Truck,Poor,Plastic Crate,28.5,63.9,4.6,12.3,11.98
+Dambulla - Colombo,Wet,751,130,Refrigerated Van,Good,Ventilated Box,27.1,75.2,6.7,5.6,14.6
+Dambulla - Colombo,Wet,222,126,Three-Wheeler,Good,Ventilated Box,29.3,80.4,6.2,10.1,15.64
+Dambulla - Colombo,Wet,722,124,Covered Truck,Moderate,Cardboard Box,28.9,93,4.5,2.7,20.52
+Dambulla - Colombo,Dry,65,125,Refrigerated Van,Moderate,Plastic Crate,33.4,78.3,5.2,10.5,15.11
+Dambulla - Colombo,Dry,250,104,Open Truck,Poor,Ventilated Box,29.2,68.2,5.2,7.4,16.89
+Dambulla - Colombo,Wet,654,131,Open Truck,Moderate,Cardboard Box,26.4,71,5.8,3.9,19.77
+Dambulla - Colombo,Wet,211,87,Open Truck,Moderate,Cardboard Box,29.8,78,5.6,6.4,19.89
+Dambulla - Colombo,Dry,473,141,Covered Truck,Good,Cardboard Box,30.5,58.4,6.1,6.2,13.81
+Dambulla - Colombo,Dry,367,123,Covered Truck,Good,Sack,29.8,72.7,5.2,5.4,17.55
+Dambulla - Colombo,Dry,543,125,Open Truck,Poor,Ventilated Box,31.3,55,6.9,4.4,17.62
+Dambulla - Colombo,Dry,502,129,Three-Wheeler,Moderate,Ventilated Box,27,73.4,6.6,3.6,18.41
+Dambulla - Colombo,Wet,381,112,Refrigerated Van,Poor,Cardboard Box,25.8,80.2,6.2,11.2,14.28
+Dambulla - Colombo,Wet,678,112,Covered Truck,Poor,Ventilated Box,28.5,86.6,6,3.4,20.22
+Dambulla - Colombo,Dry,176,110,Refrigerated Van,Moderate,Plastic Crate,37.7,65.1,5.5,7.2,17.66
+Dambulla - Colombo,Wet,413,137,Covered Truck,Poor,Cardboard Box,25,87.5,5.5,3.2,20.41
+Dambulla - Colombo,Wet,339,120,Open Truck,Poor,Cardboard Box,31.3,72,5.5,9.9,15.28
+Dambulla - Colombo,Wet,444,127,Three-Wheeler,Good,Sack,31.3,90.4,6.5,5.4,23.91
+Dambulla - Colombo,Dry,628,89,Covered Truck,Moderate,Plastic Crate,29,70.5,6.2,4.4,16.84
+Dambulla - Colombo,Dry,173,121,Three-Wheeler,Moderate,Plastic Crate,26.5,65.9,4.5,2.4,22.71
+Dambulla - Colombo,Wet,118,129,Covered Truck,Good,Plastic Crate,27.7,84.7,5.7,5.1,19.84
+Dambulla - Colombo,Wet,582,133,Refrigerated Van,Moderate,Sack,26,78.3,6.2,10.4,13.99
+Dambulla - Colombo,Wet,713,119,Covered Truck,Moderate,Plastic Crate,29.6,78.1,5.1,5.8,17.63
+Dambulla - Colombo,Dry,536,96,Refrigerated Van,Poor,Plastic Crate,31.7,78.6,6.1,6.9,17.29
+Dambulla - Colombo,Dry,744,128,Open Truck,Poor,Plastic Crate,31.9,67.8,5.1,1.5,22.06
+Dambulla - Colombo,Dry,736,137,Covered Truck,Moderate,Ventilated Box,34.4,63,4.8,13.6,12.73
+Dambulla - Colombo,Wet,492,92,Open Truck,Poor,Ventilated Box,24.5,87.8,6.3,10.4,16.79
+Dambulla - Colombo,Wet,745,96,Refrigerated Van,Moderate,Sack,31.6,89.8,3.6,4.4,22.58
+Dambulla - Colombo,Wet,153,85,Open Truck,Poor,Ventilated Box,29.2,84.9,4.3,11.1,14.76
+Dambulla - Colombo,Wet,172,116,Open Truck,Good,Plastic Crate,30.7,93.3,7.3,10.2,16.23
+Dambulla - Colombo,Wet,264,115,Refrigerated Van,Good,Sack,30.5,89.4,4.9,6.1,18.87
+Dambulla - Colombo,Dry,80,137,Refrigerated Van,Moderate,Sack,31.1,69.7,6.7,10.2,15.87
+Dambulla - Colombo,Dry,71,112,Refrigerated Van,Moderate,Cardboard Box,28.2,72.7,4.9,13.1,10.34
+Dambulla - Colombo,Wet,490,95,Covered Truck,Good,Sack,28.8,76.3,4.6,9.8,14.3
+Dambulla - Colombo,Dry,186,95,Three-Wheeler,Moderate,Cardboard Box,28.9,74.8,3.1,3.7,22.62
+Dambulla - Colombo,Wet,778,121,Three-Wheeler,Moderate,Sack,29,81.4,4.7,12.7,17.98
+Dambulla - Colombo,Wet,150,103,Open Truck,Moderate,Ventilated Box,26.5,80.1,6.2,2.1,20.35
+Dambulla - Colombo,Dry,215,115,Covered Truck,Poor,Ventilated Box,34.1,66.1,4.5,10.1,14.99
+Dambulla - Colombo,Dry,198,102,Refrigerated Van,Good,Ventilated Box,31.9,62.6,5.9,11.1,13.11
+Dambulla - Colombo,Wet,607,137,Open Truck,Moderate,Ventilated Box,29.3,85.5,7.2,5.1,20.05
+Dambulla - Colombo,Dry,279,109,Covered Truck,Moderate,Sack,33.3,62.3,4.5,9.7,16.24
+Dambulla - Colombo,Dry,183,131,Covered Truck,Poor,Plastic Crate,29.1,68.8,4,4.8,15.5
+Dambulla - Colombo,Dry,672,137,Covered Truck,Good,Sack,35.4,79,6.9,13.3,15.65
+Dambulla - Colombo,Wet,520,118,Refrigerated Van,Moderate,Sack,28.8,82.9,6,13.9,13.6
+Dambulla - Colombo,Dry,75,110,Covered Truck,Poor,Cardboard Box,29.3,71.8,4.4,4.8,17.3
+Dambulla - Colombo,Dry,265,85,Refrigerated Van,Moderate,Plastic Crate,32.1,61.8,5.8,11,14.66
+Dambulla - Colombo,Dry,787,140,Open Truck,Good,Ventilated Box,27.1,67.9,8,1.5,21.83
+Dambulla - Colombo,Wet,567,97,Covered Truck,Poor,Sack,33.5,70.6,4.9,6.5,20.43
+Dambulla - Colombo,Dry,360,95,Open Truck,Moderate,Cardboard Box,31.1,70,5.9,2.2,22.72
+Dambulla - Colombo,Wet,476,114,Covered Truck,Poor,Plastic Crate,30.6,80.1,4.1,6.6,18.07
+Dambulla - Colombo,Wet,219,126,Covered Truck,Poor,Cardboard Box,29.5,80.8,3.7,2.1,24.35
+Dambulla - Colombo,Dry,595,93,Open Truck,Moderate,Cardboard Box,29,70,6.5,7,17.65
+Dambulla - Colombo,Dry,742,102,Open Truck,Good,Plastic Crate,26.3,74,3.9,6,17.78
+Dambulla - Colombo,Dry,327,125,Three-Wheeler,Poor,Plastic Crate,27.2,68.2,7.3,9.8,15.35
+Dambulla - Colombo,Wet,376,103,Refrigerated Van,Moderate,Ventilated Box,32,82.6,5.2,8.8,17.84
+Dambulla - Colombo,Wet,554,132,Covered Truck,Good,Ventilated Box,25.8,75.8,4.2,3.7,17.28
+Dambulla - Colombo,Dry,482,108,Refrigerated Van,Poor,Ventilated Box,33.2,72.5,3.7,15.1,9
+Dambulla - Colombo,Dry,134,94,Covered Truck,Moderate,Ventilated Box,29.3,68.2,4.1,7.2,14.28
+Dambulla - Colombo,Dry,591,89,Open Truck,Good,Plastic Crate,34,72.9,4.5,11,15.1
+Dambulla - Colombo,Wet,251,105,Open Truck,Good,Plastic Crate,26.5,90.5,5.1,1.5,24.06
+Dambulla - Colombo,Dry,240,105,Covered Truck,Moderate,Cardboard Box,33.6,62,5.6,10.4,11.99
+Dambulla - Colombo,Wet,642,142,Refrigerated Van,Moderate,Plastic Crate,27.3,83.3,6.6,10.9,13.58
+Dambulla - Colombo,Dry,593,101,Refrigerated Van,Moderate,Plastic Crate,35.1,55.1,3.9,8.2,16.18
+Dambulla - Colombo,Dry,217,139,Refrigerated Van,Good,Sack,33.7,70.2,7,9.9,15.01
+Dambulla - Colombo,Wet,144,143,Open Truck,Poor,Sack,22.6,88.6,6.3,1.5,27.29
+Dambulla - Colombo,Wet,173,103,Open Truck,Good,Plastic Crate,31,83.6,3.9,5.9,18.91
+Dambulla - Colombo,Dry,538,140,Covered Truck,Good,Ventilated Box,31.7,73.7,4.7,5.5,15.24
+Dambulla - Colombo,Dry,526,98,Covered Truck,Poor,Cardboard Box,33.8,76.7,5.2,11.6,14.44
+Dambulla - Colombo,Dry,730,90,Three-Wheeler,Good,Sack,27.7,68.5,5.8,11,16.22
+Dambulla - Colombo,Dry,215,100,Covered Truck,Good,Plastic Crate,30.8,59.3,4.7,8.9,14.56
+Dambulla - Colombo,Dry,358,104,Three-Wheeler,Good,Ventilated Box,31.5,63.1,5.7,6.5,18.12
+Dambulla - Colombo,Wet,609,137,Covered Truck,Good,Cardboard Box,27.7,76,5.8,2.4,23.05
+Dambulla - Colombo,Dry,286,103,Covered Truck,Good,Cardboard Box,31.2,72.3,4,8.3,17.78
+Dambulla - Colombo,Dry,320,105,Open Truck,Good,Sack,32.8,66.1,4.2,2.7,23.25
+Dambulla - Colombo,Dry,200,129,Covered Truck,Moderate,Ventilated Box,34,74.2,5.5,8.2,16.02
+Dambulla - Colombo,Dry,353,117,Open Truck,Good,Ventilated Box,27.5,65.8,3.7,7.7,15.23
+Dambulla - Colombo,Dry,740,139,Three-Wheeler,Moderate,Sack,31.8,53.1,5.5,5.4,19.42
+Dambulla - Colombo,Dry,469,143,Covered Truck,Good,Cardboard Box,33.5,66.6,5.4,8.5,14.68
+Dambulla - Colombo,Wet,137,106,Refrigerated Van,Good,Plastic Crate,24.8,84.6,3.6,12.4,12.27
+Dambulla - Colombo,Dry,644,91,Covered Truck,Poor,Ventilated Box,32.4,61.8,5.2,9.5,13.41
+Dambulla - Colombo,Dry,593,136,Covered Truck,Moderate,Ventilated Box,27.6,60.1,6.2,4.6,16.44
+Dambulla - Colombo,Wet,711,90,Covered Truck,Poor,Ventilated Box,29.6,80.3,4.4,4.5,19.56
+Dambulla - Colombo,Dry,673,97,Covered Truck,Good,Ventilated Box,32.2,62.4,4.1,10,14.28
+Dambulla - Colombo,Dry,723,94,Covered Truck,Moderate,Cardboard Box,30.3,70.5,4.7,5.9,20.18
+Dambulla - Colombo,Dry,244,131,Open Truck,Good,Sack,33.6,80.5,6.3,11.8,17.08
+Dambulla - Colombo,Dry,366,97,Covered Truck,Moderate,Ventilated Box,32.4,81.3,4.4,10.4,13.05
+Dambulla - Colombo,Wet,220,137,Open Truck,Poor,Plastic Crate,28.1,73.3,5.7,9.2,17.97
+Dambulla - Colombo,Wet,548,113,Open Truck,Good,Cardboard Box,30.6,86.9,5.7,7.2,17.39
+Dambulla - Colombo,Dry,609,141,Three-Wheeler,Poor,Plastic Crate,30.9,66.8,6.6,7.5,16.85
+Dambulla - Colombo,Wet,684,138,Open Truck,Moderate,Ventilated Box,30,64.5,7.4,9.9,13.79
+Dambulla - Colombo,Wet,111,127,Refrigerated Van,Moderate,Cardboard Box,30.2,89.6,4.5,9.4,17.68
+Dambulla - Colombo,Dry,549,129,Open Truck,Moderate,Ventilated Box,34.5,70.5,6.3,10.5,14.88
+Dambulla - Colombo,Wet,625,101,Covered Truck,Moderate,Plastic Crate,28.7,84.8,5.4,7.4,18.67
+Dambulla - Colombo,Wet,655,141,Covered Truck,Moderate,Sack,31.4,71.4,5.5,4.2,20.75
+Dambulla - Colombo,Wet,288,133,Refrigerated Van,Moderate,Sack,29.4,81.6,6.7,12.2,13.86
+Dambulla - Colombo,Dry,529,123,Covered Truck,Good,Plastic Crate,27.2,71.7,5.9,4.6,15.38
+Dambulla - Colombo,Dry,266,140,Refrigerated Van,Good,Cardboard Box,31.9,58.6,6.1,9.5,15.08
+Dambulla - Colombo,Wet,140,132,Open Truck,Moderate,Ventilated Box,26.2,82.8,6.3,1.5,23.22
+Dambulla - Colombo,Dry,163,119,Refrigerated Van,Moderate,Sack,33.7,60.1,4.8,11.8,13.45
+Dambulla - Colombo,Dry,68,109,Open Truck,Poor,Ventilated Box,31.6,74.3,6.2,6.3,19.6
+Dambulla - Colombo,Dry,710,89,Covered Truck,Poor,Plastic Crate,30.5,71.4,4.2,4.9,18.03
+Dambulla - Colombo,Wet,392,107,Three-Wheeler,Poor,Plastic Crate,25.4,90.9,4.8,8.2,20.91
+Dambulla - Colombo,Dry,479,106,Refrigerated Van,Poor,Ventilated Box,32.4,62.7,4.7,11.5,13.91
+Dambulla - Colombo,Wet,791,114,Covered Truck,Moderate,Sack,25.5,98,4.9,3.5,20.67
+Dambulla - Colombo,Dry,796,104,Open Truck,Good,Cardboard Box,31.4,67.4,5.6,7.1,17.26
+Dambulla - Colombo,Wet,680,121,Refrigerated Van,Good,Plastic Crate,27.4,80.1,5.2,9.5,13.75
+Dambulla - Colombo,Dry,325,118,Refrigerated Van,Poor,Sack,32.2,56.9,5.2,5.9,16.39
+Dambulla - Colombo,Dry,88,113,Refrigerated Van,Poor,Cardboard Box,32.4,60.7,4.4,8.8,13.79
+Dambulla - Colombo,Dry,177,89,Open Truck,Poor,Plastic Crate,33.1,77,5.3,2.2,20.3
+Dambulla - Colombo,Dry,138,126,Three-Wheeler,Moderate,Plastic Crate,33.3,64.7,5.4,2.9,25.31
+Dambulla - Colombo,Wet,250,111,Open Truck,Good,Plastic Crate,27.3,87.1,4.9,10.7,16.17
+Dambulla - Colombo,Dry,278,124,Refrigerated Van,Good,Plastic Crate,34.9,66.4,7.3,10.4,15.7
+Dambulla - Colombo,Dry,269,143,Covered Truck,Good,Plastic Crate,31.2,69,6.9,1.8,21.72
+Dambulla - Colombo,Dry,436,141,Refrigerated Van,Good,Ventilated Box,34.9,80.2,4.7,5.6,19.45
+Dambulla - Colombo,Wet,675,106,Refrigerated Van,Good,Ventilated Box,34.2,95.6,5,8.8,15.49
+Dambulla - Colombo,Dry,278,143,Covered Truck,Good,Sack,31.4,71.4,7.7,4.5,20.63
+Dambulla - Colombo,Dry,673,97,Refrigerated Van,Moderate,Sack,33.9,65.8,5.2,11.4,12.84
+Dambulla - Colombo,Wet,147,138,Covered Truck,Poor,Ventilated Box,22.8,92.3,6,2.5,19.49
+Dambulla - Colombo,Wet,732,126,Covered Truck,Good,Sack,30.2,91.3,6.4,3.3,21.41
+Dambulla - Colombo,Wet,198,119,Three-Wheeler,Moderate,Sack,31.8,82.8,4.8,11.9,18.33
+Dambulla - Colombo,Dry,318,110,Refrigerated Van,Good,Cardboard Box,31.8,71.2,4,9.3,16.07
+Dambulla - Colombo,Wet,509,102,Open Truck,Good,Cardboard Box,23.9,79.6,4.4,8.7,16.18
+Dambulla - Colombo,Dry,122,142,Open Truck,Moderate,Plastic Crate,31.2,50.1,5.7,4.9,19.47
+Dambulla - Colombo,Wet,483,110,Open Truck,Good,Plastic Crate,29.6,75.3,5.8,6.9,17.76
+Dambulla - Colombo,Wet,530,133,Covered Truck,Moderate,Plastic Crate,25.9,70.7,4.2,5,17.84
+Dambulla - Colombo,Dry,140,127,Covered Truck,Good,Ventilated Box,27,60.7,6.5,12.6,12.76
+Dambulla - Colombo,Wet,598,89,Covered Truck,Poor,Cardboard Box,29.2,85,3.7,9.1,16.16
+Dambulla - Colombo,Wet,664,138,Covered Truck,Poor,Cardboard Box,23.6,85.5,6.8,2.1,18.55
+Dambulla - Colombo,Dry,475,85,Open Truck,Moderate,Sack,32.4,60,5.4,3.7,19.83
+Dambulla - Colombo,Dry,478,101,Refrigerated Van,Good,Ventilated Box,28.3,64.2,4,10.7,11.71
+Dambulla - Colombo,Dry,619,119,Covered Truck,Poor,Ventilated Box,26.3,65.7,6.7,7.9,16.5
+Dambulla - Colombo,Dry,433,101,Covered Truck,Good,Plastic Crate,31.4,68.3,5.3,6.3,16.08
+Dambulla - Colombo,Wet,366,142,Refrigerated Van,Good,Plastic Crate,29.8,75.5,6.3,13.6,13.1
+Dambulla - Colombo,Dry,333,112,Open Truck,Good,Sack,30.1,65.9,3.5,2.1,24.28
+Dambulla - Colombo,Dry,279,141,Refrigerated Van,Poor,Ventilated Box,25.4,64,5.1,14.7,11.42
+Dambulla - Colombo,Dry,142,142,Covered Truck,Poor,Plastic Crate,31.4,75.5,5.3,4.1,18.02
+Dambulla - Colombo,Wet,145,87,Covered Truck,Good,Cardboard Box,28.8,80.5,4.7,9.3,16.65
+Dambulla - Colombo,Dry,442,95,Refrigerated Van,Moderate,Ventilated Box,34.4,65.2,5.5,5.6,20.99
+Dambulla - Colombo,Wet,330,131,Covered Truck,Good,Sack,24.8,85.4,6.8,3.3,19.65
+Dambulla - Colombo,Wet,646,118,Refrigerated Van,Moderate,Sack,30.6,91.9,5.2,3.9,23.77
+Dambulla - Colombo,Wet,413,137,Three-Wheeler,Good,Cardboard Box,23.2,89.9,6.7,8.5,18.33
+Dambulla - Colombo,Dry,624,92,Three-Wheeler,Moderate,Plastic Crate,37.1,75.8,3.7,4.5,19.89
+Dambulla - Colombo,Wet,712,113,Open Truck,Good,Cardboard Box,27.7,76.6,4.3,3.6,16.54
+Dambulla - Colombo,Dry,330,111,Refrigerated Van,Moderate,Ventilated Box,34.3,69.9,4.7,6.1,14.11
+Dambulla - Colombo,Dry,583,127,Open Truck,Good,Ventilated Box,33.7,64.5,4.5,8.9,12.63
+Dambulla - Colombo,Dry,687,116,Covered Truck,Good,Plastic Crate,29.9,70.1,4.5,8.7,13.75
+Dambulla - Colombo,Dry,490,126,Open Truck,Poor,Sack,28.4,68.1,5.5,2.9,21.81
+Dambulla - Colombo,Wet,156,100,Covered Truck,Moderate,Sack,29.8,70.7,3.1,12,15.48
+Dambulla - Colombo,Dry,157,91,Three-Wheeler,Poor,Ventilated Box,33.9,71.8,5.9,4.5,20.39
+Dambulla - Colombo,Dry,603,117,Refrigerated Van,Good,Sack,32.7,67.7,5.8,9.9,15.03
+Dambulla - Colombo,Dry,554,93,Refrigerated Van,Good,Ventilated Box,27,78.2,3.1,9.9,12.48
+Dambulla - Colombo,Dry,329,121,Open Truck,Moderate,Sack,34.1,65.5,5.4,1.5,24.99
+Dambulla - Colombo,Wet,405,120,Refrigerated Van,Poor,Sack,29.1,77.6,5.8,3.1,23.62
+Dambulla - Colombo,Wet,386,123,Open Truck,Good,Plastic Crate,26,79.7,7,1.5,22.09
+Dambulla - Colombo,Dry,255,136,Three-Wheeler,Moderate,Cardboard Box,29.1,69.7,4.9,5.5,17.9
+Dambulla - Colombo,Dry,656,93,Open Truck,Poor,Ventilated Box,31.2,71.3,5.4,1.5,24.72
+Dambulla - Colombo,Dry,581,113,Covered Truck,Moderate,Cardboard Box,30.9,69.6,4.5,5.9,19.03
+Dambulla - Colombo,Dry,758,135,Covered Truck,Moderate,Cardboard Box,28.1,74.8,6.7,12.5,14.95
+Dambulla - Colombo,Wet,525,97,Refrigerated Van,Moderate,Plastic Crate,29.9,90.6,5.3,7.4,18.83
+Dambulla - Colombo,Dry,600,112,Covered Truck,Moderate,Plastic Crate,37.4,64.1,5.2,4.7,17.92
+Dambulla - Colombo,Dry,269,90,Covered Truck,Poor,Sack,26.6,69.1,4.2,8.6,17.74
+Dambulla - Colombo,Dry,649,127,Three-Wheeler,Poor,Cardboard Box,32.3,78.8,5,8.6,18.81
+Dambulla - Colombo,Wet,589,125,Covered Truck,Poor,Sack,25.6,73.3,4.7,2.9,20.45
+Dambulla - Colombo,Dry,128,130,Covered Truck,Good,Sack,28.6,68,5.5,5.3,17.89
+Dambulla - Colombo,Dry,771,109,Refrigerated Van,Moderate,Cardboard Box,28.6,54.5,4.9,10.7,12.37
+Dambulla - Colombo,Dry,551,118,Open Truck,Poor,Ventilated Box,30.3,62.2,6.5,5.1,18.09
+Dambulla - Colombo,Wet,426,143,Open Truck,Good,Cardboard Box,28.5,90.3,5.9,3.1,20.37
+Dambulla - Colombo,Dry,317,114,Covered Truck,Moderate,Plastic Crate,34,69.9,6.3,8.5,16.92
+Dambulla - Colombo,Dry,82,115,Refrigerated Van,Good,Sack,32.1,52.8,3.1,15.2,10.55
+Dambulla - Colombo,Wet,221,137,Three-Wheeler,Good,Plastic Crate,28.9,73.2,6.3,11.5,15.81
+Dambulla - Colombo,Dry,71,102,Three-Wheeler,Poor,Plastic Crate,32.1,70.5,5.1,5.9,16.8
+Dambulla - Colombo,Dry,465,133,Three-Wheeler,Moderate,Cardboard Box,30.4,67.8,4.6,9,17.86
+Dambulla - Colombo,Dry,672,113,Open Truck,Moderate,Plastic Crate,32.1,64.2,3.9,8.2,15.95
+Dambulla - Colombo,Dry,382,87,Covered Truck,Good,Ventilated Box,33.6,84.5,4.2,13.1,13.45
+Dambulla - Colombo,Wet,514,133,Covered Truck,Good,Plastic Crate,25.1,95.5,5.5,5.3,20.27
+Dambulla - Colombo,Dry,228,143,Three-Wheeler,Moderate,Plastic Crate,30.3,65,7.6,11.2,15.69
+Dambulla - Colombo,Dry,758,132,Covered Truck,Good,Ventilated Box,34.8,72,6.4,4.8,17.99
+Dambulla - Colombo,Dry,587,95,Covered Truck,Poor,Ventilated Box,28.8,60.1,3.7,10.4,12.62
+Dambulla - Colombo,Dry,748,102,Covered Truck,Moderate,Sack,32.3,64.8,3.8,4.3,18.49
+Dambulla - Colombo,Dry,359,122,Open Truck,Moderate,Sack,29.6,80.5,5.6,1.5,24.65
+Dambulla - Colombo,Wet,712,105,Open Truck,Good,Plastic Crate,23.7,93.3,3.5,6.9,19.7
+Dambulla - Colombo,Wet,352,111,Covered Truck,Moderate,Ventilated Box,25.2,85.4,4.1,6.5,18.28
+Dambulla - Colombo,Wet,709,132,Covered Truck,Moderate,Ventilated Box,29.6,87,6.2,1.5,25.26
+Dambulla - Colombo,Dry,552,129,Covered Truck,Moderate,Plastic Crate,33.5,62.6,4.7,5.7,16.84
+Dambulla - Colombo,Dry,531,129,Covered Truck,Good,Plastic Crate,30.9,68.3,4.4,6.3,16.86
+Dambulla - Colombo,Wet,451,118,Covered Truck,Good,Ventilated Box,24.8,83.7,6.7,8.1,18.5
+Dambulla - Colombo,Dry,378,102,Open Truck,Good,Sack,32.9,73.7,4.8,5.6,18.34
+Dambulla - Colombo,Wet,707,89,Refrigerated Van,Poor,Cardboard Box,29.7,70.4,4.7,9.3,15.74
+Dambulla - Colombo,Dry,357,121,Open Truck,Good,Ventilated Box,30,59.8,6.5,7.1,17.76
+Dambulla - Colombo,Wet,483,89,Three-Wheeler,Moderate,Plastic Crate,24.1,73.6,4.7,12.1,14.7
+Dambulla - Colombo,Wet,516,89,Covered Truck,Good,Sack,26.4,75.9,4.5,12.2,14.26
+Dambulla - Colombo,Dry,281,133,Refrigerated Van,Good,Sack,30.5,68.3,6.5,12.3,13.72
+Dambulla - Colombo,Dry,488,102,Three-Wheeler,Poor,Sack,32.1,66.6,4.9,7,22.22
+Dambulla - Colombo,Dry,228,140,Covered Truck,Good,Plastic Crate,30.7,70,7.7,7.9,15.56
+Dambulla - Colombo,Wet,568,143,Three-Wheeler,Moderate,Cardboard Box,25.1,86.9,5.1,4.6,22.71
+Dambulla - Colombo,Dry,481,125,Refrigerated Van,Moderate,Ventilated Box,32.5,62.9,5.7,8.1,15.39
+Dambulla - Colombo,Wet,99,101,Covered Truck,Moderate,Cardboard Box,25.6,90.4,4,1.9,22.92
+Dambulla - Colombo,Dry,305,118,Covered Truck,Good,Plastic Crate,33.4,70.1,4.5,10.5,13.31
+Dambulla - Colombo,Wet,599,113,Open Truck,Moderate,Ventilated Box,22,87.7,4.8,1.5,23.15
+Dambulla - Colombo,Dry,674,121,Covered Truck,Moderate,Ventilated Box,34.1,65.9,5.3,4.9,17.05
+Dambulla - Colombo,Dry,666,89,Covered Truck,Good,Sack,33.1,65.2,3.6,6.8,16.42
+Dambulla - Colombo,Wet,579,113,Open Truck,Poor,Cardboard Box,30.1,78.6,4.5,7.7,18.35
+Dambulla - Colombo,Dry,513,139,Covered Truck,Moderate,Cardboard Box,28.6,72.7,8.3,5.9,18.41
+Dambulla - Colombo,Dry,231,126,Covered Truck,Poor,Ventilated Box,33.2,74.7,5.8,4.7,19.04
+Dambulla - Colombo,Dry,523,136,Covered Truck,Good,Sack,31.6,68.1,4.5,10.3,12.47
+Dambulla - Colombo,Wet,660,106,Refrigerated Van,Good,Ventilated Box,24.7,83,4.2,6.4,15.29
+Dambulla - Colombo,Wet,256,142,Covered Truck,Good,Plastic Crate,31.2,76.1,5.8,6.8,17.36
+Dambulla - Colombo,Dry,577,121,Open Truck,Poor,Ventilated Box,31.5,75.8,5.8,2.6,19.55
+Dambulla - Colombo,Dry,501,128,Refrigerated Van,Poor,Plastic Crate,31.1,69.5,5.5,7.5,15.25
+Dambulla - Colombo,Wet,550,125,Open Truck,Good,Ventilated Box,29.2,88.1,4.2,9.4,15.08
+Dambulla - Colombo,Dry,616,111,Open Truck,Poor,Cardboard Box,33,70.7,3.4,12.4,14.95
+Dambulla - Colombo,Wet,363,125,Covered Truck,Poor,Plastic Crate,27,80,6.1,1.5,22.44
+Dambulla - Colombo,Wet,731,101,Covered Truck,Poor,Sack,26.9,89.1,6.3,11.3,16.6
+Dambulla - Colombo,Dry,650,120,Refrigerated Van,Good,Sack,25.5,54.2,5,5.8,17.59
+Dambulla - Colombo,Dry,367,121,Covered Truck,Good,Ventilated Box,29.7,66.4,4.5,8.4,14.35
+Dambulla - Colombo,Dry,323,113,Three-Wheeler,Good,Plastic Crate,30.2,58.7,5.1,11.2,13.34
+Dambulla - Colombo,Wet,314,140,Covered Truck,Poor,Plastic Crate,28,80.9,6.8,3.7,18.5
+Dambulla - Colombo,Wet,322,116,Three-Wheeler,Moderate,Sack,29.8,73.6,4.7,9.3,15.63
+Dambulla - Colombo,Wet,238,130,Refrigerated Van,Moderate,Cardboard Box,29.1,89.9,6.1,6.8,18.1
+Dambulla - Colombo,Dry,383,125,Covered Truck,Moderate,Sack,28.2,70.9,4.8,10,15
+Dambulla - Colombo,Dry,639,114,Open Truck,Moderate,Sack,30.8,71.3,6.8,9.8,15.09
+Dambulla - Colombo,Dry,607,144,Covered Truck,Good,Sack,33.4,70.8,6.6,4.5,20.08
+Dambulla - Colombo,Wet,172,120,Covered Truck,Good,Cardboard Box,26.6,83.2,5.5,3.1,17.51
+Dambulla - Colombo,Wet,427,89,Covered Truck,Poor,Plastic Crate,27.4,77.9,4.7,7.5,16.93
+Dambulla - Colombo,Dry,575,126,Open Truck,Good,Ventilated Box,32.3,73,5,1.5,23.22
+Dambulla - Colombo,Dry,565,115,Open Truck,Good,Sack,31.3,66.9,5.3,10.8,14.83
+Dambulla - Colombo,Wet,496,90,Three-Wheeler,Moderate,Sack,28.9,78.2,5.4,3.5,21.09
+Dambulla - Colombo,Dry,487,126,Covered Truck,Good,Cardboard Box,33.1,63.6,6,4.6,18.07
+Dambulla - Colombo,Dry,605,122,Three-Wheeler,Poor,Plastic Crate,33.5,62.3,6.2,1.5,24.6
+Dambulla - Colombo,Dry,781,123,Open Truck,Poor,Cardboard Box,29.6,63,5.2,6.5,16.66
+Dambulla - Colombo,Dry,645,102,Covered Truck,Poor,Ventilated Box,33.9,66.7,5.1,3,19.8
+Dambulla - Colombo,Wet,267,136,Covered Truck,Moderate,Sack,26,80.4,6.1,1.9,25.84
+Dambulla - Colombo,Dry,579,85,Refrigerated Van,Good,Sack,29,73.7,4.6,11.7,13.79
+Dambulla - Colombo,Dry,643,96,Covered Truck,Good,Cardboard Box,32.8,84.9,4.9,6.4,19.19
+Dambulla - Colombo,Dry,446,144,Covered Truck,Poor,Cardboard Box,31.6,61.9,4.4,7.4,17.99
+Dambulla - Colombo,Wet,789,116,Covered Truck,Poor,Cardboard Box,28.5,83.8,5.9,5.8,18.23
+Dambulla - Colombo,Wet,665,100,Three-Wheeler,Moderate,Ventilated Box,27,80.2,6.4,6.1,20.78
+Dambulla - Colombo,Wet,664,89,Covered Truck,Moderate,Cardboard Box,30.8,79.7,3.1,5.3,17.89
+Dambulla - Colombo,Wet,231,122,Covered Truck,Good,Ventilated Box,29.5,78.5,5.4,4.2,18.96
+Dambulla - Colombo,Wet,275,119,Open Truck,Moderate,Ventilated Box,27.5,83.4,5.7,1.5,21.23
+Dambulla - Colombo,Dry,300,123,Open Truck,Poor,Cardboard Box,30.4,56.7,4,10.9,14.3
+Dambulla - Colombo,Wet,610,93,Open Truck,Good,Plastic Crate,32.2,77.9,3.7,11.2,14.72
+Dambulla - Colombo,Dry,513,131,Covered Truck,Poor,Ventilated Box,32.5,77.8,5.1,7.6,14.27
+Dambulla - Colombo,Wet,93,139,Refrigerated Van,Poor,Sack,26.1,81.8,7.6,3.8,23.18
+Dambulla - Colombo,Dry,469,114,Covered Truck,Moderate,Ventilated Box,33.9,67.4,4,4.3,17.63
+Dambulla - Colombo,Dry,280,94,Open Truck,Good,Plastic Crate,30.6,70.9,4.1,12.5,12.86
+Dambulla - Colombo,Wet,194,105,Refrigerated Van,Moderate,Ventilated Box,25.6,87.9,3.3,5.9,15.58
+Dambulla - Colombo,Wet,144,133,Covered Truck,Good,Sack,27.6,87.6,4.2,2.5,23.5
+Dambulla - Colombo,Wet,759,112,Open Truck,Poor,Cardboard Box,23.6,79.8,5.4,10.7,16.99
+Dambulla - Colombo,Wet,158,129,Covered Truck,Good,Plastic Crate,25.9,90,5.4,9.4,16.93
+Dambulla - Colombo,Dry,91,140,Covered Truck,Poor,Ventilated Box,32.5,69,5.7,6.5,17.22
+Dambulla - Colombo,Wet,106,108,Refrigerated Van,Poor,Ventilated Box,27.8,81.1,4.8,8.3,15.14
+Dambulla - Colombo,Wet,195,143,Refrigerated Van,Good,Ventilated Box,26,86.7,7.5,8.1,16.12
+Dambulla - Colombo,Wet,560,120,Covered Truck,Poor,Sack,28.5,85.5,5.9,4.2,20.75
+Dambulla - Colombo,Wet,199,112,Open Truck,Good,Cardboard Box,26.8,87.5,5.4,8.3,16.12
+Dambulla - Colombo,Dry,171,86,Covered Truck,Moderate,Ventilated Box,31.2,77.6,4.6,13.6,12.05
+Dambulla - Colombo,Dry,605,129,Covered Truck,Good,Plastic Crate,31,66.5,4.3,9.1,15.45
+Dambulla - Colombo,Dry,649,140,Three-Wheeler,Moderate,Plastic Crate,34,58.8,4,8.3,16.45
+Dambulla - Colombo,Dry,217,143,Open Truck,Moderate,Ventilated Box,31.7,67.6,5.9,10.2,13.7
+Dambulla - Colombo,Dry,229,101,Refrigerated Van,Poor,Sack,29.6,64,3.1,7.7,15.23
+Dambulla - Colombo,Wet,385,94,Covered Truck,Poor,Plastic Crate,30.9,97,5.8,1.5,27.34
+Dambulla - Colombo,Dry,465,129,Covered Truck,Moderate,Cardboard Box,30.9,65.3,4.9,10.6,13.12
+Dambulla - Colombo,Dry,263,130,Open Truck,Poor,Plastic Crate,29.7,62.8,6.1,4.1,17.7
+Dambulla - Colombo,Dry,528,122,Refrigerated Van,Good,Sack,29.7,68.2,7.2,8.7,14.08
+Dambulla - Colombo,Dry,424,86,Refrigerated Van,Good,Sack,30.1,83.8,4.2,7.1,14.85
+Dambulla - Colombo,Wet,520,131,Open Truck,Good,Plastic Crate,27.3,73.2,5.7,5.8,18.31
+Dambulla - Colombo,Dry,572,87,Refrigerated Van,Good,Ventilated Box,30.4,60.6,4.4,11.5,12.46
+Dambulla - Colombo,Wet,330,119,Open Truck,Good,Plastic Crate,31.3,89.9,4.5,1.5,23.57
+Dambulla - Colombo,Dry,125,122,Refrigerated Van,Moderate,Ventilated Box,30.7,74.8,5.2,4.8,19.86
+Dambulla - Colombo,Dry,310,122,Three-Wheeler,Moderate,Sack,33.8,75.6,4.3,5.1,21.44
+Dambulla - Colombo,Dry,139,105,Open Truck,Moderate,Ventilated Box,26.5,54.6,5.2,5.4,15.79
+Dambulla - Colombo,Wet,655,141,Covered Truck,Moderate,Plastic Crate,27.5,89.1,6.1,7.6,16.52
+Dambulla - Colombo,Dry,298,98,Covered Truck,Poor,Ventilated Box,31.2,64.4,4.3,2.7,19.68
+Dambulla - Colombo,Dry,107,91,Open Truck,Poor,Cardboard Box,33.1,75,3.6,6.9,18.68
+Dambulla - Colombo,Wet,51,86,Open Truck,Moderate,Ventilated Box,32.7,89.5,5.4,3.9,21.84
+Dambulla - Colombo,Dry,265,131,Open Truck,Moderate,Ventilated Box,31.2,65.2,6,3.1,18.32
+Dambulla - Colombo,Wet,256,100,Open Truck,Poor,Cardboard Box,30.2,82,3.7,4.8,22.18
+Dambulla - Colombo,Wet,765,107,Three-Wheeler,Poor,Ventilated Box,25.6,73.9,4.4,7.6,18.67
+Dambulla - Colombo,Dry,85,140,Covered Truck,Moderate,Cardboard Box,28,74.3,7.7,3.4,19.32
+Dambulla - Colombo,Dry,664,106,Covered Truck,Moderate,Ventilated Box,34.4,60.4,4.5,1.8,20.97
+Dambulla - Colombo,Dry,563,142,Refrigerated Van,Poor,Ventilated Box,35.9,65.9,4.8,10.3,14.4
+Dambulla - Colombo,Wet,118,142,Covered Truck,Moderate,Plastic Crate,28.3,77.3,6.6,3.8,17.95
+Dambulla - Colombo,Dry,309,140,Open Truck,Good,Sack,28.6,73.2,5.9,4.5,18.36
+Dambulla - Colombo,Wet,510,104,Refrigerated Van,Moderate,Sack,30,82.9,6,10,16.71
+Dambulla - Colombo,Wet,523,114,Refrigerated Van,Moderate,Ventilated Box,26.7,76.9,6.4,5.3,15.39
+Dambulla - Colombo,Wet,96,125,Covered Truck,Moderate,Plastic Crate,27.2,81,5.9,1.5,24.42
+Dambulla - Colombo,Dry,446,91,Covered Truck,Poor,Plastic Crate,34.4,59.7,5.3,3.7,18.17
+Dambulla - Colombo,Wet,646,95,Refrigerated Van,Moderate,Sack,29.5,87.2,4.2,4.3,22.4
+Dambulla - Colombo,Dry,330,131,Open Truck,Moderate,Cardboard Box,33.2,69.7,6,2.1,22.74
+Dambulla - Colombo,Dry,218,134,Open Truck,Good,Sack,33.5,52.3,6.5,6.8,16.79
+Dambulla - Colombo,Dry,796,112,Covered Truck,Poor,Sack,34.8,71.7,4.7,10.2,15.75
+Dambulla - Colombo,Wet,265,90,Three-Wheeler,Moderate,Ventilated Box,27,77.8,4,8,19.39
+Dambulla - Colombo,Dry,712,96,Open Truck,Poor,Sack,28.3,50,4.6,1.5,22.37
+Dambulla - Colombo,Wet,83,109,Covered Truck,Poor,Plastic Crate,27.9,78.1,5.1,6.1,17.87
+Dambulla - Colombo,Wet,655,96,Open Truck,Moderate,Plastic Crate,23.6,78.1,3.7,11,13.49
+Dambulla - Colombo,Dry,704,142,Open Truck,Poor,Plastic Crate,31.4,68.1,5.7,5.5,17.16
+Dambulla - Colombo,Dry,353,110,Open Truck,Moderate,Plastic Crate,33.4,71.2,4.9,9.2,15.41
+Dambulla - Colombo,Dry,589,90,Covered Truck,Good,Ventilated Box,32.4,67.2,3.1,6.5,16.55
+Dambulla - Colombo,Dry,164,117,Three-Wheeler,Good,Ventilated Box,31.3,60.9,5.3,2.5,22.87
+Dambulla - Colombo,Wet,682,122,Covered Truck,Poor,Ventilated Box,27.8,63,4,6.5,15.65
+Dambulla - Colombo,Wet,436,106,Three-Wheeler,Good,Cardboard Box,26,82.2,3.9,8.3,18.91
+Dambulla - Colombo,Dry,433,128,Covered Truck,Good,Cardboard Box,30.7,68.5,6.9,4,17.79
+Dambulla - Colombo,Wet,139,102,Open Truck,Moderate,Sack,30.8,77.5,6.5,9,16.4
+Dambulla - Colombo,Dry,742,142,Refrigerated Van,Good,Ventilated Box,25.5,65.6,5.5,9.3,9.12
+Dambulla - Colombo,Dry,681,101,Open Truck,Moderate,Ventilated Box,30.7,55.4,5.5,1.5,20
+Dambulla - Colombo,Dry,65,133,Refrigerated Van,Good,Cardboard Box,30.6,60.4,6.1,13.2,9.1
+Dambulla - Colombo,Dry,486,104,Covered Truck,Good,Cardboard Box,30.3,58.4,3.3,10.8,12.39
+Dambulla - Colombo,Wet,592,138,Refrigerated Van,Poor,Ventilated Box,27.1,84.5,7.4,5.1,17.64
+Dambulla - Colombo,Dry,276,102,Covered Truck,Moderate,Plastic Crate,31.2,72.8,4.3,7.8,16.1
+Dambulla - Colombo,Dry,662,107,Covered Truck,Poor,Ventilated Box,31.1,76.9,5.8,7.6,16.78
+Dambulla - Colombo,Dry,553,143,Open Truck,Good,Cardboard Box,29.4,70,5.3,3.1,18.34
+Dambulla - Colombo,Dry,461,87,Covered Truck,Moderate,Plastic Crate,32.3,62.1,3.7,3.3,19.94
+Dambulla - Colombo,Wet,420,112,Open Truck,Poor,Cardboard Box,29.4,83.9,4.8,11,15.49
+Dambulla - Colombo,Dry,529,86,Open Truck,Poor,Sack,31.5,73.9,4.9,4.7,20.21
+Dambulla - Colombo,Dry,412,85,Open Truck,Good,Sack,28.9,70.9,2.7,9.9,14.5
+Dambulla - Colombo,Dry,358,108,Covered Truck,Good,Cardboard Box,28.5,57.9,5.9,9.4,11.18
+Dambulla - Colombo,Wet,239,118,Open Truck,Moderate,Plastic Crate,25.4,79.8,5.2,2.1,19.93
+Dambulla - Colombo,Dry,415,107,Covered Truck,Good,Sack,28.5,57,5.7,6.7,17.13
+Dambulla - Colombo,Dry,240,99,Covered Truck,Good,Sack,33.4,68.8,3.5,8.9,15.56
+Dambulla - Colombo,Wet,765,121,Refrigerated Van,Good,Sack,32.8,66,5.7,9.6,15.34
+Dambulla - Colombo,Wet,672,139,Refrigerated Van,Moderate,Ventilated Box,33.5,89.2,5.7,4.1,23.71
+Dambulla - Colombo,Dry,248,93,Refrigerated Van,Good,Cardboard Box,28.9,68.4,4.7,8.8,13.55
+Dambulla - Colombo,Wet,595,92,Refrigerated Van,Good,Plastic Crate,25.3,84.5,4.2,5.2,19.48
+Dambulla - Colombo,Dry,164,105,Refrigerated Van,Good,Ventilated Box,31.4,69.7,3.9,7.8,16.59
+Dambulla - Colombo,Dry,495,109,Covered Truck,Moderate,Ventilated Box,28.8,53.6,6.8,4.1,21.51
+Dambulla - Colombo,Dry,284,140,Open Truck,Moderate,Sack,26.5,66,7.2,11.2,14.92
+Dambulla - Colombo,Wet,382,110,Three-Wheeler,Moderate,Ventilated Box,27.3,90.9,4.8,6.2,19.79
+Dambulla - Colombo,Dry,406,99,Covered Truck,Good,Cardboard Box,28.4,65.4,6.7,6.9,16.63
+Dambulla - Colombo,Wet,96,112,Covered Truck,Moderate,Ventilated Box,28.6,87.4,5.3,9.1,18.02
+Dambulla - Colombo,Wet,287,130,Refrigerated Van,Moderate,Cardboard Box,31.8,78.9,6.1,7.5,16.45
+Dambulla - Colombo,Wet,661,122,Covered Truck,Poor,Sack,27.2,86.4,4.9,4,21.57
+Dambulla - Colombo,Dry,165,116,Covered Truck,Poor,Cardboard Box,31.4,69.4,6.7,4.3,18.02
+Dambulla - Colombo,Wet,182,141,Open Truck,Moderate,Sack,25.8,87.1,6.7,3.9,22.98
+Dambulla - Colombo,Dry,162,128,Open Truck,Moderate,Sack,26.7,64.7,6.5,2.7,18.65
+Dambulla - Colombo,Wet,94,143,Covered Truck,Moderate,Sack,29.8,84.1,7.3,1.8,25.96
+Dambulla - Colombo,Wet,601,124,Refrigerated Van,Moderate,Plastic Crate,28.1,86.8,6.1,3.6,23.81
+Dambulla - Colombo,Dry,178,133,Open Truck,Good,Cardboard Box,27.9,56.6,4.8,1.5,20.66
+Dambulla - Colombo,Wet,61,91,Open Truck,Good,Ventilated Box,28.3,84.6,3.1,10.1,14.58
+Dambulla - Colombo,Dry,245,123,Refrigerated Van,Good,Cardboard Box,34.4,72.3,3.7,11,14.33
+Dambulla - Colombo,Dry,764,97,Three-Wheeler,Moderate,Cardboard Box,29.9,74.3,3.5,7.8,18.26
+Dambulla - Colombo,Wet,202,121,Open Truck,Moderate,Cardboard Box,29.3,78.8,5.6,6.1,18.91
+Dambulla - Colombo,Wet,488,125,Covered Truck,Moderate,Cardboard Box,25.4,76.7,4.7,7.5,17.16
+Dambulla - Colombo,Wet,650,105,Open Truck,Moderate,Ventilated Box,29.2,79.1,4.5,7.3,16.9
+Dambulla - Colombo,Dry,402,92,Open Truck,Moderate,Cardboard Box,30.6,64.5,5.6,4.4,16.12
+Dambulla - Colombo,Dry,655,87,Open Truck,Good,Plastic Crate,28.3,65.1,5.6,6.2,17.33
+Dambulla - Colombo,Dry,379,95,Three-Wheeler,Moderate,Ventilated Box,32.7,68.5,4.5,3.9,18.54
+Dambulla - Colombo,Wet,100,108,Open Truck,Good,Ventilated Box,28.7,79,4.6,7.1,19.2
+Dambulla - Colombo,Wet,613,134,Refrigerated Van,Good,Cardboard Box,27.5,78.6,5.1,6.6,16.38
+Dambulla - Colombo,Wet,670,90,Open Truck,Moderate,Sack,29.3,73.7,3.4,6.6,20.05
+Dambulla - Colombo,Wet,655,118,Open Truck,Moderate,Ventilated Box,26.6,77.9,4.2,9.7,14.54
+Dambulla - Colombo,Dry,431,106,Covered Truck,Poor,Ventilated Box,29.1,75,5.9,9.3,15.08
+Dambulla - Colombo,Dry,546,86,Open Truck,Poor,Cardboard Box,33.7,68.4,4.8,4.2,22.66
+Dambulla - Colombo,Dry,475,96,Covered Truck,Moderate,Cardboard Box,32.4,71.4,5.3,11.3,15.24
+Dambulla - Colombo,Dry,690,93,Covered Truck,Good,Cardboard Box,29.3,76.4,5.7,10.8,13.85
+Dambulla - Colombo,Wet,687,123,Open Truck,Good,Sack,26.9,80,4.3,5.3,21.59
+Dambulla - Colombo,Wet,288,92,Refrigerated Van,Moderate,Ventilated Box,31.5,84.2,6.5,13.4,11.64
+Dambulla - Colombo,Wet,91,141,Open Truck,Poor,Cardboard Box,28.4,76.2,6,2.4,19.89
+Dambulla - Colombo,Wet,274,139,Covered Truck,Good,Cardboard Box,31.1,80.9,5.1,4.1,18.83
+Dambulla - Colombo,Wet,257,132,Covered Truck,Moderate,Ventilated Box,27.1,86.6,6.5,5.9,16.26
+Dambulla - Colombo,Wet,187,85,Covered Truck,Moderate,Plastic Crate,27.3,68.8,3.5,8.2,14.57
+Dambulla - Colombo,Dry,418,107,Covered Truck,Good,Cardboard Box,28.8,62.9,4,4.2,16.03
+Dambulla - Colombo,Wet,759,105,Covered Truck,Poor,Ventilated Box,26.8,91.5,3.8,7.5,16.02
+Dambulla - Colombo,Dry,179,127,Three-Wheeler,Moderate,Sack,37.4,54.5,5.8,1.8,25.55
+Dambulla - Colombo,Dry,215,94,Covered Truck,Poor,Ventilated Box,27.1,62,3.1,5.8,14.97
+Dambulla - Colombo,Wet,757,88,Covered Truck,Moderate,Sack,27.1,74.2,4.1,5.9,19
+Dambulla - Colombo,Dry,574,126,Covered Truck,Good,Sack,31.5,69.4,4.8,7.8,14.91
+Dambulla - Colombo,Dry,145,143,Covered Truck,Good,Ventilated Box,27.9,60.8,5.1,7.4,16.5
+Dambulla - Colombo,Dry,323,95,Open Truck,Good,Plastic Crate,30.8,75.4,5.9,4.7,19.36
+Dambulla - Colombo,Dry,52,103,Refrigerated Van,Good,Cardboard Box,26.7,84.6,4.8,14.6,11.1
+Dambulla - Colombo,Wet,53,131,Three-Wheeler,Good,Cardboard Box,26.5,78.2,6.6,2.5,23.61
+Dambulla - Colombo,Wet,459,88,Open Truck,Moderate,Cardboard Box,33,85.8,4.8,6.2,19.7
+Dambulla - Colombo,Dry,191,106,Covered Truck,Good,Cardboard Box,31,77.5,5.5,8.4,15.8
+Dambulla - Colombo,Wet,645,92,Three-Wheeler,Good,Sack,27.6,91.8,5,5,23.84
+Dambulla - Colombo,Wet,786,112,Covered Truck,Good,Sack,28.3,84.6,6.7,7,17.53
+Dambulla - Colombo,Dry,115,109,Covered Truck,Poor,Cardboard Box,35,65.6,4.1,2.3,24.68
+Dambulla - Colombo,Dry,359,99,Refrigerated Van,Good,Plastic Crate,33.5,65.8,5.5,8.4,15.24
+Dambulla - Colombo,Wet,160,141,Refrigerated Van,Poor,Ventilated Box,29.3,85.8,5.6,9.1,14.75
+Dambulla - Colombo,Dry,101,93,Open Truck,Moderate,Plastic Crate,33.8,68.1,2.9,9.5,15.3
+Dambulla - Colombo,Dry,689,88,Refrigerated Van,Moderate,Ventilated Box,31.4,66.1,3.5,12,11.6
+Dambulla - Colombo,Wet,175,105,Covered Truck,Poor,Sack,27,85.9,5.5,5.7,20.41
+Dambulla - Colombo,Wet,483,103,Open Truck,Moderate,Cardboard Box,26.7,87.3,4.8,1.5,27.22
+Dambulla - Colombo,Dry,467,131,Three-Wheeler,Moderate,Cardboard Box,36,62.3,4,5.7,20.24
+Dambulla - Colombo,Dry,152,116,Open Truck,Poor,Ventilated Box,27.6,68.1,4.9,2.5,18.87
+Dambulla - Colombo,Dry,634,99,Open Truck,Good,Ventilated Box,34,77.2,6.9,3.3,19.25
+Dambulla - Colombo,Dry,571,115,Covered Truck,Good,Ventilated Box,27.4,72.1,5.7,5,15.47
+Dambulla - Colombo,Wet,430,88,Open Truck,Moderate,Ventilated Box,30.2,82.2,3.2,11.3,15.83
+Dambulla - Colombo,Dry,79,91,Refrigerated Van,Good,Ventilated Box,32,67.1,4.3,4.3,18.09
+Dambulla - Colombo,Wet,145,136,Open Truck,Poor,Ventilated Box,28.9,79.2,7.1,1.9,23.1
+Dambulla - Colombo,Wet,634,127,Open Truck,Good,Sack,30,78.6,6.5,4.3,20.88
+Dambulla - Colombo,Wet,348,112,Covered Truck,Moderate,Ventilated Box,27.7,88.8,6.6,10.7,16.01
+Dambulla - Colombo,Dry,172,101,Three-Wheeler,Moderate,Sack,31,59.1,3.2,11.5,14.73
+Dambulla - Colombo,Wet,289,109,Open Truck,Good,Sack,30.9,94.4,5.4,10.7,16.48
+Dambulla - Colombo,Wet,336,89,Three-Wheeler,Moderate,Sack,27.4,85,4.5,2.2,26.13
+Dambulla - Colombo,Dry,391,97,Refrigerated Van,Poor,Plastic Crate,32.1,68.3,4.6,9.3,15.55
+Dambulla - Colombo,Dry,491,112,Three-Wheeler,Moderate,Cardboard Box,32.5,66,5.4,6,21.51
+Dambulla - Colombo,Wet,444,141,Refrigerated Van,Poor,Sack,26.7,76.3,4.5,3.9,21.07
+Dambulla - Colombo,Dry,736,106,Covered Truck,Good,Sack,30.1,75.4,3.3,7.6,16.67
+Dambulla - Colombo,Dry,288,105,Covered Truck,Poor,Sack,31.5,64.6,6.3,9.7,14.98
+Dambulla - Colombo,Dry,650,96,Covered Truck,Good,Sack,31.2,71.7,3.1,4.7,17.32
+Dambulla - Colombo,Wet,483,101,Open Truck,Moderate,Ventilated Box,24.4,87.4,3.3,6.7,18.64
+Dambulla - Colombo,Dry,137,138,Covered Truck,Poor,Plastic Crate,29.5,66.9,4.5,4.1,19.92
+Dambulla - Colombo,Wet,286,130,Refrigerated Van,Moderate,Ventilated Box,26,85.6,5.6,3.2,20.38
+Dambulla - Colombo,Wet,598,137,Covered Truck,Moderate,Sack,28.7,76.5,6.7,11.6,14.42
+Dambulla - Colombo,Wet,698,86,Three-Wheeler,Moderate,Ventilated Box,25.2,91.6,4,13,16.65
+Dambulla - Colombo,Dry,615,103,Open Truck,Good,Cardboard Box,24.9,72.1,5.2,9.9,15.99
+Dambulla - Colombo,Dry,525,132,Three-Wheeler,Good,Sack,35.7,62.3,5.3,5.8,21.31
+Dambulla - Colombo,Dry,108,138,Refrigerated Van,Good,Sack,28.4,70.2,5.5,12,11.85
+Dambulla - Colombo,Dry,721,136,Covered Truck,Moderate,Plastic Crate,38,62,5.2,12.9,12.67
+Dambulla - Colombo,Wet,72,87,Refrigerated Van,Good,Ventilated Box,26,80.4,6.2,11.7,10.41
+Dambulla - Colombo,Dry,780,113,Refrigerated Van,Moderate,Plastic Crate,29.1,62.4,3.6,7.9,14.07
+Dambulla - Colombo,Dry,500,95,Open Truck,Moderate,Ventilated Box,35.9,65.3,5.7,6,16.82
+Dambulla - Colombo,Dry,356,97,Refrigerated Van,Moderate,Plastic Crate,27.5,59.3,5.3,8.7,12.72
+Dambulla - Colombo,Wet,638,94,Covered Truck,Good,Cardboard Box,27.8,66.9,5.2,1.5,20.98
+Dambulla - Colombo,Dry,752,87,Refrigerated Van,Good,Sack,32.3,67.5,5.3,14.2,9.37
+Dambulla - Colombo,Wet,170,92,Open Truck,Moderate,Ventilated Box,27,84.9,4.7,8.8,16.21
+Dambulla - Colombo,Dry,692,136,Three-Wheeler,Moderate,Cardboard Box,34,70.4,6.4,1.5,25.98
+Dambulla - Colombo,Wet,708,86,Covered Truck,Moderate,Ventilated Box,29.8,79.1,3.4,9.4,14.24
+Dambulla - Colombo,Dry,539,117,Refrigerated Van,Moderate,Sack,29.7,73.1,6.3,9.4,14.12
+Dambulla - Colombo,Wet,460,101,Refrigerated Van,Poor,Sack,30.9,82,4.5,5.9,19.84
+Dambulla - Colombo,Wet,749,108,Covered Truck,Good,Plastic Crate,30.4,82,3.9,6.5,17.04
+Dambulla - Colombo,Dry,710,100,Open Truck,Moderate,Cardboard Box,35.1,71.7,5.3,10.2,17.22
+Dambulla - Colombo,Wet,492,96,Refrigerated Van,Moderate,Sack,29,89,6.1,6.7,18.06
+Dambulla - Colombo,Dry,544,131,Open Truck,Moderate,Sack,29.3,74.2,6.4,8.6,15.11
+Dambulla - Colombo,Dry,394,100,Three-Wheeler,Poor,Sack,30.2,58.5,6.7,10.8,16.62
+Dambulla - Colombo,Dry,661,102,Refrigerated Van,Moderate,Sack,28.5,65.8,5.1,10.6,13.62
+Dambulla - Colombo,Wet,689,97,Refrigerated Van,Good,Sack,30.4,82.8,4.7,10.2,17.35
+Dambulla - Colombo,Dry,144,85,Covered Truck,Moderate,Cardboard Box,34.3,69.7,4.7,5.3,20.7
+Dambulla - Colombo,Dry,256,105,Refrigerated Van,Moderate,Ventilated Box,30.8,68.2,5.8,15.1,9.27
+Dambulla - Colombo,Dry,591,119,Three-Wheeler,Moderate,Sack,31.1,72.3,5.9,8.8,19.56
+Dambulla - Colombo,Dry,796,120,Refrigerated Van,Moderate,Cardboard Box,30.1,71.2,4,4.8,21.06
+Dambulla - Colombo,Dry,615,88,Refrigerated Van,Good,Sack,27.7,76,3.6,8.5,14.92
+Dambulla - Colombo,Wet,414,121,Covered Truck,Moderate,Sack,26.1,81.4,6.6,5.8,19.22
+Dambulla - Colombo,Dry,135,139,Covered Truck,Poor,Sack,30.6,62.8,6.8,1.6,24.07
+Dambulla - Colombo,Dry,499,140,Covered Truck,Good,Cardboard Box,32.3,63.6,4.8,4.1,17.33
+Dambulla - Colombo,Dry,394,117,Open Truck,Moderate,Cardboard Box,30.5,61.8,5.6,3.5,19.44
+Dambulla - Colombo,Dry,136,139,Three-Wheeler,Poor,Plastic Crate,27.4,73,5.7,11.8,16.52
+Dambulla - Colombo,Dry,277,129,Covered Truck,Good,Plastic Crate,34.4,72.2,5.4,7.9,16.89
+Dambulla - Colombo,Dry,788,88,Covered Truck,Moderate,Plastic Crate,27.3,69.5,5.6,2.7,19.87
+Dambulla - Colombo,Dry,93,115,Open Truck,Poor,Ventilated Box,28.5,58.8,5.9,11.2,13.01
+Dambulla - Colombo,Dry,156,86,Open Truck,Moderate,Cardboard Box,33.8,57.2,5.2,7.5,17.98
+Dambulla - Colombo,Dry,551,132,Refrigerated Van,Moderate,Sack,25.9,60.8,5.9,14.1,12.71
+Dambulla - Colombo,Wet,305,86,Covered Truck,Moderate,Plastic Crate,26.2,81.4,5.2,4.6,17.88
+Dambulla - Colombo,Dry,281,86,Covered Truck,Good,Cardboard Box,30.9,56.6,4,2.5,20.48
+Dambulla - Colombo,Dry,184,134,Open Truck,Moderate,Sack,28.1,65.3,5.5,9.7,16.46
+Dambulla - Colombo,Wet,75,88,Covered Truck,Poor,Ventilated Box,25.1,91.5,4.3,7.5,18.46
+Dambulla - Colombo,Dry,212,132,Refrigerated Van,Moderate,Sack,28.8,58.2,4.5,3.1,18.95
+Dambulla - Colombo,Wet,176,135,Three-Wheeler,Moderate,Ventilated Box,28.5,87.8,6,7.3,19.46
+Dambulla - Colombo,Dry,530,107,Refrigerated Van,Moderate,Plastic Crate,33,61.3,5.4,10.8,13.86
+Dambulla - Colombo,Dry,758,124,Three-Wheeler,Good,Ventilated Box,31.7,63.1,7,11.5,13.68
+Dambulla - Colombo,Dry,546,138,Covered Truck,Moderate,Cardboard Box,31.2,64.4,4.2,8.7,15.17
+Dambulla - Colombo,Dry,689,120,Covered Truck,Good,Plastic Crate,33,63.4,4.5,10.7,12.45
+Dambulla - Colombo,Dry,638,141,Covered Truck,Poor,Ventilated Box,28,68.3,4.6,2.6,19.99
+Dambulla - Colombo,Dry,144,119,Covered Truck,Good,Cardboard Box,32.7,72,6.1,8.6,15.07
+Dambulla - Colombo,Dry,515,141,Covered Truck,Poor,Plastic Crate,30.4,59.4,6.2,9.8,13.42
+Dambulla - Colombo,Wet,290,111,Covered Truck,Good,Cardboard Box,30.2,75.5,6.4,3.5,20.1
+Dambulla - Colombo,Wet,410,87,Refrigerated Van,Good,Cardboard Box,28,87.9,4.8,12,14.15
+Dambulla - Colombo,Dry,131,109,Refrigerated Van,Moderate,Sack,34.1,64.9,3.4,15.1,11.95
+Dambulla - Colombo,Dry,551,115,Three-Wheeler,Good,Sack,32.9,71.7,7.1,11.8,15.84
+Dambulla - Colombo,Wet,373,109,Refrigerated Van,Poor,Plastic Crate,25.1,77.7,6.3,5.1,14.63
+Dambulla - Colombo,Dry,91,107,Open Truck,Good,Ventilated Box,33.2,74.7,5.4,9.3,12.76
+Dambulla - Colombo,Dry,126,115,Refrigerated Van,Poor,Cardboard Box,32,68.8,3.9,6.9,18.33
+Dambulla - Colombo,Wet,381,85,Covered Truck,Poor,Sack,27.4,74,5.6,7.3,16.92
+Dambulla - Colombo,Dry,452,103,Covered Truck,Moderate,Sack,28.6,78.4,4,9.9,14.47
+Dambulla - Colombo,Dry,495,93,Refrigerated Van,Poor,Cardboard Box,30.1,71,4.7,8.9,16.73
+Dambulla - Colombo,Dry,367,126,Covered Truck,Moderate,Plastic Crate,29.4,65.8,4.2,4.6,16.59
+Dambulla - Colombo,Dry,415,94,Open Truck,Moderate,Cardboard Box,29.6,71.1,3.1,4.4,18.26
+Dambulla - Colombo,Dry,331,143,Open Truck,Good,Plastic Crate,29.4,79,6.2,11.1,12.02
+Dambulla - Colombo,Wet,59,91,Three-Wheeler,Good,Plastic Crate,26.1,79.2,4.4,1.5,23.83
+Dambulla - Colombo,Dry,596,100,Covered Truck,Good,Cardboard Box,35.3,72.5,4.5,10.3,15.74
+Dambulla - Colombo,Dry,317,110,Open Truck,Good,Sack,29,76.2,4.4,4.8,19.51
+Dambulla - Colombo,Wet,439,143,Open Truck,Poor,Ventilated Box,28.7,74.8,7,6.2,16.81
+Dambulla - Colombo,Dry,233,102,Covered Truck,Good,Sack,32.3,75.3,5.1,2.2,22.64
+Dambulla - Colombo,Dry,569,124,Covered Truck,Moderate,Plastic Crate,33.7,66.5,4.9,7,17.28
+Dambulla - Colombo,Dry,764,91,Covered Truck,Moderate,Cardboard Box,34.3,58.5,6.1,3.7,18.24
+Dambulla - Colombo,Dry,792,108,Covered Truck,Moderate,Ventilated Box,28,70.4,5.5,10.7,13.17
+Dambulla - Colombo,Dry,189,120,Open Truck,Good,Plastic Crate,25.9,57.6,5.2,6.9,15.18
+Dambulla - Colombo,Dry,464,106,Open Truck,Moderate,Plastic Crate,31.6,62,4.9,10.4,14.99
+Dambulla - Colombo,Wet,396,109,Open Truck,Moderate,Sack,27.6,85.9,5.8,7.7,17.04
+Dambulla - Colombo,Dry,630,124,Open Truck,Poor,Cardboard Box,32.3,78.7,6.2,6.6,19.88
+Dambulla - Colombo,Wet,513,127,Open Truck,Good,Ventilated Box,31.7,80.8,5,10.4,17.12
+Dambulla - Colombo,Wet,620,127,Refrigerated Van,Moderate,Ventilated Box,26.5,76,4.9,10.4,13.23
+Dambulla - Colombo,Dry,270,98,Covered Truck,Moderate,Cardboard Box,34.6,66.4,3.4,2.1,19.9
+Dambulla - Colombo,Wet,521,92,Covered Truck,Good,Plastic Crate,29,73.3,4.2,8.4,15.42
+Dambulla - Colombo,Dry,420,90,Refrigerated Van,Good,Cardboard Box,31.5,63.3,4.8,7.7,15.12
+Dambulla - Colombo,Wet,718,129,Open Truck,Poor,Ventilated Box,29.9,82,4.6,6.5,16.28
+Dambulla - Colombo,Dry,703,100,Three-Wheeler,Poor,Plastic Crate,31.9,76.7,4.1,8.4,19.08
+Dambulla - Colombo,Dry,524,129,Covered Truck,Good,Ventilated Box,24.2,67.4,4.2,10.9,10.79
+Dambulla - Colombo,Wet,641,98,Refrigerated Van,Moderate,Ventilated Box,24.1,85.4,3.2,10.3,15
+Dambulla - Colombo,Wet,784,100,Three-Wheeler,Good,Ventilated Box,29.1,79.6,6.4,6.6,21.62
+Dambulla - Colombo,Wet,352,106,Covered Truck,Moderate,Cardboard Box,30.4,89.1,5.2,6.6,18.42
+Dambulla - Colombo,Dry,723,137,Refrigerated Van,Poor,Plastic Crate,31.2,68.4,4.2,6.8,15.15
+Dambulla - Colombo,Dry,457,113,Three-Wheeler,Moderate,Plastic Crate,32.2,63.8,5.3,5,18.36
+Dambulla - Colombo,Wet,228,119,Refrigerated Van,Good,Cardboard Box,26.7,66.5,6.4,14.6,11.48
+Dambulla - Colombo,Dry,604,109,Open Truck,Moderate,Cardboard Box,35,59.6,3.1,11.1,15.34
+Dambulla - Colombo,Dry,281,89,Open Truck,Poor,Sack,31.6,73.9,6,4,20.58
+Dambulla - Colombo,Wet,283,98,Refrigerated Van,Good,Cardboard Box,25.4,92.7,4.4,4.7,21.77
+Dambulla - Colombo,Dry,304,126,Three-Wheeler,Moderate,Cardboard Box,38,61.8,4.9,11.5,15.06
+Dambulla - Colombo,Dry,717,102,Open Truck,Good,Sack,31.5,65,4,3.3,19.19
+Dambulla - Colombo,Wet,308,99,Covered Truck,Moderate,Plastic Crate,29.7,85.7,5.6,12.3,16.51
+Dambulla - Colombo,Dry,369,114,Covered Truck,Good,Sack,35.1,67.9,5.6,8.5,16.22
+Dambulla - Colombo,Dry,701,103,Three-Wheeler,Moderate,Ventilated Box,35.3,57.1,6.6,11.2,15.91
+Dambulla - Colombo,Wet,324,109,Three-Wheeler,Good,Ventilated Box,29.1,84.9,3.9,6.8,19.31
+Dambulla - Colombo,Dry,382,95,Open Truck,Poor,Plastic Crate,31,72,5.5,4.3,20.02
+Dambulla - Colombo,Wet,669,105,Covered Truck,Moderate,Plastic Crate,23.8,91.7,5.1,4,19.3
+Dambulla - Colombo,Dry,313,103,Open Truck,Good,Ventilated Box,32.2,67.9,5.6,2.6,18.1
+Dambulla - Colombo,Dry,205,139,Three-Wheeler,Good,Cardboard Box,29.7,68.3,5.1,7.7,16.59
+Dambulla - Colombo,Wet,150,103,Refrigerated Van,Good,Plastic Crate,32,76.6,3.8,9.6,14.91
+Dambulla - Colombo,Wet,397,92,Open Truck,Moderate,Ventilated Box,26.5,81,4.8,9.2,16.69
+Dambulla - Colombo,Wet,299,121,Covered Truck,Moderate,Plastic Crate,25.3,86,4.3,4.2,19.15
+Dambulla - Colombo,Dry,253,86,Refrigerated Van,Poor,Ventilated Box,32.3,73.7,4.4,7.5,15.8
+Dambulla - Colombo,Wet,179,104,Open Truck,Good,Cardboard Box,28.1,90.4,6.5,7.7,17.27
+Dambulla - Colombo,Wet,224,136,Open Truck,Good,Ventilated Box,30.5,98,5.3,11,15.39
+Dambulla - Colombo,Wet,582,106,Three-Wheeler,Poor,Cardboard Box,31.6,77.9,3.5,3.1,20.73
+Dambulla - Colombo,Wet,573,115,Refrigerated Van,Good,Sack,30.2,82.5,5.7,9.9,16.04
+Dambulla - Colombo,Dry,441,137,Refrigerated Van,Good,Sack,29.6,73.9,5.7,4.7,19.97
+Dambulla - Colombo,Dry,107,86,Covered Truck,Moderate,Cardboard Box,25.9,60.1,4.3,5.6,18.18
+Dambulla - Colombo,Dry,257,89,Open Truck,Moderate,Cardboard Box,30.3,74.9,3.4,3.1,18.04
+Dambulla - Colombo,Wet,585,116,Covered Truck,Good,Cardboard Box,23.5,88.5,4.4,2.4,22.89
+Dambulla - Colombo,Wet,414,111,Covered Truck,Poor,Ventilated Box,25.5,71.5,6.8,5.7,20.28
+Dambulla - Colombo,Wet,303,120,Covered Truck,Good,Cardboard Box,29.2,79.9,6.3,4.3,18.91
+Dambulla - Colombo,Wet,793,125,Covered Truck,Poor,Ventilated Box,28.3,77.8,4.7,3.9,19.11
+Dambulla - Colombo,Wet,670,115,Covered Truck,Moderate,Sack,27.3,78,6.7,7.1,18.08
+Dambulla - Colombo,Wet,617,88,Open Truck,Good,Ventilated Box,26.4,80.2,3.6,7.9,15.38
+Dambulla - Colombo,Dry,334,135,Covered Truck,Good,Sack,32.8,72.7,6.8,13.4,15.01
+Dambulla - Colombo,Wet,650,116,Open Truck,Good,Sack,33.6,65.6,5.7,8.8,17.93
+Dambulla - Colombo,Dry,355,118,Open Truck,Moderate,Ventilated Box,27.6,64.8,5.1,4.6,16.65
+Dambulla - Colombo,Wet,647,107,Covered Truck,Moderate,Cardboard Box,27.1,77.7,6.3,4.5,19.54
+Dambulla - Colombo,Dry,739,118,Refrigerated Van,Good,Plastic Crate,32.1,69.9,6.1,4.2,20.43
+Dambulla - Colombo,Dry,392,93,Covered Truck,Good,Ventilated Box,32.7,71.6,4.5,8,15.09
+Dambulla - Colombo,Dry,250,91,Open Truck,Good,Cardboard Box,34,62.4,3.9,2.8,23.96
+Dambulla - Colombo,Wet,558,119,Refrigerated Van,Moderate,Cardboard Box,28.3,93.8,4.8,6.4,16.81
+Dambulla - Colombo,Wet,546,99,Three-Wheeler,Good,Sack,30.1,75.5,4.1,6.6,22.02
+Dambulla - Colombo,Wet,136,94,Open Truck,Good,Ventilated Box,24,86.5,6,1.5,25.16
+Dambulla - Colombo,Dry,295,104,Open Truck,Good,Sack,33.7,65.4,4.5,7.1,18.89
+Dambulla - Colombo,Dry,405,138,Covered Truck,Poor,Sack,35.5,62.6,6.2,1.5,23.48
+Dambulla - Colombo,Wet,753,107,Open Truck,Moderate,Cardboard Box,26.2,77.8,6.2,10.7,14.97
+Dambulla - Colombo,Wet,713,113,Covered Truck,Good,Ventilated Box,26.9,86,5.3,2.1,23.02
+Dambulla - Colombo,Wet,167,142,Refrigerated Van,Moderate,Ventilated Box,30.9,77.3,5.9,6,17.65
+Dambulla - Colombo,Dry,199,144,Open Truck,Moderate,Cardboard Box,33.7,68.2,6.3,7.8,17.24
+Dambulla - Colombo,Wet,296,85,Open Truck,Good,Cardboard Box,26.1,79.3,4.4,7.4,17.16
+Dambulla - Colombo,Dry,418,131,Covered Truck,Moderate,Plastic Crate,32.8,80.3,4.9,8.9,16.82
+Dambulla - Colombo,Wet,146,130,Refrigerated Van,Poor,Ventilated Box,32.8,84.1,6.8,11.1,16.29
+Dambulla - Colombo,Dry,278,87,Covered Truck,Moderate,Sack,35.3,68.5,4.5,3.1,19.76
+Dambulla - Colombo,Dry,173,126,Covered Truck,Poor,Cardboard Box,30.9,67.7,5.4,3.7,18.9
+Dambulla - Colombo,Wet,533,127,Covered Truck,Good,Plastic Crate,28.8,83.7,4.6,7.6,16.3
+Dambulla - Colombo,Dry,83,115,Covered Truck,Poor,Ventilated Box,31,67.5,4.8,10,13.74
+Dambulla - Colombo,Dry,716,94,Three-Wheeler,Poor,Plastic Crate,37.3,59.6,5.3,5.8,21.1
+Dambulla - Colombo,Dry,788,130,Covered Truck,Poor,Plastic Crate,24.6,69.9,6.1,1.8,22.51
+Dambulla - Colombo,Wet,477,103,Open Truck,Moderate,Plastic Crate,29.1,70,6.1,7.1,19.62
+Dambulla - Colombo,Dry,133,125,Covered Truck,Moderate,Plastic Crate,30.4,73.2,5,3,21.47
+Dambulla - Colombo,Wet,608,132,Open Truck,Moderate,Cardboard Box,32.9,81.8,7.7,5.9,21.48
+Dambulla - Colombo,Dry,591,115,Open Truck,Moderate,Plastic Crate,31.3,65.5,3.8,1.5,20.99
+Dambulla - Colombo,Dry,772,99,Open Truck,Good,Ventilated Box,35.9,68.4,6,3.5,17.97
+Dambulla - Colombo,Dry,609,121,Open Truck,Moderate,Plastic Crate,28.2,77.2,6.3,1.5,22.66
+Dambulla - Colombo,Dry,163,128,Covered Truck,Poor,Sack,32.8,76.8,5.9,7.2,22.3
+Dambulla - Colombo,Dry,466,132,Covered Truck,Moderate,Ventilated Box,31.6,69.8,5.1,7.5,17.4
+Dambulla - Colombo,Dry,657,127,Open Truck,Poor,Sack,29.1,71.1,5.4,6.9,18.47
+Dambulla - Colombo,Wet,54,102,Covered Truck,Poor,Cardboard Box,31.3,87.2,4.6,6.8,19.25
+Dambulla - Colombo,Dry,166,121,Refrigerated Van,Poor,Plastic Crate,28.2,68.6,6.2,14.7,12.32
+Dambulla - Colombo,Dry,508,137,Three-Wheeler,Moderate,Plastic Crate,32.4,70.4,5.7,7.1,19.61
+Dambulla - Colombo,Dry,74,133,Refrigerated Van,Moderate,Plastic Crate,31.5,66.8,5.1,6.7,13.35
+Dambulla - Colombo,Dry,153,132,Refrigerated Van,Poor,Ventilated Box,32,76.2,6.5,9.3,15.45
+Dambulla - Colombo,Dry,568,85,Open Truck,Good,Plastic Crate,32.7,57.7,2.9,10.4,13.38
+Dambulla - Colombo,Dry,565,106,Open Truck,Moderate,Plastic Crate,33,62.5,6,11.2,13.67
+Dambulla - Colombo,Wet,279,133,Refrigerated Van,Good,Plastic Crate,27.2,75,4.7,10.4,13.04
+Dambulla - Colombo,Dry,531,90,Covered Truck,Good,Plastic Crate,29.7,70.4,5.7,13.3,10.15
+Dambulla - Colombo,Wet,746,102,Three-Wheeler,Moderate,Cardboard Box,31.1,80.5,3.9,6.3,19.26
+Dambulla - Colombo,Wet,352,132,Open Truck,Moderate,Sack,31.8,77.2,5.8,2.6,20.48
+Dambulla - Colombo,Dry,780,144,Covered Truck,Moderate,Sack,26.1,62.9,6.6,5.9,16.64
+Dambulla - Colombo,Wet,552,106,Covered Truck,Moderate,Sack,22.4,83.2,3.5,7.9,20.11
+Dambulla - Colombo,Dry,392,93,Open Truck,Good,Plastic Crate,28.7,70.8,5.4,2.4,18.1
+Dambulla - Colombo,Wet,344,133,Open Truck,Good,Sack,28.7,89.3,5.4,2.7,20.3
+Dambulla - Colombo,Wet,131,128,Three-Wheeler,Moderate,Sack,28.2,79,5.5,1.9,24.74
+Dambulla - Colombo,Dry,638,111,Covered Truck,Moderate,Sack,32.3,67.9,5,10.2,15.68
+Dambulla - Colombo,Dry,269,103,Covered Truck,Moderate,Ventilated Box,31.2,65.4,4.6,8.4,12.6
+Dambulla - Colombo,Dry,667,113,Covered Truck,Moderate,Cardboard Box,34.5,75.9,4.2,13.9,14.56
+Dambulla - Colombo,Wet,572,85,Refrigerated Van,Moderate,Sack,31,80.7,3.7,6.9,18.43
+Dambulla - Colombo,Dry,551,127,Refrigerated Van,Moderate,Sack,26.7,62,7.5,11.7,11.97
+Dambulla - Colombo,Dry,425,107,Covered Truck,Good,Cardboard Box,33.4,74.2,5.1,7.5,18.73
+Dambulla - Colombo,Dry,668,129,Refrigerated Van,Poor,Sack,31.1,67.8,7.2,14.6,11.54
+Dambulla - Colombo,Dry,737,87,Covered Truck,Good,Plastic Crate,34.6,64,5.2,12.2,11.3
+Dambulla - Colombo,Wet,345,134,Open Truck,Poor,Sack,27.9,80,4.3,9.7,16.26
+Dambulla - Colombo,Wet,166,96,Covered Truck,Moderate,Ventilated Box,30.7,98,4.2,7.8,18.96
+Dambulla - Colombo,Wet,93,108,Refrigerated Van,Moderate,Sack,27.1,87.4,6,10.4,17.16
+Dambulla - Colombo,Dry,453,131,Refrigerated Van,Moderate,Sack,34.6,57,5.8,8.3,16.06
+Dambulla - Colombo,Dry,290,98,Three-Wheeler,Good,Plastic Crate,26.6,65.6,3.6,5.4,17.53
+Dambulla - Colombo,Dry,422,85,Covered Truck,Moderate,Cardboard Box,28.5,68.4,4.9,2.6,23.37
+Dambulla - Colombo,Wet,791,130,Open Truck,Good,Ventilated Box,28,88.7,7.2,1.5,24.36
+Dambulla - Colombo,Dry,671,94,Open Truck,Good,Plastic Crate,30,69.9,5,6.8,15.57
+Dambulla - Colombo,Wet,264,121,Open Truck,Good,Cardboard Box,29.8,79.1,5.3,9.7,15.1
+Dambulla - Colombo,Wet,248,138,Open Truck,Poor,Ventilated Box,29.2,88,5.9,1.5,24.3
+Dambulla - Colombo,Wet,602,143,Open Truck,Good,Sack,29.4,83,8.1,5.4,21.32
+Dambulla - Colombo,Dry,464,137,Three-Wheeler,Good,Sack,29.6,72.7,6.8,7,17.61
+Dambulla - Colombo,Dry,469,141,Covered Truck,Moderate,Cardboard Box,30.8,64.7,6.6,4.1,17.26
+Dambulla - Colombo,Dry,310,104,Open Truck,Moderate,Sack,31,64.6,6,4.1,20.51
+Dambulla - Colombo,Wet,547,139,Three-Wheeler,Moderate,Ventilated Box,31.5,83.8,6.6,1.5,26.47
+Dambulla - Colombo,Wet,295,116,Refrigerated Van,Good,Sack,24.5,74.2,6,13.9,13.21
+Dambulla - Colombo,Dry,661,85,Covered Truck,Moderate,Sack,33.2,66.8,5.5,3.7,19.24
+Dambulla - Colombo,Wet,744,85,Refrigerated Van,Moderate,Sack,26.4,84.1,2.8,10.9,17.39
+Dambulla - Colombo,Wet,554,92,Refrigerated Van,Poor,Plastic Crate,25.9,81.8,3.7,8.9,14.51
+Dambulla - Colombo,Wet,508,144,Open Truck,Moderate,Plastic Crate,25,83.8,5.6,7.6,16.35
+Dambulla - Colombo,Wet,353,136,Three-Wheeler,Good,Plastic Crate,29.8,83.9,6.5,11.9,17.27
+Dambulla - Colombo,Dry,618,137,Covered Truck,Good,Ventilated Box,28.5,65.8,4.7,12.1,10.67
+Dambulla - Colombo,Wet,490,105,Three-Wheeler,Moderate,Plastic Crate,23.8,79,5.8,1.5,24.47
+Dambulla - Colombo,Wet,779,107,Refrigerated Van,Good,Ventilated Box,27.5,80.1,4.1,7.7,16.11
+Dambulla - Colombo,Wet,83,99,Open Truck,Good,Cardboard Box,24.8,87.8,3.7,2.1,20.65
+Dambulla - Colombo,Wet,542,107,Covered Truck,Poor,Cardboard Box,31.2,77.2,3.9,11.8,15.79
+Dambulla - Colombo,Dry,435,134,Covered Truck,Moderate,Plastic Crate,29.6,62.6,8,3.6,17.25
+Dambulla - Colombo,Wet,196,108,Covered Truck,Poor,Plastic Crate,25.7,83.7,4.3,8.3,15.29
+Dambulla - Colombo,Wet,534,144,Open Truck,Moderate,Ventilated Box,31.3,81.3,4.4,1.5,25.26
+Dambulla - Colombo,Dry,71,128,Refrigerated Van,Poor,Sack,31.2,66.3,7.2,4,21.8
+Dambulla - Colombo,Dry,792,114,Covered Truck,Moderate,Cardboard Box,30.1,66.6,5.7,8.6,15.05
+Dambulla - Colombo,Wet,798,127,Covered Truck,Good,Cardboard Box,24.9,89.7,6.6,10.2,14.87
+Dambulla - Colombo,Wet,213,89,Open Truck,Moderate,Plastic Crate,27.6,90.2,4.5,6.7,20.07
+Dambulla - Colombo,Dry,517,99,Covered Truck,Moderate,Plastic Crate,27.4,70.7,4,7,16.5
+Dambulla - Colombo,Wet,307,111,Three-Wheeler,Good,Sack,25.8,78.1,4.2,8.4,20.64
+Dambulla - Colombo,Dry,337,101,Covered Truck,Good,Ventilated Box,34.7,65.1,4,2.5,21.68
+Dambulla - Colombo,Wet,456,136,Covered Truck,Good,Ventilated Box,26.4,78.9,5.5,5.1,16.7
+Dambulla - Colombo,Dry,503,98,Refrigerated Van,Moderate,Sack,30.8,79.3,5.5,8.8,18.19
+Dambulla - Colombo,Dry,533,140,Refrigerated Van,Moderate,Sack,27.6,66.2,5.5,14.7,12.89
+Dambulla - Colombo,Wet,639,89,Covered Truck,Moderate,Sack,29.2,80.6,4.9,2.6,24.28
+Dambulla - Colombo,Dry,660,138,Open Truck,Good,Cardboard Box,26.8,69.6,7.5,6.4,19.79
+Dambulla - Colombo,Dry,506,92,Three-Wheeler,Good,Cardboard Box,27.9,55.2,4.6,2,19.58
+Dambulla - Colombo,Wet,184,132,Refrigerated Van,Moderate,Cardboard Box,23.5,69.9,5.3,13.8,10.58
+Dambulla - Colombo,Dry,204,127,Covered Truck,Good,Ventilated Box,30.3,70.2,6.6,11.5,11.27
+Dambulla - Colombo,Dry,302,95,Open Truck,Poor,Cardboard Box,29.9,65.1,5.1,7,17.64
+Dambulla - Colombo,Dry,584,104,Covered Truck,Poor,Plastic Crate,31.1,79.5,3.6,11.9,12.46
+Dambulla - Colombo,Wet,633,128,Covered Truck,Moderate,Ventilated Box,26.5,85.4,5.4,1.5,24.3
+Dambulla - Colombo,Wet,708,113,Covered Truck,Moderate,Ventilated Box,28.9,71.6,4.6,7.7,16.42
+Dambulla - Colombo,Dry,375,100,Covered Truck,Poor,Plastic Crate,28.7,61.5,5.9,1.5,22.73
+Dambulla - Colombo,Wet,397,133,Three-Wheeler,Good,Plastic Crate,28.2,78.9,4.7,7.9,18.01
+Dambulla - Colombo,Wet,499,115,Open Truck,Good,Ventilated Box,26.9,83,5.5,4.6,19.75
+Dambulla - Colombo,Dry,387,142,Refrigerated Van,Poor,Cardboard Box,28.9,59.6,7.1,5.1,19.28
+Dambulla - Colombo,Dry,72,92,Three-Wheeler,Good,Cardboard Box,30.7,72,5.5,5.1,20.82
+Dambulla - Colombo,Dry,702,99,Refrigerated Van,Poor,Sack,27.4,65.2,4,7.4,15.96
+Dambulla - Colombo,Dry,618,122,Three-Wheeler,Poor,Cardboard Box,33.3,65.7,6.4,11.8,16.58
+Dambulla - Colombo,Dry,557,104,Three-Wheeler,Moderate,Sack,27.5,68.9,6.5,1.5,25.03
+Dambulla - Colombo,Wet,141,98,Open Truck,Moderate,Sack,30.9,79.4,5.8,1.5,24.91
+Dambulla - Colombo,Dry,263,86,Covered Truck,Good,Ventilated Box,32.9,64.1,4.7,8.4,14.18
+Dambulla - Colombo,Wet,218,92,Covered Truck,Good,Plastic Crate,33.2,85.6,5.1,2.9,21.1
+Dambulla - Colombo,Dry,515,102,Open Truck,Good,Plastic Crate,28,77.9,5.4,1.5,22.56
+Dambulla - Colombo,Wet,140,112,Open Truck,Good,Cardboard Box,28.6,73.9,5.6,4.3,18.83
+Dambulla - Colombo,Wet,734,88,Refrigerated Van,Poor,Cardboard Box,29.6,84.8,3,9.9,18.35
+Dambulla - Colombo,Dry,522,90,Covered Truck,Good,Cardboard Box,31.5,71.8,3.3,12.4,12.89
+Dambulla - Colombo,Wet,240,113,Covered Truck,Good,Plastic Crate,23.9,80.4,4,10,14.29
+Dambulla - Colombo,Wet,351,118,Refrigerated Van,Poor,Cardboard Box,30.9,78.7,5.7,3,23.06
+Dambulla - Colombo,Dry,118,135,Covered Truck,Moderate,Cardboard Box,27.8,63.5,5.9,6,15.75
+Dambulla - Colombo,Dry,108,118,Refrigerated Van,Moderate,Plastic Crate,28.2,70.3,4.5,7.6,13.42
+Dambulla - Colombo,Dry,360,137,Covered Truck,Poor,Cardboard Box,32.5,70.1,4.7,5.4,18.41
+Dambulla - Colombo,Wet,695,129,Covered Truck,Moderate,Cardboard Box,30.8,83.1,5.3,11.7,15.63
+Dambulla - Colombo,Dry,493,102,Three-Wheeler,Good,Ventilated Box,33.8,69.4,5.8,8.6,17.21
+Dambulla - Colombo,Wet,542,105,Covered Truck,Moderate,Cardboard Box,25.2,75,3.8,5.7,16.07
+Dambulla - Colombo,Dry,478,124,Refrigerated Van,Moderate,Plastic Crate,26.3,72.7,3.6,11.5,12.23
+Dambulla - Colombo,Dry,604,118,Three-Wheeler,Moderate,Sack,29.7,55.6,6.7,6.9,19.4
+Dambulla - Colombo,Dry,792,101,Three-Wheeler,Good,Cardboard Box,26,70,4.2,12.2,15.95
+Dambulla - Colombo,Wet,539,120,Open Truck,Poor,Plastic Crate,25.4,78.8,6,8.1,17.33
+Dambulla - Colombo,Dry,662,113,Covered Truck,Poor,Sack,32.4,70.3,3.9,10.6,16.52
+Dambulla - Colombo,Dry,320,110,Three-Wheeler,Good,Ventilated Box,30.4,68,6.1,3.6,16.32
+Dambulla - Colombo,Wet,397,100,Open Truck,Moderate,Sack,24.6,92.2,4.5,1.5,25.96
+Dambulla - Colombo,Wet,708,106,Covered Truck,Poor,Cardboard Box,28.5,71.9,6.8,6.8,18.01
+Dambulla - Colombo,Dry,779,99,Refrigerated Van,Moderate,Ventilated Box,28,70.3,4.5,13.7,10.65
+Dambulla - Colombo,Wet,289,138,Covered Truck,Moderate,Ventilated Box,24.8,86.8,4.2,2.1,21.99
+Dambulla - Colombo,Dry,391,109,Covered Truck,Moderate,Cardboard Box,29.5,62.8,5.4,12,11.08
+Dambulla - Colombo,Wet,781,137,Refrigerated Van,Good,Sack,29.6,78.6,6.7,5.6,17.38
+Dambulla - Colombo,Dry,227,123,Covered Truck,Moderate,Ventilated Box,31.7,63.9,7.1,8.1,15.22
+Dambulla - Colombo,Dry,684,126,Open Truck,Good,Cardboard Box,30.7,70.2,6.6,4.2,18.94
+Dambulla - Colombo,Wet,700,107,Open Truck,Moderate,Ventilated Box,28.2,80,4.4,3.8,16.9
+Dambulla - Colombo,Wet,251,105,Open Truck,Moderate,Ventilated Box,27.1,84.3,5.5,3.8,19.03
+Dambulla - Colombo,Wet,738,137,Open Truck,Moderate,Ventilated Box,27.7,82.3,5.8,6.7,20.38
+Dambulla - Colombo,Dry,192,96,Open Truck,Poor,Cardboard Box,29.5,78.6,3.5,9.7,15.35
+Dambulla - Colombo,Dry,133,106,Three-Wheeler,Moderate,Plastic Crate,28.3,59.6,4.8,2.8,19.49
+Dambulla - Colombo,Dry,119,130,Refrigerated Van,Good,Sack,26.6,61.7,5.7,10.8,13.57
+Dambulla - Colombo,Wet,724,136,Open Truck,Good,Cardboard Box,28.9,70.8,6.3,11.5,15.83
+Dambulla - Colombo,Wet,203,88,Refrigerated Van,Moderate,Sack,26.3,81.9,5.9,9.8,16.99
+Dambulla - Colombo,Dry,576,131,Open Truck,Poor,Sack,32.3,68,5.2,5.9,20.9
+Dambulla - Colombo,Dry,336,134,Covered Truck,Moderate,Sack,31.7,74.5,6.8,10,13.19
+Dambulla - Colombo,Wet,578,103,Open Truck,Moderate,Ventilated Box,28.2,91.6,6,6.7,18.94
+Dambulla - Colombo,Wet,571,102,Open Truck,Poor,Sack,27.8,89.2,4.9,7.9,19.27
+Dambulla - Colombo,Dry,580,104,Three-Wheeler,Moderate,Ventilated Box,25.7,75.5,5.4,2.9,21.31
+Dambulla - Colombo,Wet,561,128,Three-Wheeler,Good,Sack,27.8,89.3,4.9,11.1,18.05
+Dambulla - Colombo,Wet,237,95,Covered Truck,Moderate,Cardboard Box,29.5,83.2,4.9,3.7,21.61
+Dambulla - Colombo,Dry,279,134,Covered Truck,Good,Cardboard Box,24.6,64.6,4.9,9.9,11.51
+Dambulla - Colombo,Dry,415,120,Open Truck,Poor,Cardboard Box,33.7,69.6,6.6,6.5,19.05
+Dambulla - Colombo,Wet,380,116,Refrigerated Van,Good,Plastic Crate,24.8,77.2,4.4,12.1,12.93
+Dambulla - Colombo,Wet,744,116,Covered Truck,Moderate,Plastic Crate,27.5,86,6,5.7,18.22
+Dambulla - Colombo,Dry,622,120,Refrigerated Van,Moderate,Cardboard Box,33.9,61.8,5.3,7.3,17.7
+Dambulla - Colombo,Wet,420,141,Open Truck,Poor,Ventilated Box,25.7,85.2,4.9,9.1,16.06
+Dambulla - Colombo,Dry,747,87,Covered Truck,Moderate,Plastic Crate,33.2,70,2.7,5.3,16.93
+Dambulla - Colombo,Dry,693,131,Three-Wheeler,Moderate,Ventilated Box,30.6,72.1,3.7,11.5,14.49
+Dambulla - Colombo,Dry,561,106,Refrigerated Van,Moderate,Ventilated Box,35,64.5,4.9,13.1,10.51
+Dambulla - Colombo,Wet,384,141,Refrigerated Van,Poor,Cardboard Box,27.8,86.1,6.6,11.8,15.26
+Dambulla - Colombo,Dry,400,124,Refrigerated Van,Poor,Sack,25.6,59.5,6.7,8.3,14.56
+Dambulla - Colombo,Wet,501,86,Open Truck,Good,Ventilated Box,27.4,79,3.6,11.5,13.76
+Dambulla - Colombo,Wet,85,140,Covered Truck,Good,Sack,27.5,74.9,6.3,9.5,14.97
+Dambulla - Colombo,Wet,57,99,Three-Wheeler,Poor,Ventilated Box,24.3,81.1,5.6,4,20.96
+Dambulla - Colombo,Dry,189,143,Refrigerated Van,Moderate,Sack,31.1,73.7,5.1,10.1,16.67
+Dambulla - Colombo,Wet,122,135,Covered Truck,Moderate,Plastic Crate,31.6,74.2,7.4,5.9,19.94
+Dambulla - Colombo,Wet,59,110,Covered Truck,Moderate,Sack,25.6,69.3,5.1,7.9,16.1
+Dambulla - Colombo,Dry,256,131,Three-Wheeler,Poor,Ventilated Box,32.3,63.8,6.7,7,18.52
+Dambulla - Colombo,Dry,161,98,Refrigerated Van,Good,Plastic Crate,25.5,67.9,4.5,8.4,11.95
+Dambulla - Colombo,Wet,288,95,Three-Wheeler,Moderate,Sack,23.7,89.6,4.6,11,17.49
+Dambulla - Colombo,Wet,669,139,Refrigerated Van,Poor,Plastic Crate,30.1,82.4,5.9,11,14.25
+Dambulla - Colombo,Dry,135,112,Refrigerated Van,Good,Sack,31.3,56.5,5.6,14.5,9.14
+Dambulla - Colombo,Dry,431,133,Covered Truck,Good,Cardboard Box,29.7,73,6.3,4,16.57
+Dambulla - Colombo,Dry,652,103,Covered Truck,Moderate,Plastic Crate,35.3,64.1,6.1,10.3,13.4
+Dambulla - Colombo,Wet,698,119,Open Truck,Moderate,Cardboard Box,27.7,88.3,6.2,6.1,18.02
+Dambulla - Colombo,Wet,344,131,Three-Wheeler,Good,Sack,28.4,88.9,5.2,7.5,20.7
+Dambulla - Colombo,Dry,662,139,Refrigerated Van,Moderate,Plastic Crate,35.2,65.3,5.9,10.9,13.91
+Dambulla - Colombo,Dry,568,139,Refrigerated Van,Moderate,Plastic Crate,29.9,63.4,6.1,13.3,10.22
+Dambulla - Colombo,Dry,115,106,Three-Wheeler,Moderate,Cardboard Box,29.2,56.3,6.5,4.3,20.67
+Dambulla - Colombo,Dry,547,98,Covered Truck,Good,Ventilated Box,26.6,61.8,5.3,13,9.15
+Dambulla - Colombo,Dry,153,121,Open Truck,Moderate,Ventilated Box,32.6,72.9,6.7,4.5,19.89
+Dambulla - Colombo,Wet,351,143,Covered Truck,Poor,Sack,30.3,90.4,7.8,9.6,18.67
+Dambulla - Colombo,Wet,409,143,Open Truck,Moderate,Cardboard Box,28.7,75.2,5.8,3.9,21.53
+Dambulla - Colombo,Dry,740,126,Three-Wheeler,Good,Ventilated Box,34.9,72,5.8,8,17.82
+Dambulla - Colombo,Wet,511,99,Open Truck,Moderate,Cardboard Box,26.4,90,3,1.5,25.37
+Dambulla - Colombo,Wet,131,130,Open Truck,Moderate,Cardboard Box,27.8,87,5.6,1.5,26.6
+Dambulla - Colombo,Wet,542,103,Refrigerated Van,Good,Ventilated Box,28,82.6,4.1,11,12.98
+Dambulla - Colombo,Wet,192,102,Open Truck,Moderate,Cardboard Box,27.6,75.1,3.1,6.4,17.99
+Dambulla - Colombo,Dry,390,91,Open Truck,Poor,Sack,26.7,63.6,4.7,2.5,19.7
+Dambulla - Colombo,Dry,685,143,Covered Truck,Poor,Plastic Crate,35,78.1,7,7.4,18.29
+Dambulla - Colombo,Dry,258,135,Covered Truck,Poor,Plastic Crate,29.3,73.8,7.5,4.2,20.1
+Dambulla - Colombo,Wet,629,123,Refrigerated Van,Moderate,Sack,29.1,75.2,5.1,6.1,17.37
+Dambulla - Colombo,Wet,571,115,Open Truck,Good,Ventilated Box,24.2,77.6,4.9,3.3,20.41
+Dambulla - Colombo,Dry,105,112,Three-Wheeler,Poor,Ventilated Box,31.9,75,4.2,6.4,18.5
+Dambulla - Colombo,Dry,282,134,Covered Truck,Poor,Sack,30.6,69.8,4.1,10.3,14.23
+Dambulla - Colombo,Dry,235,120,Covered Truck,Moderate,Ventilated Box,31.9,72.5,4.4,1.8,19.96
+Dambulla - Colombo,Dry,470,123,Three-Wheeler,Moderate,Ventilated Box,32.8,76.3,5.9,10.8,16.36
+Dambulla - Colombo,Dry,733,140,Open Truck,Moderate,Sack,28,63.2,6.3,11.9,13.67
+Dambulla - Colombo,Dry,544,109,Three-Wheeler,Moderate,Cardboard Box,29,75.3,6.6,9.8,14.33
+Dambulla - Colombo,Wet,616,93,Three-Wheeler,Moderate,Ventilated Box,32.3,85.2,4.8,6,19.7
+Dambulla - Colombo,Dry,541,88,Covered Truck,Good,Ventilated Box,30.5,74.3,4.5,12.6,11.7
+Dambulla - Colombo,Wet,728,119,Covered Truck,Good,Plastic Crate,23.6,85.9,5.2,12.5,15.08
+Dambulla - Colombo,Dry,753,92,Three-Wheeler,Moderate,Cardboard Box,33.3,67.6,5.5,13.4,15.26
+Dambulla - Colombo,Dry,308,111,Open Truck,Poor,Plastic Crate,29.8,75.2,6.2,10.8,15.17
+Dambulla - Colombo,Wet,607,109,Open Truck,Poor,Sack,28.4,75.3,4.4,7.5,19.17
+Dambulla - Colombo,Dry,81,96,Open Truck,Good,Cardboard Box,30.1,72.4,5.2,10.4,14.82
+Dambulla - Colombo,Wet,287,134,Open Truck,Good,Plastic Crate,33,83.8,4.8,1.5,24.17
+Dambulla - Colombo,Dry,663,142,Covered Truck,Good,Cardboard Box,33.4,68.6,6.3,8.3,17.43
+Dambulla - Colombo,Wet,236,134,Open Truck,Poor,Plastic Crate,28.7,80.9,4.8,5.4,18.51
+Dambulla - Colombo,Dry,751,142,Open Truck,Moderate,Ventilated Box,30.9,71.9,4.3,10.3,12.96
+Dambulla - Colombo,Wet,724,104,Three-Wheeler,Poor,Plastic Crate,26.9,69.8,6.8,2.1,20.12
+Dambulla - Colombo,Dry,211,120,Covered Truck,Moderate,Cardboard Box,34.3,57.9,6.4,9.8,13.35
+Dambulla - Colombo,Dry,230,112,Open Truck,Moderate,Ventilated Box,29.2,65.8,5.3,11.1,11.5
+Dambulla - Colombo,Wet,382,105,Open Truck,Good,Plastic Crate,26.3,76,5.3,9.2,16.62
+Dambulla - Colombo,Dry,504,129,Refrigerated Van,Moderate,Sack,31.2,62,6.4,10.4,13.84
+Dambulla - Colombo,Wet,204,109,Refrigerated Van,Good,Ventilated Box,28.9,87.5,4.1,6.2,15.11
+Dambulla - Colombo,Dry,325,107,Covered Truck,Good,Cardboard Box,30.1,61.5,5.4,13.1,13.09
+Dambulla - Colombo,Dry,120,133,Three-Wheeler,Moderate,Cardboard Box,30,59.3,8.2,5.1,18.4
+Dambulla - Colombo,Wet,309,124,Covered Truck,Good,Cardboard Box,26.2,87.7,7.1,7.1,16.57
+Dambulla - Colombo,Wet,473,136,Open Truck,Poor,Plastic Crate,27,91.3,6.3,6.8,20.08
+Dambulla - Colombo,Dry,583,131,Refrigerated Van,Moderate,Plastic Crate,32.3,64.8,7.2,5.9,15.26
+Dambulla - Colombo,Wet,123,85,Three-Wheeler,Poor,Sack,28.5,76.8,3.3,10.2,18.14
+Dambulla - Colombo,Wet,62,129,Three-Wheeler,Poor,Sack,29.3,68.8,5.3,7.3,21.32
+Dambulla - Colombo,Dry,328,140,Three-Wheeler,Good,Sack,37.4,64.3,5.4,6.1,21.84
+Dambulla - Colombo,Wet,218,101,Covered Truck,Moderate,Cardboard Box,27.2,90,4.2,8.2,16.87
+Dambulla - Colombo,Dry,237,109,Covered Truck,Moderate,Plastic Crate,30,68.9,4.5,2.7,15.15
+Dambulla - Colombo,Wet,637,126,Open Truck,Good,Sack,25.7,82.4,5.9,10.3,15.74
+Dambulla - Colombo,Dry,317,143,Covered Truck,Good,Cardboard Box,28.6,69.8,6.8,6.3,17.31
+Dambulla - Colombo,Wet,323,98,Open Truck,Poor,Sack,27.1,92,5.4,5.2,20.99
+Dambulla - Colombo,Dry,652,130,Covered Truck,Poor,Sack,28.9,67,4.3,1.9,22.97
+Dambulla - Colombo,Wet,159,102,Open Truck,Good,Sack,32.3,84.3,3.1,11.5,16.68
+Dambulla - Colombo,Wet,289,105,Refrigerated Van,Moderate,Cardboard Box,25.6,78.3,6.1,5.6,15.09
+Dambulla - Colombo,Wet,506,93,Covered Truck,Moderate,Plastic Crate,23.1,73.8,4,13,11.04
+Dambulla - Colombo,Dry,409,118,Open Truck,Good,Plastic Crate,33.2,70.9,7.6,10.8,13.77
+Dambulla - Colombo,Dry,256,97,Open Truck,Good,Plastic Crate,34.6,68.8,3.7,3.7,18.43
+Dambulla - Colombo,Dry,252,102,Open Truck,Poor,Sack,30.4,71.6,5.5,3.9,22.78
+Dambulla - Colombo,Dry,243,96,Covered Truck,Good,Plastic Crate,30.8,67.1,4.4,11.9,12.07
+Dambulla - Colombo,Dry,751,131,Covered Truck,Moderate,Cardboard Box,28.2,72.4,5.4,9,16.48
+Dambulla - Colombo,Dry,164,89,Covered Truck,Good,Plastic Crate,32.5,68.5,3.7,9.4,14.63
+Dambulla - Colombo,Dry,712,135,Covered Truck,Moderate,Sack,25,61.9,6.1,10.3,13.52
+Dambulla - Colombo,Dry,141,134,Refrigerated Van,Good,Ventilated Box,29.7,68.9,7.2,8.7,15.7
+Dambulla - Colombo,Wet,523,109,Refrigerated Van,Moderate,Plastic Crate,25,84.7,6.4,3.4,19.7
+Dambulla - Colombo,Wet,736,126,Covered Truck,Poor,Cardboard Box,27.5,88.9,4.9,9.4,17.31
+Dambulla - Colombo,Dry,148,117,Covered Truck,Poor,Sack,33.2,64.7,4.1,9.3,15.49
+Dambulla - Colombo,Wet,350,122,Covered Truck,Good,Sack,29.1,80.1,6.4,2,24.16
+Dambulla - Colombo,Wet,631,133,Refrigerated Van,Good,Plastic Crate,27.5,82.4,5.9,11.9,11.27
+Dambulla - Colombo,Wet,180,134,Open Truck,Good,Sack,27.5,77.7,5.2,7.5,18.83
+Dambulla - Colombo,Dry,548,125,Refrigerated Van,Moderate,Sack,34,58.6,5.7,3.1,21.11
+Dambulla - Colombo,Wet,594,87,Open Truck,Poor,Plastic Crate,24.9,94.2,4.8,9.7,16.1
+Dambulla - Colombo,Dry,798,129,Covered Truck,Moderate,Cardboard Box,30.8,75.2,4.7,7.2,17.55
+Dambulla - Colombo,Dry,617,115,Three-Wheeler,Poor,Plastic Crate,27.9,63.9,5.9,13.2,13.39
+Dambulla - Colombo,Dry,365,87,Refrigerated Van,Moderate,Sack,30.8,59.6,4.4,14.6,10.88
+Dambulla - Colombo,Dry,578,144,Open Truck,Good,Ventilated Box,30.7,59.2,6.1,3.4,16.44
+Dambulla - Colombo,Wet,719,85,Open Truck,Moderate,Plastic Crate,28.1,82.5,4.3,1.5,22.57
+Dambulla - Colombo,Wet,626,139,Open Truck,Poor,Ventilated Box,31.6,79.1,5.3,9,17.2
+Dambulla - Colombo,Dry,636,140,Open Truck,Poor,Plastic Crate,28.5,75.3,6.2,1.5,23.84
+Dambulla - Colombo,Dry,148,90,Open Truck,Moderate,Plastic Crate,32.1,59.9,3.5,8.6,15.94
+Dambulla - Colombo,Wet,396,103,Open Truck,Poor,Plastic Crate,34.3,80.6,3.4,7.6,18.87
+Dambulla - Colombo,Wet,591,92,Three-Wheeler,Good,Cardboard Box,29.4,77.1,5.3,9.6,16.41
+Dambulla - Colombo,Dry,782,103,Open Truck,Poor,Ventilated Box,30.6,66.3,6.7,8.5,15.32
+Dambulla - Colombo,Wet,73,123,Open Truck,Moderate,Ventilated Box,28,73.7,7.3,1.5,20.63
+Dambulla - Colombo,Dry,741,141,Open Truck,Poor,Ventilated Box,30.6,69.3,6.3,1.9,18.93
+Dambulla - Colombo,Wet,154,144,Refrigerated Van,Good,Cardboard Box,26.6,80.6,7.7,11.6,12
+Dambulla - Colombo,Wet,610,99,Open Truck,Moderate,Ventilated Box,27.1,83.3,4.6,8.9,15.47
+Dambulla - Colombo,Wet,432,96,Refrigerated Van,Poor,Ventilated Box,26.5,84.3,3.5,8.8,18.41
+Dambulla - Colombo,Wet,61,103,Open Truck,Poor,Cardboard Box,28.8,74.3,5.8,4.9,18.64
+Dambulla - Colombo,Dry,73,141,Open Truck,Good,Cardboard Box,33.5,74.7,6.8,3.7,22.09
+Dambulla - Colombo,Wet,793,132,Covered Truck,Moderate,Sack,24,84.4,5.5,6.2,19.66
+Dambulla - Colombo,Wet,581,96,Open Truck,Moderate,Ventilated Box,28,80.7,5.1,11.3,14.39
+Dambulla - Colombo,Dry,468,89,Open Truck,Moderate,Sack,28.9,64.8,4.6,1.5,21.94
+Dambulla - Colombo,Dry,295,113,Covered Truck,Poor,Plastic Crate,33.6,75,5.2,7.5,15.91
+Dambulla - Colombo,Dry,246,139,Refrigerated Van,Moderate,Sack,28.9,72.1,6.8,13,11.8
+Dambulla - Colombo,Wet,536,98,Open Truck,Good,Sack,30.3,73.2,5.4,9.3,17.94
+Dambulla - Colombo,Wet,230,135,Refrigerated Van,Poor,Ventilated Box,27.6,77.5,4,4.2,21.1
+Dambulla - Colombo,Dry,257,89,Covered Truck,Moderate,Plastic Crate,29.2,61.1,2.9,2.1,18.46
+Dambulla - Colombo,Dry,331,138,Refrigerated Van,Good,Ventilated Box,30.7,63.3,5,14.4,9.16
+Dambulla - Colombo,Wet,444,104,Three-Wheeler,Moderate,Ventilated Box,25.5,82.4,4.8,12.4,14.45
+Dambulla - Colombo,Wet,704,114,Open Truck,Moderate,Plastic Crate,29.6,88.7,3.5,2.6,24.99
+Dambulla - Colombo,Dry,186,103,Covered Truck,Good,Plastic Crate,31.1,64.9,4.5,8.4,15.54
+Dambulla - Colombo,Wet,558,113,Open Truck,Good,Cardboard Box,33.1,84.5,5,8.3,19.14
+Dambulla - Colombo,Dry,91,87,Covered Truck,Moderate,Cardboard Box,29.9,80.8,4.1,1.5,22.83
+Dambulla - Colombo,Wet,70,133,Three-Wheeler,Poor,Plastic Crate,30.2,88.2,4.2,4,22.78
+Dambulla - Colombo,Wet,772,85,Refrigerated Van,Moderate,Cardboard Box,26.3,74.4,3,7,17.18
+Dambulla - Colombo,Dry,575,86,Refrigerated Van,Good,Ventilated Box,29.6,76.9,3.6,14.2,8.12
+Dambulla - Colombo,Dry,195,140,Open Truck,Poor,Sack,28,65.6,8.1,7.5,17.35
+Dambulla - Colombo,Dry,750,116,Open Truck,Moderate,Plastic Crate,35.1,74,6.4,9.2,16.17
+Dambulla - Colombo,Dry,159,86,Open Truck,Good,Sack,33.5,66.1,3.5,11.7,13.69
+Dambulla - Colombo,Dry,676,111,Open Truck,Moderate,Cardboard Box,31.9,74.4,4.6,12,16.43
+Dambulla - Colombo,Dry,123,100,Open Truck,Poor,Sack,33.5,62.5,5.8,10.3,16.54
+Dambulla - Colombo,Wet,411,91,Refrigerated Van,Moderate,Sack,23.8,76.9,4.5,10.4,14.49
+Dambulla - Colombo,Wet,763,137,Open Truck,Poor,Cardboard Box,28,78.9,6.3,4,19.85
+Dambulla - Colombo,Wet,312,119,Three-Wheeler,Poor,Plastic Crate,29.2,73.4,4.6,9.3,15.63
+Dambulla - Colombo,Wet,724,115,Covered Truck,Good,Plastic Crate,26.9,75.3,5.7,9.8,14.75
+Dambulla - Colombo,Dry,393,113,Refrigerated Van,Moderate,Ventilated Box,31.9,61.8,4.8,12.7,9.74
+Dambulla - Colombo,Wet,712,134,Covered Truck,Good,Sack,25.3,78.7,7.6,3.8,19.69
+Dambulla - Colombo,Wet,690,90,Three-Wheeler,Moderate,Cardboard Box,29.1,82.1,5.5,10.6,15
+Dambulla - Colombo,Dry,103,143,Open Truck,Moderate,Ventilated Box,29.5,70.8,5.9,4.1,20.02
+Dambulla - Colombo,Wet,72,90,Open Truck,Good,Ventilated Box,27.9,82.7,3.4,10.9,14.51
