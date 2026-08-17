@@ -11,22 +11,32 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
 });
 
-const createColoredIcon = (color) => {
-  return new L.Icon({
-    iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-${color}.png`,
-    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-    iconSize: [25, 41],
-    iconAnchor: [12, 41],
-    popupAnchor: [1, -34],
-    shadowSize: [41, 41]
+const createColoredIcon = (color, isFarm = false) => {
+  const markerHtml = `
+    <div style="
+      background-color: ${color};
+      width: ${isFarm ? '24px' : '20px'};
+      height: ${isFarm ? '24px' : '20px'};
+      border-radius: 50%;
+      border: 3px solid white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+      ${isFarm ? 'animation: pulse 2s infinite;' : ''}
+    "></div>
+  `;
+  return new L.divIcon({
+    html: markerHtml,
+    className: 'custom-div-icon',
+    iconSize: [24, 24],
+    iconAnchor: [12, 12],
+    popupAnchor: [0, -12]
   });
 };
 
 const icons = {
-  farm: createColoredIcon('violet'),
-  best: createColoredIcon('green'),
-  good: createColoredIcon('gold'),
-  poor: createColoredIcon('red')
+  farm: createColoredIcon('#8b5cf6', true), // Violet
+  best: createColoredIcon('#10b981'),       // Green
+  good: createColoredIcon('#f59e0b'),       // Orange/Gold
+  poor: createColoredIcon('#ef4444')        // Red
 };
 
 function ChangeView({ center }) {
