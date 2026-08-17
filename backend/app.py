@@ -171,6 +171,32 @@ def get_weather_forecast():
         {"day": "Thursday", "temp": 29, "emoji": "☁️", "desc": "Scattered clouds"}
     ])
 
+@app.route('/api/chat', methods=['POST'])
+def chat_endpoint():
+    data = request.json
+    user_message = data.get('message', '').lower()
+    is_hindi = data.get('isHindi', False)
+    
+    # Simple rule-based mock for prototype
+    reply = ""
+    if 'tomato' in user_message or 'टमाटर' in user_message:
+        reply = "Tomatoes have a rapid decay constant of 0.15. Keep them around 13°C to maximize shelf life."
+        if is_hindi: reply = "टमाटर 0.15 के तेजी से क्षय स्थिरांक के साथ आते हैं। शेल्फ जीवन को अधिकतम करने के लिए उन्हें 13°C के आसपास रखें।"
+    elif 'onion' in user_message or 'प्याज' in user_message:
+        reply = "Onions are hardy with a low decay constant (0.05). They prefer dry environments to prevent rot."
+        if is_hindi: reply = "प्याज कम क्षय स्थिरांक (0.05) के साथ मजबूत होते हैं। सड़न को रोकने के लिए वे शुष्क वातावरण पसंद करते हैं।"
+    elif 'temperature' in user_message or 'तापमान' in user_message:
+        reply = "High temperatures exponentially increase the biological decay rate of fresh produce. Try routing to a Cold Storage facility if temperatures exceed 25°C."
+        if is_hindi: reply = "उच्च तापमान ताजी उपज के जैविक क्षय दर को तेजी से बढ़ाते हैं। यदि तापमान 25°C से अधिक हो तो कोल्ड स्टोरेज सुविधा में मार्ग तय करने का प्रयास करें।"
+    elif 'banana' in user_message or 'केला' in user_message:
+        reply = "Bananas have a high decay constant (0.20) and are very sensitive to ethylene gas. Route them quickly!"
+        if is_hindi: reply = "केले में उच्च क्षय स्थिरांक (0.20) होता है और यह एथिलीन गैस के प्रति बहुत संवेदनशील होते हैं। उन्हें जल्दी से मार्गबद्ध करें!"
+    else:
+        reply = "I am the AI Crop Assistant. I analyze your crop's biological decay constants and live weather to recommend the best logistics route. What crop do you need help with?"
+        if is_hindi: reply = "मैं एआई फसल सहायक हूँ। मैं रसद मार्ग की सिफारिश करने के लिए आपकी फसल के जैविक क्षय स्थिरांक और लाइव मौसम का विश्लेषण करता हूं। आपको किस फसल के लिए मदद चाहिए?"
+        
+    return jsonify({"reply": reply})
+
 @app.route('/api/batches/<int:batch_id>/risk', methods=['GET'])
 def calculate_risk(batch_id):
     simulated_days_offset = int(request.args.get('simulated_days_offset', 0))

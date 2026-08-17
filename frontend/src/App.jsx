@@ -8,12 +8,14 @@ import ActiveRoutes from './components/ActiveRoutes';
 import Analytics from './components/Analytics';
 import Settings from './components/Settings';
 import RiskForecastChart from './components/RiskForecastChart';
+import CropAssistant from './components/CropAssistant';
 import './App.css';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
 function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
+  const [isHindi, setIsHindi] = useState(false);
   
   const [isLoading, setIsLoading] = useState(false);
   const [riskData, setRiskData] = useState(null);
@@ -23,6 +25,7 @@ function App() {
   
   const [currentBatchId, setCurrentBatchId] = useState(null);
   const [cropType, setCropType] = useState('tomato');
+  const [batchQuantity, setBatchQuantity] = useState(500);
   
   const [simulatedDays, setSimulatedDays] = useState(0);
   const [toastMsg, setToastMsg] = useState(null);
@@ -65,6 +68,7 @@ function App() {
     setError(null);
     setFarmLocation(farmInfo);
     setCropType(batchData.crop_type);
+    setBatchQuantity(batchData.quantity_kg);
     
     try {
       const batchRes = await axios.post(`${API_URL}/api/batches`, batchData);
@@ -134,36 +138,55 @@ function App() {
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
           </svg>
         </div>
-        SPOILAGE ROUTER
+        {isHindi ? 'स्पॉइलेज राउटर' : 'SPOILAGE ROUTER'}
       </div>
+
+      <CropAssistant isHindi={isHindi} />
 
       <aside className="sidebar">
         
         <nav style={{ flex: 1 }}>
-          <div className="nav-header">Navigation</div>
+          <div className="nav-header">{isHindi ? 'नेविगेशन' : 'Navigation'}</div>
           <div className={`nav-item ${activeTab === 'dashboard' ? 'active' : ''}`} onClick={() => setActiveTab('dashboard')}>
             <svg style={{ marginRight: '10px' }} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
-            Dashboard
+            {isHindi ? 'डैशबोर्ड' : 'Dashboard'}
           </div>
           <div className={`nav-item ${activeTab === 'routes' ? 'active' : ''}`} onClick={() => setActiveTab('routes')}>
             <svg style={{ marginRight: '10px' }} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-            Active Routes
+            {isHindi ? 'सक्रिय मार्ग' : 'Active Routes'}
           </div>
           <div className={`nav-item ${activeTab === 'analytics' ? 'active' : ''}`} onClick={() => setActiveTab('analytics')}>
             <svg style={{ marginRight: '10px' }} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-            Analytics
+            {isHindi ? 'एनालिटिक्स' : 'Analytics'}
           </div>
           <div className={`nav-item ${activeTab === 'settings' ? 'active' : ''}`} onClick={() => setActiveTab('settings')}>
             <svg style={{ marginRight: '10px' }} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
-            Settings
+            {isHindi ? 'सेटिंग्स' : 'Settings'}
           </div>
         </nav>
       </aside>
 
       <main className="main-content">
         <header className="topbar">
-          <input type="text" className="topbar-search" placeholder="Search batches, mandis..." />
+          <input type="text" className="topbar-search" placeholder={isHindi ? 'खोजें...' : 'Search batches, mandis...'} />
           <div className="flex items-center gap-4" style={{ position: 'relative' }}>
+            
+            <button 
+              onClick={() => setIsHindi(!isHindi)}
+              style={{
+                backgroundColor: 'var(--surface-hover)',
+                border: '1px solid var(--border)',
+                borderRadius: '8px',
+                padding: '0.4rem 0.8rem',
+                fontSize: '0.875rem',
+                fontWeight: 600,
+                color: 'var(--text)',
+                cursor: 'pointer'
+              }}
+            >
+              {isHindi ? 'English' : 'हिंदी'}
+            </button>
+
             {localWeather ? (
               <div 
                 style={{ fontSize: '0.875rem', fontWeight: '500', color: 'var(--text)', display: 'flex', alignItems: 'center', gap: '0.5rem', backgroundColor: 'var(--surface)', padding: '0.5rem 1rem', borderRadius: '12px', border: '1px solid var(--border)', cursor: 'pointer' }}
@@ -179,7 +202,7 @@ function App() {
                 disabled={isFetchingWeather}
                 style={{ padding: '0.5rem 1rem', background: 'transparent', color: 'var(--text)', border: '1px solid var(--border)', boxShadow: 'none' }}
               >
-                {isFetchingWeather ? 'Locating...' : 'Get Local Weather'}
+                {isFetchingWeather ? (isHindi ? 'खोज रहा है...' : 'Locating...') : (isHindi ? 'स्थानीय मौसम' : 'Get Local Weather')}
               </button>
             )}
             
@@ -226,10 +249,10 @@ function App() {
             <>
               <div className="flex justify-between items-center" style={{ marginBottom: '2rem' }}>
                 <div>
-                  <h1 style={{ fontSize: '1.5rem', marginBottom: '0.25rem' }}>Routing Overview</h1>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.875rem' }}>Monitor and route harvest batches optimally based on risk.</p>
+                  <h1 style={{ fontSize: '1.5rem', marginBottom: '0.25rem' }}>{isHindi ? 'राउटिंग अवलोकन' : 'Routing Overview'}</h1>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '0.875rem' }}>{isHindi ? 'जोखिम के आधार पर फसल बैचों की निगरानी और मार्ग तय करें।' : 'Monitor and route harvest batches optimally based on risk.'}</p>
                 </div>
-                <button className="btn" onClick={() => window.location.reload()}>Refresh Data</button>
+                <button className="btn" onClick={() => window.location.reload()}>{isHindi ? 'डेटा ताज़ा करें' : 'Refresh Data'}</button>
               </div>
 
               {error && (
@@ -265,14 +288,14 @@ function App() {
 
               <div className="grid grid-cols-3">
                 <div className="flex-col gap-4">
-                  <BatchEntryForm onSubmit={handleBatchSubmit} isLoading={isLoading} />
+                  <BatchEntryForm onSubmit={handleBatchSubmit} isLoading={isLoading} isHindi={isHindi} />
                   
                   {riskData && (
                     <>
                       <div className="card" style={{ padding: '1.25rem' }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '1rem' }}>
-                          <label className="form-label" style={{ margin: 0 }}>Simulate Future</label>
-                          <span style={{ fontSize: '0.875rem', color: 'var(--primary)', fontWeight: 'bold' }}>+{simulatedDays} Days</span>
+                          <label className="form-label" style={{ margin: 0 }}>{isHindi ? 'भविष्य का अनुकरण' : 'Simulate Future'}</label>
+                          <span style={{ fontSize: '0.875rem', color: 'var(--primary)', fontWeight: 'bold' }}>+{simulatedDays} {isHindi ? 'दिन' : 'Days'}</span>
                         </div>
                         <input 
                           type="range" 
@@ -281,10 +304,10 @@ function App() {
                           onChange={e => setSimulatedDays(parseInt(e.target.value))}
                         />
                         <div style={{ textAlign: 'center', fontSize: '0.75rem', marginTop: '0.75rem', color: 'var(--text-muted)' }}>
-                          Adjust to see how risk & prices change if you hold the batch.
+                          {isHindi ? 'अगर आप बैच को रोके रखते हैं तो जोखिम और कीमतों में बदलाव देखने के लिए एडजस्ट करें।' : 'Adjust to see how risk & prices change if you hold the batch.'}
                         </div>
                       </div>
-                      <RiskScoreCard riskData={riskData} />
+                      <RiskScoreCard riskData={riskData} isHindi={isHindi} />
                       <RiskForecastChart forecastData={riskForecastData} />
                     </>
                   )}
@@ -293,7 +316,7 @@ function App() {
                 <div className="flex-col gap-4" style={{ gridColumn: 'span 2' }}>
                   <MapOverview farmLocation={farmLocation} destinations={destinations} />
                   {destinations.length > 0 && (
-                    <DestinationList destinations={destinations} cropType={cropType} onSendSMS={handleSendSMS} />
+                    <DestinationList destinations={destinations} cropType={cropType} onSendSMS={handleSendSMS} batchQuantity={batchQuantity} isHindi={isHindi} />
                   )}
                 </div>
               </div>

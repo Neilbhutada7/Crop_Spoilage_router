@@ -8,7 +8,7 @@ const FARMS = [
   { name: 'Nagpur Village (Kalmeshwar)', lat: 21.2330, lon: 78.9160 }
 ];
 
-export default function BatchEntryForm({ onSubmit, isLoading }) {
+export default function BatchEntryForm({ onSubmit, isLoading, isHindi }) {
   const [formData, setFormData] = useState({
     crop_type: 'tomato',
     harvest_date: new Date().toISOString().split('T')[0],
@@ -30,10 +30,10 @@ export default function BatchEntryForm({ onSubmit, isLoading }) {
 
   return (
     <div className="card">
-      <div style={{ marginBottom: '1.25rem', fontSize: '1.125rem', fontWeight: '600' }}>New Harvest Batch</div>
+      <div style={{ marginBottom: '1.25rem', fontSize: '1.125rem', fontWeight: '600' }}>{isHindi ? 'नया फसल बैच' : 'New Harvest Batch'}</div>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label className="form-label">Crop Type</label>
+          <label className="form-label">{isHindi ? 'फसल का प्रकार' : 'Crop Type'}</label>
           <select 
             className="form-control"
             value={formData.crop_type}
@@ -53,7 +53,7 @@ export default function BatchEntryForm({ onSubmit, isLoading }) {
         </div>
 
         <div className="form-group">
-          <label className="form-label">Harvest Date</label>
+          <label className="form-label">{isHindi ? 'कटाई की तारीख' : 'Harvest Date'}</label>
           <input 
             type="date" 
             className="form-control"
@@ -64,7 +64,7 @@ export default function BatchEntryForm({ onSubmit, isLoading }) {
         </div>
 
         <div className="form-group">
-          <label className="form-label">Quantity (kg)</label>
+          <label className="form-label">{isHindi ? 'मात्रा (किग्रा)' : 'Quantity (kg)'}</label>
           <input 
             type="number" 
             className="form-control"
@@ -76,7 +76,7 @@ export default function BatchEntryForm({ onSubmit, isLoading }) {
         </div>
 
         <div className="form-group">
-          <label className="form-label">Farm Location</label>
+          <label className="form-label">{isHindi ? 'खेत का स्थान' : 'Farm Location'}</label>
           <select 
             className="form-control"
             value={formData.farm_index}
@@ -89,7 +89,7 @@ export default function BatchEntryForm({ onSubmit, isLoading }) {
         </div>
 
         <button type="submit" className="btn btn-full" disabled={isLoading}>
-          {isLoading ? 'Processing...' : 'Analyze Risk & Find Destinations'}
+          {isLoading ? (isHindi ? 'प्रसंस्करण...' : 'Processing...') : (isHindi ? 'जोखिम का विश्लेषण करें और मार्ग खोजें' : 'Analyze Risk & Find Destinations')}
         </button>
       </form>
     </div>
