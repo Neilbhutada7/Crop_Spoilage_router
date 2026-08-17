@@ -19,7 +19,7 @@ export default function DestinationList({ destinations, cropType, onSendSMS, bat
       
       {valueUplift && valueUplift > 0 && (
         <div style={{ backgroundColor: '#10b981', color: 'white', padding: '1rem', borderRadius: '8px', marginBottom: '1.5rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          🚀 {isHindi ? `एआई राउटिंग मूल्य: इस बैच के लिए ₹${valueUplift.toLocaleString()} का अनुमानित लाभ!` : `AI Routing Value: Expected Uplift of ₹${valueUplift.toLocaleString()} for this batch!`}
+          {isHindi ? `एआई राउटिंग मूल्य: इस बैच के लिए ₹${valueUplift.toLocaleString()} का अनुमानित लाभ!` : `AI Routing Value: Expected Uplift of ₹${valueUplift.toLocaleString()} for this batch!`}
         </div>
       )}
 

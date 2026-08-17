@@ -23,13 +23,13 @@ export default function CropAssistant({ isHindi }) {
     }
   }, [isHindi]);
 
-  const handleSend = async (e) => {
-    e.preventDefault();
-    if (!inputValue.trim()) return;
+  const handleSend = async (e, textOverride) => {
+    if (e) e.preventDefault();
+    const userText = textOverride || inputValue;
+    if (!userText.trim()) return;
 
-    const userText = inputValue;
     setMessages(prev => [...prev, { role: 'user', text: userText }]);
-    setInputValue('');
+    if (!textOverride) setInputValue('');
     setIsTyping(true);
 
     try {
@@ -138,9 +138,24 @@ export default function CropAssistant({ isHindi }) {
             <div ref={messagesEndRef} />
           </div>
 
+          <div style={{ padding: '0 1rem 0.5rem 1rem', display: 'flex', gap: '0.5rem', flexWrap: 'wrap', borderTop: '1px solid var(--border)', paddingTop: '0.5rem' }}>
+            {isHindi ? (
+              <>
+                <button onClick={() => handleSend(null, 'टमाटर')} style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem', borderRadius: '12px', border: '1px solid var(--border)', backgroundColor: 'var(--surface-hover)', cursor: 'pointer' }}>टमाटर</button>
+                <button onClick={() => handleSend(null, 'प्याज')} style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem', borderRadius: '12px', border: '1px solid var(--border)', backgroundColor: 'var(--surface-hover)', cursor: 'pointer' }}>प्याज</button>
+                <button onClick={() => handleSend(null, 'तापमान')} style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem', borderRadius: '12px', border: '1px solid var(--border)', backgroundColor: 'var(--surface-hover)', cursor: 'pointer' }}>तापमान</button>
+              </>
+            ) : (
+              <>
+                <button onClick={() => handleSend(null, 'Tomato')} style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem', borderRadius: '12px', border: '1px solid var(--border)', backgroundColor: 'var(--surface-hover)', cursor: 'pointer' }}>Tomato</button>
+                <button onClick={() => handleSend(null, 'Onion')} style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem', borderRadius: '12px', border: '1px solid var(--border)', backgroundColor: 'var(--surface-hover)', cursor: 'pointer' }}>Onion</button>
+                <button onClick={() => handleSend(null, 'Temperature')} style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem', borderRadius: '12px', border: '1px solid var(--border)', backgroundColor: 'var(--surface-hover)', cursor: 'pointer' }}>Temperature</button>
+              </>
+            )}
+          </div>
+
           <form onSubmit={handleSend} style={{
-            padding: '1rem',
-            borderTop: '1px solid var(--border)',
+            padding: '0.5rem 1rem 1rem 1rem',
             display: 'flex',
             gap: '0.5rem'
           }}>

@@ -154,7 +154,7 @@ def get_weather_forecast():
                         forecasts.append({
                             "day": item_date.strftime("%A") if len(forecasts) > 0 else "Tomorrow",
                             "temp": round(item['main']['temp']),
-                            "emoji": emoji,
+                            "emoji": "",
                             "desc": item['weather'][0]['description'].capitalize()
                         })
                         if len(forecasts) >= 3:
@@ -166,9 +166,9 @@ def get_weather_forecast():
 
     # Fallback mock forecast
     return jsonify([
-        {"day": "Tomorrow", "temp": 30, "emoji": "☀️", "desc": "Clear sky"},
-        {"day": "Wednesday", "temp": 27, "emoji": "🌧️", "desc": "Light rain"},
-        {"day": "Thursday", "temp": 29, "emoji": "☁️", "desc": "Scattered clouds"}
+        {"day": "Tomorrow", "temp": 30, "emoji": "", "desc": "Clear sky"},
+        {"day": "Wednesday", "temp": 27, "emoji": "", "desc": "Light rain"},
+        {"day": "Thursday", "temp": 29, "emoji": "", "desc": "Scattered clouds"}
     ])
 
 @app.route('/api/chat', methods=['POST'])
