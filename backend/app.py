@@ -191,6 +191,9 @@ def chat_endpoint():
     elif 'banana' in user_message or 'केला' in user_message:
         reply = "Bananas have a high decay constant (0.20) and are very sensitive to ethylene gas. Route them quickly!"
         if is_hindi: reply = "केले में उच्च क्षय स्थिरांक (0.20) होता है और यह एथिलीन गैस के प्रति बहुत संवेदनशील होते हैं। उन्हें जल्दी से मार्गबद्ध करें!"
+    elif 'reduce spoilage' in user_message or 'खराब होने से बचाएं' in user_message:
+        reply = "To reduce spoilage: 1) Store crops at their ideal temperature (e.g., 13°C for tomatoes). 2) Keep them dry to prevent fungal rot. 3) Route them to the nearest Cold Storage facility."
+        if is_hindi: reply = "खराब होने से बचाने के लिए: 1) फसलों को उनके आदर्श तापमान पर स्टोर करें (जैसे, टमाटर के लिए 13°C)। 2) फंगल सड़ांध को रोकने के लिए उन्हें सूखा रखें। 3) उन्हें निकटतम कोल्ड स्टोरेज सुविधा में मार्गबद्ध करें।"
     else:
         reply = "I am the AI Crop Assistant. I analyze your crop's biological decay constants and live weather to recommend the best logistics route. What crop do you need help with?"
         if is_hindi: reply = "मैं एआई फसल सहायक हूँ। मैं रसद मार्ग की सिफारिश करने के लिए आपकी फसल के जैविक क्षय स्थिरांक और लाइव मौसम का विश्लेषण करता हूं। आपको किस फसल के लिए मदद चाहिए?"

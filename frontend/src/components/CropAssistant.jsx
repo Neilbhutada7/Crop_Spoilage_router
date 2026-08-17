@@ -143,13 +143,17 @@ export default function CropAssistant({ isHindi }) {
               <>
                 <button onClick={() => handleSend(null, 'टमाटर')} style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem', borderRadius: '12px', border: '1px solid var(--border)', backgroundColor: 'var(--surface-hover)', cursor: 'pointer' }}>टमाटर</button>
                 <button onClick={() => handleSend(null, 'प्याज')} style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem', borderRadius: '12px', border: '1px solid var(--border)', backgroundColor: 'var(--surface-hover)', cursor: 'pointer' }}>प्याज</button>
-                <button onClick={() => handleSend(null, 'तापमान')} style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem', borderRadius: '12px', border: '1px solid var(--border)', backgroundColor: 'var(--surface-hover)', cursor: 'pointer' }}>तापमान</button>
+                <button onClick={() => handleSend(null, 'केला')} style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem', borderRadius: '12px', border: '1px solid var(--border)', backgroundColor: 'var(--surface-hover)', cursor: 'pointer' }}>केला</button>
+                <button onClick={() => handleSend(null, 'तापमान')} style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem', borderRadius: '12px', border: '1px solid var(--border)', backgroundColor: 'var(--surface-hover)', cursor: 'pointer' }}>तापमान का प्रभाव</button>
+                <button onClick={() => handleSend(null, 'खराब होने से बचाएं')} style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem', borderRadius: '12px', border: '1px solid var(--border)', backgroundColor: 'var(--surface-hover)', cursor: 'pointer' }}>खराब होने से कैसे बचाएं?</button>
               </>
             ) : (
               <>
                 <button onClick={() => handleSend(null, 'Tomato')} style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem', borderRadius: '12px', border: '1px solid var(--border)', backgroundColor: 'var(--surface-hover)', cursor: 'pointer' }}>Tomato</button>
                 <button onClick={() => handleSend(null, 'Onion')} style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem', borderRadius: '12px', border: '1px solid var(--border)', backgroundColor: 'var(--surface-hover)', cursor: 'pointer' }}>Onion</button>
-                <button onClick={() => handleSend(null, 'Temperature')} style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem', borderRadius: '12px', border: '1px solid var(--border)', backgroundColor: 'var(--surface-hover)', cursor: 'pointer' }}>Temperature</button>
+                <button onClick={() => handleSend(null, 'Banana')} style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem', borderRadius: '12px', border: '1px solid var(--border)', backgroundColor: 'var(--surface-hover)', cursor: 'pointer' }}>Banana</button>
+                <button onClick={() => handleSend(null, 'Temperature effect')} style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem', borderRadius: '12px', border: '1px solid var(--border)', backgroundColor: 'var(--surface-hover)', cursor: 'pointer' }}>Temp Impact</button>
+                <button onClick={() => handleSend(null, 'Reduce spoilage')} style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem', borderRadius: '12px', border: '1px solid var(--border)', backgroundColor: 'var(--surface-hover)', cursor: 'pointer' }}>Reduce Spoilage?</button>
               </>
             )}
           </div>
