@@ -37,3 +37,17 @@ class Config:
     # works but is shared/rate-limited -- get a free personal key at
     # https://data.gov.in/user/register for reliable use beyond a demo.
     DATA_GOV_API_KEY = os.environ.get("DATA_GOV_API_KEY", "")
+    # The deployed frontend's origin (e.g. https://your-app.vercel.app), when
+    # frontend and backend are on different domains -- see app.py's CORS
+    # setup. Comma-separated if there's more than one (e.g. a Vercel
+    # preview-deployment domain alongside the production one). Empty by
+    # default: only localhost dev ports are allowed, matching the
+    # single-origin (Flask serves both) local dev setup.
+    FRONTEND_ORIGIN = os.environ.get("FRONTEND_ORIGIN", "")
+    # Cross-domain session cookies (frontend and backend on different
+    # origins, e.g. Vercel + Render) require SameSite=None + Secure --
+    # browsers refuse to send/accept the cookie on a cross-site request
+    # otherwise. Secure requires HTTPS, which breaks plain-http local dev,
+    # so this only turns on when FRONTEND_ORIGIN is actually set (i.e. a
+    # real cross-origin deployment), not for local single-origin dev.
+    CROSS_ORIGIN_DEPLOYMENT = bool(FRONTEND_ORIGIN)

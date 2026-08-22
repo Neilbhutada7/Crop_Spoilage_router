@@ -16,13 +16,24 @@ def create_app():
     app = Flask(__name__, static_folder=None)
     app.secret_key = Config.SECRET_KEY
     app.config["MAX_CONTENT_LENGTH"] = 8 * 1024 * 1024  # 8MB -- generous for a phone photo, caps abuse
+
+    if Config.CROSS_ORIGIN_DEPLOYMENT:
+        # Frontend (e.g. Vercel) and backend (e.g. Render) on different
+        # domains -- the session cookie needs SameSite=None + Secure to
+        # survive a cross-site fetch with credentials: "include", or the
+        # browser silently drops it and every login "succeeds" but the next
+        # request looks logged out.
+        app.config["SESSION_COOKIE_SAMESITE"] = "None"
+        app.config["SESSION_COOKIE_SECURE"] = True
+
     # supports_credentials + an explicit origin list (not "*") is required for
-    # the session cookie to travel on cross-port XHR from the Vite dev server.
-    # Same-origin requests (frontend served from this same Flask process,
-    # below) don't need CORS at all -- this list only matters when running
-    # the Vite dev server separately on one of these ports.
+    # the session cookie to travel cross-origin. Localhost dev ports always
+    # allowed (Vite dev server); FRONTEND_ORIGIN adds the real deployed
+    # frontend domain(s) on top, comma-separated.
     allowed_origins = [f"http://localhost:{port}" for port in range(5173, 5183)] + \
                       [f"http://127.0.0.1:{port}" for port in range(5173, 5183)]
+    if Config.FRONTEND_ORIGIN:
+        allowed_origins += [o.strip() for o in Config.FRONTEND_ORIGIN.split(",") if o.strip()]
     CORS(
         app,
         supports_credentials=True,
@@ -48,6 +59,15 @@ def create_app():
     def serve_frontend(path):
         if path.startswith("api/"):
             return jsonify({"error": "Not found"}), 404
+        if not os.path.isdir(_FRONTEND_DIST):
+            # Backend-only deployment (e.g. Render, with the frontend
+            # deployed separately on Vercel) -- frontend/dist was never
+            # built here, so there's nothing to serve. A clear message
+            # beats a crash on every non-API request.
+            return jsonify({
+                "status": "AgriRoute AI backend is running",
+                "note": "This deployment serves the API only -- the frontend is hosted separately.",
+            })
         full_path = os.path.join(_FRONTEND_DIST, path)
         if path and os.path.isfile(full_path):
             return send_from_directory(_FRONTEND_DIST, path)
@@ -59,4 +79,7 @@ def create_app():
 app = create_app()
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    # Local dev only -- production uses gunicorn (see Procfile), which
+    # imports `app` directly and never hits this block. $PORT respected in
+    # case this is ever run directly on a host that assigns it dynamically.
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)), debug=True)

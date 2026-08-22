@@ -1,0 +1,31 @@
+databases:
+  - name: agriroute-db
+    plan: free
+    databaseName: spoilage_router
+    user: spoilage
+
+services:
+  - type: web
+    name: agriroute-backend
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: agriroute-db
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+      # Set this to your Vercel frontend's URL after it's deployed, e.g.
+      # https://crop-spoilage-router.vercel.app -- comma-separate if you
+      # have more than one (e.g. a preview deployment URL too).
+      - key: FRONTEND_ORIGIN
+        sync: false
+      # Optional -- see backend/.env.example for what each enables.
+      - key: DATA_GOV_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
