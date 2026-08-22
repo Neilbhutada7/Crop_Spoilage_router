@@ -8,3 +8,5 @@ __pycache__/
 *.pyc
 *.pyo
 .DS_Store
+backend/notifications.log
+backend/backend_stderr.log

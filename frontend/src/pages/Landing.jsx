@@ -9,6 +9,27 @@ import LanguageSelector from "../components/LanguageSelector";
 const DEMO_USERNAME = "demo_judge";
 const DEMO_PASSWORD = "sih2026demo";
 
+function CopyField({ label, value }) {
+  const [copied, setCopied] = useState(false);
+  async function handleCopy() {
+    try {
+      await navigator.clipboard.writeText(value);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      // Clipboard API unavailable (e.g. insecure context) -- the value is
+      // still shown as selectable text, so it can be copied manually.
+    }
+  }
+  return (
+    <button type="button" onClick={handleCopy} className="flex items-center justify-between gap-2 w-full px-2.5 py-1.5 rounded-md bg-white border border-gray-200 hover:border-brand-300 text-left transition-colors">
+      <span className="text-[11px] text-gray-400 shrink-0">{label}</span>
+      <span className="text-xs font-mono font-semibold text-gray-800 truncate">{value}</span>
+      <span className="text-[10px] font-bold text-brand-700 shrink-0">{copied ? "✓" : "Copy"}</span>
+    </button>
+  );
+}
+
 export default function Landing() {
   const navigate = useNavigate();
   const { t } = useTranslation();
@@ -146,9 +167,13 @@ export default function Landing() {
                 {busy ? t("landing.pleaseWait") : mode === "login" ? t("landing.loginButton") : t("landing.signupButton")}
               </button>
             </form>
-            <p className="text-[11px] text-gray-400 mt-4 leading-relaxed">
-              {t("landing.authHint")}
-            </p>
+            <div className="mt-4 pt-4 border-t border-gray-100">
+              <p className="text-[11px] text-gray-400 mb-2 leading-relaxed">{t("landing.authHint")}</p>
+              <div className="space-y-1.5">
+                <CopyField label={t("landing.username")} value={DEMO_USERNAME} />
+                <CopyField label={t("landing.password")} value={DEMO_PASSWORD} />
+              </div>
+            </div>
           </div>
         )}
       </div>

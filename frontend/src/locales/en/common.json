@@ -96,7 +96,7 @@
     "loginButton": "Log In",
     "signupButton": "Create Account",
     "pleaseWait": "Please wait...",
-    "authHint": "Any username and password works for this demo.",
+    "authHint": "Or use this demo login (tap to copy):",
     "viewDemo": "View Demo",
     "switchToSignup": "New here? Create an account",
     "switchToLogin": "Already have an account? Log in"

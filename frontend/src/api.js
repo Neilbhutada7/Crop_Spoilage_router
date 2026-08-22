@@ -1,4 +1,14 @@
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api";
+// Relative by default: this app is single-origin (Flask serves the built
+// frontend AND the API from the same domain/port -- see app.py's
+// send_from_directory setup), so "/api" correctly reaches the backend
+// whether that's localhost:5000 in dev or the real deployed domain.
+// A hardcoded "http://localhost:5000/api" default only ever worked on the
+// machine that built it -- every visitor to a real deployment would have
+// their own browser try to reach localhost on THEIR OWN computer instead
+// of the server, failing every request (login included) with no useful
+// error. Set VITE_API_BASE_URL only if the API is ever served from a
+// different origin than the frontend.
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "/api";
 
 async function request(path, options = {}) {
   const res = await fetch(`${API_BASE_URL}${path}`, {
