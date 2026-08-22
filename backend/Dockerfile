@@ -1,24 +1,15 @@
-FROM python:3.10-slim
+FROM python:3.11-slim
 
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y libpq-dev gcc && rm -rf /var/lib/apt/lists/*
+# psycopg2-binary needs libpq at runtime; gcc not required since we use the binary wheel.
+RUN apt-get update && apt-get install -y --no-install-recommends libpq5 && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-# Environment variables
-ENV FLASK_APP=app.py
-ENV FLASK_RUN_HOST=0.0.0.0
-ENV FLASK_ENV=development
+EXPOSE 5000
 
-# Create a startup script that runs the setup tasks before starting Flask
-RUN echo '#!/bin/bash\n\
-python seed_db.py\n\
-python seed_and_train.py\n\
-flask run' > /start.sh
-RUN chmod +x /start.sh
-
-CMD ["/start.sh"]
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--workers", "2", "app:app"]

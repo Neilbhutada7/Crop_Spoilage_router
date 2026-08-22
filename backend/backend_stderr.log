@@ -1,0 +1,1757 @@
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.12.81:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\destination_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+127.0.0.1 - - [22/Aug/2026 22:52:35] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:52:51] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:53:03] "POST /api/batches/85/sold HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:53:03] "GET /api/batches/85/predicted-vs-actual HTTP/1.1" 200 -
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\batch_history_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\batch_history_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+127.0.0.1 - - [22/Aug/2026 22:54:35] "POST /api/batches/85/sold HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:54:35] "GET /api/batches/85/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:56:56] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:56:56] "GET /assets/index-BZzHe5PP.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:56:56] "GET /assets/index-CCM_a_X-.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:57:00] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:57:00] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:57:00] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:57:00] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:57:00] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:57:00] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:57:00] "GET /api/batches/85/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:57:02] "GET /api/batches/85/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:57:03] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:57:05] "GET /api/batches/82/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:57:05] "GET /api/batches/84/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:57:05] "GET /api/batches/83/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:57:06] "GET /api/batches/83/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:57:06] "GET /api/batches/82/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:57:06] "GET /api/batches/84/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:57:06] "GET /api/batches/81/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:57:07] "GET /api/batches/81/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:01] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:01] "GET /assets/index-BZzHe5PP.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:01] "GET /assets/index-CCM_a_X-.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:02] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:03] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:03] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:03] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:03] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:03] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:03] "GET /api/batches/85/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:04] "GET /api/batches/85/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:05] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:07] "GET /api/batches/84/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:07] "GET /api/batches/82/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:07] "GET /api/batches/83/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:08] "GET /api/batches/83/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:08] "GET /api/batches/84/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:08] "GET /api/batches/82/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:09] "GET /api/batches/81/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:10] "GET /api/batches/81/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:47] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:47] "GET /assets/index-BZzHe5PP.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:48] "GET /assets/index-CCM_a_X-.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:48] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:49] "GET /batch-analysis HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:49] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:49] "GET /assets/index-BZzHe5PP.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 22:58:49] "GET /assets/index-CCM_a_X-.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 22:58:49] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:50] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:50] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:50] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:50] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:51] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:52] "POST /api/batches HTTP/1.1" 201 -
+127.0.0.1 - - [22/Aug/2026 22:58:53] "GET /api/batches/86/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:55] "GET /api/batches/86/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:59] "GET /api/batches/86/risk-forecast?days=6 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:59] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:58:59] "GET /assets/index-BZzHe5PP.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 22:58:59] "GET /assets/index-CCM_a_X-.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 22:59:00] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:00] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:00] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:00] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:00] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:00] "GET /api/batches/86/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:01] "GET /api/batches/86/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:02] "GET /api/batches/86/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:04] "GET /api/batches/85/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:04] "GET /api/batches/84/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:04] "GET /api/batches/83/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:05] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:05] "GET /api/batches/84/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:06] "GET /api/batches/82/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:06] "GET /api/batches/83/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:07] "GET /api/batches/82/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:10] "POST /api/batches/86/sold HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:10] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:10] "GET /api/batches/86/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:10] "GET /api/batches/86/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:12] "GET /api/batches/86/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:12] "GET /api/batches/86/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:13] "GET /api/batches/85/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:14] "GET /api/batches/83/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:14] "GET /api/batches/84/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:15] "GET /api/batches/83/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:15] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 22:59:15] "GET /api/batches/84/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:01:04] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:01:04] "GET /assets/index-BZzHe5PP.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:01:04] "GET /assets/index-BVMhQcU8.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:01:05] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:01:06] "GET /batch-analysis HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:01:06] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:01:06] "GET /assets/index-BZzHe5PP.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:01:06] "GET /assets/index-BVMhQcU8.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:01:06] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:01:06] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:01:06] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:01:06] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:01:06] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:01:07] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:01:09] "POST /api/batches HTTP/1.1" 201 -
+127.0.0.1 - - [22/Aug/2026 23:01:10] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:01:11] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:01:15] "GET /api/batches/87/risk-forecast?days=6 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:04:21] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:04:22] "GET /assets/index-BZzHe5PP.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:04:22] "GET /assets/index-D7hl_BVm.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:04:23] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:04:23] "GET /settings HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:04:23] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:04:23] "GET /assets/index-BZzHe5PP.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:04:23] "GET /assets/index-D7hl_BVm.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:04:23] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:04:24] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:04:24] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:04:24] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:04:24] "GET /model-performance HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:04:25] "GET /assets/index-BZzHe5PP.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:04:25] "GET /assets/index-D7hl_BVm.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:04:25] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:04:25] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:04:25] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:04:25] "GET /api/model-info HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:04:25] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:04:25] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:04:26] "GET /api/batches/86/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:04:26] "GET /api/batches/63/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:04:26] "GET /api/batches/85/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:04:26] "GET /api/batches/62/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:04:26] "GET /api/batches/65/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:05:15] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:16] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:16] "GET /assets/index-BJB1Lh2h.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:16] "GET /assets/index-wATENwgt.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:17] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:18] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:18] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:18] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:18] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:18] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:18] "GET /api/batches/87/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:19] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:20] "GET /batch-analysis HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:20] "GET /assets/index-BJB1Lh2h.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:09:20] "GET /assets/index-wATENwgt.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:09:20] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:21] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:21] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:21] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:21] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:21] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:22] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:24] "GET /photo-analyzer HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:25] "GET /assets/index-BJB1Lh2h.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:09:25] "GET /assets/index-wATENwgt.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:09:25] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:25] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:25] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:25] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:25] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:27] "GET /destination-optimizer HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:27] "GET /assets/index-wATENwgt.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:09:27] "GET /assets/index-BJB1Lh2h.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:09:28] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:28] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:28] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:28] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:30] "GET /route-planner HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:30] "GET /assets/index-BJB1Lh2h.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:09:30] "GET /assets/index-wATENwgt.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:09:31] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:31] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:31] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:31] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:33] "GET /assistant HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:33] "GET /assets/index-BJB1Lh2h.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:09:33] "GET /assets/index-wATENwgt.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:09:34] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:34] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:34] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:34] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:36] "GET /model-performance HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:36] "GET /assets/index-BJB1Lh2h.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:09:36] "GET /assets/index-wATENwgt.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:09:37] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:37] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:37] "GET /api/model-info HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:37] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:37] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:37] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:37] "GET /api/batches/86/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:37] "GET /api/batches/85/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:37] "GET /api/batches/63/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:37] "GET /api/batches/62/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:37] "GET /api/batches/65/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:40] "GET /benchmark HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:40] "GET /assets/index-BJB1Lh2h.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:09:40] "GET /assets/index-wATENwgt.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:09:40] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:41] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:41] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:41] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:43] "GET /data-sources HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:43] "GET /assets/index-BJB1Lh2h.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:09:43] "GET /assets/index-wATENwgt.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:09:43] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:43] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:44] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:44] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:44] "GET /api/model-info HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:44] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:46] "GET /settings HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:47] "GET /assets/index-BJB1Lh2h.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:09:47] "GET /assets/index-wATENwgt.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:09:47] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:47] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:47] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:47] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:49] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:50] "GET /assets/index-BJB1Lh2h.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:09:50] "GET /assets/index-wATENwgt.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:09:50] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:50] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:50] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:50] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:50] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:50] "GET /api/batches/87/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:52] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:53] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:54] "GET /api/batches/84/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:54] "GET /api/batches/86/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:54] "GET /api/batches/85/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:56] "GET /api/batches/86/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:56] "GET /api/batches/84/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:56] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:56] "GET /api/batches/83/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:09:57] "GET /api/batches/83/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:12:59] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:13:00] "GET /assets/index-BJB1Lh2h.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:13:00] "GET /assets/index-C7Or9DtC.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:13:01] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:13:01] "GET /destination-optimizer HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:13:01] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:13:01] "GET /assets/index-BJB1Lh2h.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:13:01] "GET /assets/index-C7Or9DtC.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:13:01] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:13:02] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:13:02] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:13:02] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:13:02] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:13:04] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:13:07] "GET /route-planner HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:13:08] "GET /assets/index-BJB1Lh2h.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:13:08] "GET /assets/index-C7Or9DtC.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:13:08] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:13:08] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:13:08] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:13:08] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:13:08] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:13:10] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:13:14] "GET /photo-analyzer HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:13:14] "GET /assets/index-BJB1Lh2h.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:13:14] "GET /assets/index-C7Or9DtC.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:13:14] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:13:15] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:13:15] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:13:15] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:13:15] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:14:28] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:14:28] "GET /assets/index-BJB1Lh2h.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:14:28] "GET /assets/index-Dpsnb0MO.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:14:29] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:14:30] "GET /assistant HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:14:30] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:14:30] "GET /assets/index-BJB1Lh2h.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:14:30] "GET /assets/index-Dpsnb0MO.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:14:30] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:14:30] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:14:30] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:14:30] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:14:30] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:14:32] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:14:33] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:14:36] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:14:38] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:07] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:07] "GET /assets/index-BJB1Lh2h.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:07] "GET /assets/index-Dpsnb0MO.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:08] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:08] "GET /assistant HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:08] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:09] "GET /assets/index-BJB1Lh2h.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:15:09] "GET /assets/index-Dpsnb0MO.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:15:09] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:09] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:09] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:09] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:09] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:10] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:11] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:14] "POST /api/assistant/ask HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:54] "GET /assets/index-BJB1Lh2h.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:54] "GET /assets/index-Dpsnb0MO.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:55] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:55] "GET /assistant HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:55] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:56] "GET /assets/index-BJB1Lh2h.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:15:56] "GET /assets/index-Dpsnb0MO.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:15:56] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:56] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:56] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:56] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:56] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:57] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:15:58] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:16:01] "POST /api/assistant/ask HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:18:48] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:18:49] "GET /assets/index-BJB1Lh2h.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:18:49] "GET /assets/index-DFhmSZWN.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:18:50] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:18:50] "GET /assistant HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:18:50] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:18:50] "GET /assets/index-BJB1Lh2h.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:18:51] "GET /assets/index-DFhmSZWN.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:18:51] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:18:51] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:18:51] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:18:51] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:18:51] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:18:52] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:18:53] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:18:57] "POST /api/assistant/ask HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:19:00] "POST /api/assistant/ask HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:19:03] "POST /api/assistant/ask HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:19:06] "POST /api/assistant/ask HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:19:12] "POST /api/assistant/ask HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:19:13] "POST /api/assistant/ask HTTP/1.1" 200 -
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\ai_assistant_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+127.0.0.1 - - [22/Aug/2026 23:22:04] "POST /api/assistant/ask HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:26:22] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:26:22] "GET /assets/index-BgUM-Nvz.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:26:22] "GET /assets/index-Bw-iZJ-8.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:26:25] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:26:26] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:26:26] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:26:26] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:26:26] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:26:26] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:26:26] "GET /api/batches/87/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:26:28] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:26:28] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:26:29] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:26:31] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:26:56] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:26:56] "GET /assets/index-BgUM-Nvz.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:26:56] "GET /assets/index-Bw-iZJ-8.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:26:57] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:26:58] "GET /destination-optimizer HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:26:58] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:26:58] "GET /assets/index-BgUM-Nvz.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:26:58] "GET /assets/index-Bw-iZJ-8.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:26:58] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:26:58] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:26:58] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:26:58] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:26:58] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:27:00] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:27:32] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:27:32] "GET /assets/index-BgUM-Nvz.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:27:32] "GET /assets/index-Bw-iZJ-8.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:27:33] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:27:34] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:27:34] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:27:34] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:27:34] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:27:34] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:27:34] "GET /api/batches/87/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:27:35] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:27:36] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:27:38] "GET /api/batches/86/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:27:38] "GET /api/batches/85/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:27:38] "GET /api/batches/84/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:27:40] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:27:40] "GET /api/batches/83/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:27:40] "GET /api/batches/86/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo request failed, falling back to synthetic: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=6)
+127.0.0.1 - - [22/Aug/2026 23:27:45] "GET /api/batches/84/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo request failed, falling back to synthetic: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=6)
+127.0.0.1 - - [22/Aug/2026 23:27:46] "GET /api/batches/83/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:21] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:21] "GET /assets/index-BgUM-Nvz.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:21] "GET /assets/index-Bw-iZJ-8.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:22] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:22] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:23] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:23] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:23] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:23] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:23] "GET /api/batches/87/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:24] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:25] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:27] "GET /api/batches/85/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:27] "GET /api/batches/84/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:27] "GET /api/batches/86/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:27] "GET /batch-analysis HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:27] "GET /assets/index-BgUM-Nvz.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:28:27] "GET /assets/index-Bw-iZJ-8.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:28:27] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:27] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:27] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:28] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:28] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:28] "GET /api/batches/84/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:28] "GET /api/batches/86/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:28] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:29] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:31] "GET /assistant HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:31] "GET /assets/index-BgUM-Nvz.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:28:31] "GET /assets/index-Bw-iZJ-8.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:28:31] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:31] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:31] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:31] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:32] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:33] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:28:34] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:29:50] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:29:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:30:33] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:30:33] "GET /assets/index-sw2Vadcl.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:30:33] "GET /assets/index-BgUM-Nvz.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:30:34] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:30:43] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:30:43] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:30:43] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:30:44] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:30:44] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:30:44] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:30:44] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:30:44] "GET /api/batches/87/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:30:45] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:30:47] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:30:48] "GET /api/batches/85/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:30:49] "GET /api/batches/84/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:30:49] "GET /api/batches/86/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:30:50] "GET /api/batches/86/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:30:50] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:30:50] "GET /api/batches/84/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:30:50] "GET /api/batches/83/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:30:52] "GET /api/batches/83/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:31:00] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:31:00] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:31:14] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:31:14] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:31:15] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:31:15] "GET /api/batches HTTP/1.1" 200 -
+[weather_service] Open-Meteo request failed, falling back to synthetic: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=6)
+127.0.0.1 - - [22/Aug/2026 23:31:22] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:31:25] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:31:33] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:31:33] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:31:33] "GET /api/batches/87/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:31:35] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:31:36] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:31:37] "GET /api/batches/86/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:31:38] "GET /api/batches/85/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:31:38] "GET /api/batches/84/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:31:39] "GET /api/batches/86/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:31:39] "GET /api/batches/83/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:31:39] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:31:39] "GET /api/batches/84/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:31:41] "GET /api/batches/83/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:39:23] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:39:24] "GET /assets/index-CVJuwj3C.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:39:24] "GET /assets/index--RX3hAxa.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:39:27] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:39:27] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:39:28] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:39:28] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:39:28] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:39:28] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:39:28] "GET /api/batches/87/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:39:31] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:39:32] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:39:55] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:39:55] "GET /assets/index-CVJuwj3C.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:39:55] "GET /assets/index--RX3hAxa.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:39:56] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:39:56] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:39:57] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:39:57] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:39:57] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:39:57] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:39:57] "GET /api/batches/87/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:39:58] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:00] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:02] "GET /api/batches/85/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:02] "GET /api/batches/84/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:02] "GET /api/batches/86/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:03] "GET /api/batches/86/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:03] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:03] "GET /api/batches/84/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:03] "GET /api/batches/83/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:04] "GET /api/batches/83/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:08] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:08] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:09] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:09] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:10] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:40:11] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:11] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:40:13] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:13] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:40:14] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:15] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:40:15] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:16] "GET /api/batches/87/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:17] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:17] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:19] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:21] "GET /api/batches/86/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:21] "GET /api/batches/84/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:21] "GET /api/batches/85/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:22] "GET /api/batches/84/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:22] "GET /api/batches/86/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:22] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:22] "GET /api/batches/83/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:23] "GET /api/batches/83/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:33] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:34] "GET /assets/index-CVJuwj3C.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:34] "GET /assets/index--RX3hAxa.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:35] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:35] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:35] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:35] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:35] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:35] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:35] "GET /api/batches/87/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:37] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:38] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:39] "GET /api/batches/84/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:39] "GET /api/batches/86/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:39] "GET /api/batches/85/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:40] "GET /api/batches/84/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:41] "GET /api/batches/86/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:40:41] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:41:00] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:41:00] "GET /assets/index-CVJuwj3C.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:41:00] "GET /assets/index--RX3hAxa.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:41:01] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:41:01] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:41:02] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:41:02] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:41:02] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:41:02] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:41:02] "GET /api/batches/87/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:41:03] "GET /api/batches/87/risk HTTP/1.1" 200 -
+[weather_service] Open-Meteo request failed, falling back to synthetic: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=6)
+[weather_service] Open-Meteo request failed, falling back to synthetic: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=6)
+127.0.0.1 - - [22/Aug/2026 23:41:15] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:41:24] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:41:24] "GET /assets/index-CVJuwj3C.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:41:24] "GET /assets/index--RX3hAxa.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:41:25] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:41:26] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:41:26] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:41:26] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:41:26] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:41:26] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:41:26] "GET /api/batches/87/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:41:27] "GET /api/batches/87/risk HTTP/1.1" 200 -
+[weather_service] Open-Meteo request failed, falling back to synthetic: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=6)
+127.0.0.1 - - [22/Aug/2026 23:41:34] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:41:35] "GET /api/batches/86/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:41:35] "GET /api/batches/85/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:41:36] "GET /api/batches/86/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:41:37] "GET /api/batches/84/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo request failed, falling back to synthetic: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=6)
+127.0.0.1 - - [22/Aug/2026 23:41:41] "GET /api/batches/84/risk HTTP/1.1" 200 -
+[weather_service] Open-Meteo request failed, falling back to synthetic: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=6)
+127.0.0.1 - - [22/Aug/2026 23:41:42] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:42:15] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:42:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:42:50] "GET /assets/index--RX3hAxa.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:42:50] "GET /assets/index-CVJuwj3C.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:42:50] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:43:03] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:43:04] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:43:04] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:43:04] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:43:04] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:43:04] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:43:04] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:43:04] "GET /api/batches/87/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:43:06] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:43:07] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:43:09] "GET /api/batches/86/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:43:09] "GET /api/batches/85/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:43:09] "GET /api/batches/84/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:43:10] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:43:10] "GET /api/batches/86/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:43:10] "GET /api/batches/84/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:43:11] "GET /api/batches/83/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:43:12] "GET /api/batches/83/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:45:25] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:45:25] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:45:26] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:45:31] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:45:31] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:45:32] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:45:33] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:45:33] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:45:34] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:45:34] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:45:34] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:45:35] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:45:36] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:45:36] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:45:36] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:45:36] "GET /api/batches/87/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:45:37] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:45:38] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:45:41] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:45:44] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:45:46] "GET /api/batches/86/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:45:46] "GET /api/batches/84/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:45:48] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:45:48] "GET /api/batches/84/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:45:48] "GET /api/batches/86/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:45:48] "GET /api/batches/83/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:45:49] "GET /api/batches/83/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo request failed, falling back to synthetic: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=6)
+127.0.0.1 - - [22/Aug/2026 23:45:51] "GET /api/batches/85/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:47:27] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:47:27] "GET /assets/index-DI5-88zj.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:47:27] "GET /assets/index-CCPeVFIW.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:47:28] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:47:28] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:47:29] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:47:29] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:47:29] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:47:29] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:47:29] "GET /api/batches/87/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:47:30] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:47:31] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:47:32] "GET /api/batches/86/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:47:32] "GET /api/batches/84/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:47:32] "GET /api/batches/85/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:47:34] "GET /api/batches/86/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:47:34] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:47:34] "GET /api/batches/84/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:48:23] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:48:23] "GET /assets/index-CCPeVFIW.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:48:23] "GET /assets/index-DI5-88zj.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:48:23] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:48:35] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:48:35] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:48:35] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:48:35] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:48:36] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:48:36] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:48:36] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:48:36] "GET /api/batches/87/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:48:37] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:48:39] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:48:40] "GET /api/batches/86/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:48:41] "GET /api/batches/84/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:48:41] "GET /api/batches/85/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:48:42] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:48:42] "GET /api/batches/84/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:48:42] "GET /api/batches/86/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:48:42] "GET /api/batches/83/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:48:44] "GET /api/batches/83/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:18] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:18] "GET /assets/index-B7_fVZYD.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:18] "GET /assets/index-CFI8IPjj.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:19] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:19] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:19] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:20] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:20] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:20] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:20] "GET /api/batches/87/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:21] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:22] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:23] "GET /api/batches/86/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:23] "GET /api/batches/85/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:23] "GET /api/batches/84/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:24] "GET /api/batches/84/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:24] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:24] "GET /api/batches/86/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:58] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:58] "GET /assets/index-CFI8IPjj.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:58] "GET /assets/index-B7_fVZYD.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:58] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:58] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:59] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:59] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:59] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:59] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:53:59] "GET /api/batches/87/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:54:01] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:54:02] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:54:04] "GET /api/batches/86/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:54:04] "GET /api/batches/84/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:54:04] "GET /api/batches/85/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:54:05] "GET /api/batches/86/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:54:05] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:54:05] "GET /api/batches/84/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:54:05] "GET /api/batches/83/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:54:07] "GET /api/batches/83/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:54:50] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:54:50] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:54:51] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:55:00] "POST /api/batches HTTP/1.1" 201 -
+127.0.0.1 - - [22/Aug/2026 23:55:02] "GET /api/batches/88/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:55:03] "GET /api/batches/88/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:55:09] "GET /api/batches/88/risk-forecast?days=6 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:56:49] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:56:53] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:57:02] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:02] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:57:03] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:03] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:57:03] "GET /api/batches/88/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:04] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:04] "GET /api/batches/88/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:06] "GET /api/batches/88/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:08] "GET /api/batches/86/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:08] "GET /api/batches/85/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:08] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:09] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:09] "GET /api/batches/86/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:09] "GET /api/batches/84/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:09] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:11] "GET /api/batches/84/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:14] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:14] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:57:16] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:16] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:17] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:57:17] "GET /api/batches/88/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:18] "GET /api/batches/88/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:19] "GET /api/batches/88/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:21] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:21] "GET /api/batches/86/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:21] "GET /api/batches/85/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:22] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:23] "GET /api/batches/86/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:23] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:23] "GET /api/batches/84/risk HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:24] "GET /api/batches/84/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:29] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [22/Aug/2026 23:57:29] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2026 23:57:30] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\risk_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\risk_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\risk_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\risk_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\risk_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\risk_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+127.0.0.1 - - [23/Aug/2026 00:00:37] "GET /api/health HTTP/1.1" 200 -
+[weather_service] Open-Meteo request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:01:11] "GET /api/batches/88/risk HTTP/1.1" 200 -
+[weather_service] Open-Meteo request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:05:19] "GET /api/batches/88/risk HTTP/1.1" 200 -
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\weather_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\risk_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\risk_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:06:37] "GET /api/batches/88/risk HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:06:48] "GET /api/batches/88/risk HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:06:51] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:07:19] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:07:19] "GET /assets/index-B7_fVZYD.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:07:19] "GET /assets/index-DyoXQ4uS.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:07:23] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:07:23] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:07:24] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:07:24] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:07:24] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:07:24] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:07:24] "GET /api/batches/88/predicted-vs-actual HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:07:27] "GET /api/batches/88/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:07:28] "GET /api/batches/88/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:07:31] "GET /api/batches/86/risk HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:07:32] "GET /api/batches/85/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:07:32] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:07:32] "GET /api/batches/86/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:07:32] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=6)
+127.0.0.1 - - [23/Aug/2026 00:07:36] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:09:09] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:09:10] "GET /assets/index-B7_fVZYD.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:09:10] "GET /assets/index-jiu5nYHK.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:09:11] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:09:11] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:09:11] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:09:11] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:09:11] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:09:11] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:09:11] "GET /api/batches/88/predicted-vs-actual HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:09:14] "GET /api/batches/88/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:09:15] "GET /api/batches/88/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:09:19] "GET /api/batches/85/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:09:19] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:09:19] "GET /api/batches/86/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:09:20] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:09:20] "GET /api/batches/86/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:09:20] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:09:35] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:10:43] "GET /batch-analysis HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:10:43] "GET /assets/index-jiu5nYHK.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:10:58] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:10:58] "GET /assets/index-B7_fVZYD.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:10:58] "GET /assets/index-jiu5nYHK.js HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:10:58] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:11:11] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:11:11] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:11:11] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:11:11] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:11:11] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:11:11] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:11:11] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:11:11] "GET /api/batches/88/predicted-vs-actual HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:11:15] "GET /api/batches/88/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:11:16] "GET /api/batches/88/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:11:21] "GET /api/batches/85/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:11:21] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:11:21] "GET /api/batches/86/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:11:23] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:11:23] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:11:23] "GET /api/batches/86/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:11:25] "GET /api/batches/84/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:11:26] "GET /api/batches/84/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:11:30] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:11:30] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:11:31] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:11:32] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:11:32] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:11:33] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:11:33] "GET /api/batches HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:11:38] "GET /api/batches/88/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:11:45] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:11:45] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:11:49] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:11:49] "GET /favicon.ico HTTP/1.1" 304 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:11:52] "GET /api/batches/88/risk HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=6)
+127.0.0.1 - - [23/Aug/2026 00:11:54] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:11:55] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:11:55] "GET /api/batches/88/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:11:55] "GET /api/batches/88/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:11:56] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:11:56] "GET /favicon.ico HTTP/1.1" 304 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:11:58] "GET /api/batches/88/risk HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:11:58] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:12:00] "GET /api/batches/88/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:12:06] "POST /api/batches HTTP/1.1" 201 -
+127.0.0.1 - - [23/Aug/2026 00:12:08] "GET /api/batches/89/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:12:09] "GET /api/batches/89/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo request failed, falling back to synthetic: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=6)
+127.0.0.1 - - [23/Aug/2026 00:12:12] "GET /api/batches/88/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo request failed, falling back to synthetic: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=6)
+127.0.0.1 - - [23/Aug/2026 00:12:21] "GET /api/batches/89/risk-forecast?days=6 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:12:47] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:13:00] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:13:39] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:13:39] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:13:39] "GET /api/batches/89/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:13:41] "GET /api/batches/89/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:13:42] "GET /api/batches/89/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:13:45] "GET /api/batches/88/risk HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:13:46] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:13:47] "GET /api/batches/86/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:13:48] "GET /api/batches/88/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:13:48] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:13:48] "GET /api/batches/86/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:13:49] "GET /api/batches/85/risk HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=6)
+127.0.0.1 - - [23/Aug/2026 00:13:56] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:14:02] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:14:11] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:14:11] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:14:11] "GET /api/batches/89/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:14:12] "GET /api/batches/89/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:14:14] "GET /api/batches/89/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:14:18] "GET /api/batches/86/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:14:18] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:14:18] "GET /api/batches/88/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:14:20] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:14:20] "GET /api/batches/88/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:14:20] "GET /api/batches/86/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:14:21] "GET /api/batches/85/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:14:22] "GET /api/batches/85/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:02] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:02] "GET /assets/index-D1vA1KWj.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:02] "GET /assets/index-KnwVGNp9.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:06] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:06] "GET /batch-analysis HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:06] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:06] "GET /assets/index-D1vA1KWj.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:21:06] "GET /assets/index-KnwVGNp9.js HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:21:06] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:07] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:07] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:07] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:07] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:08] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:09] "POST /api/batches HTTP/1.1" 201 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:21:11] "GET /api/batches/90/risk HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:21:12] "GET /api/batches/90/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:16] "GET /api/batches/90/risk-forecast?days=6 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:16] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:16] "GET /assets/index-D1vA1KWj.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:21:16] "GET /assets/index-KnwVGNp9.js HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:21:17] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:17] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:17] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:17] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:17] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:17] "GET /api/batches/90/predicted-vs-actual HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:21:19] "GET /api/batches/90/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:20] "GET /api/batches/90/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:22] "GET /api/batches/89/risk HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:21:23] "GET /api/batches/89/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:21:24] "GET /api/batches/88/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:24] "GET /api/batches/87/risk HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:21:25] "GET /api/batches/86/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:25] "GET /api/batches/88/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:25] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:21:27] "GET /api/batches/86/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:21:32] "POST /api/batches/90/sold HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:21:32] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:12] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:12] "GET /assets/index-D1vA1KWj.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:13] "GET /assets/index-KnwVGNp9.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:13] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:14] "GET /batch-analysis HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:14] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:14] "GET /assets/index-D1vA1KWj.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:27:14] "GET /assets/index-KnwVGNp9.js HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:27:14] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:14] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:14] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:14] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:14] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:16] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:17] "POST /api/batches HTTP/1.1" 201 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:27:19] "GET /api/batches/91/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:20] "GET /api/batches/91/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:23] "GET /api/batches/91/risk-forecast?days=6 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:24] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:24] "GET /assets/index-D1vA1KWj.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:27:24] "GET /assets/index-KnwVGNp9.js HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:27:24] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:25] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:25] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:25] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:25] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:25] "GET /api/batches/91/predicted-vs-actual HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:27:27] "GET /api/batches/91/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:28] "GET /api/batches/91/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:30] "GET /api/batches/89/risk HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:27:31] "GET /api/batches/89/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:31] "GET /api/batches/88/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:31] "GET /api/batches/90/risk HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:27:32] "GET /api/batches/87/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:32] "GET /api/batches/90/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:33] "GET /api/batches/88/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:27:34] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:27:39] "POST /api/batches/91/sold HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:39] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:40] "GET /api/batches/91/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:40] "GET /api/batches/91/predicted-vs-actual HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:27:42] "GET /api/batches/91/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:43] "GET /api/batches/91/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:45] "GET /api/batches/89/risk HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:27:45] "GET /api/batches/90/risk HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:27:46] "GET /api/batches/89/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:47] "GET /api/batches/88/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:27:47] "GET /api/batches/90/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:27:48] "GET /api/batches/87/risk HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:27:49] "GET /api/batches/87/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=6)
+127.0.0.1 - - [23/Aug/2026 00:27:52] "GET /api/batches/88/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:29:05] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:29:05] "GET /assets/index-KnwVGNp9.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:29:05] "GET /assets/index-D1vA1KWj.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:29:05] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:29:05] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:29:06] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:29:06] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:29:06] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:29:06] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:29:06] "GET /api/batches/91/predicted-vs-actual HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:29:09] "GET /api/batches/91/risk HTTP/1.1" 200 -
+[weather_service] Open-Meteo request failed, falling back to synthetic: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=6)
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:29:16] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:29:16] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:29:16] "GET /api/batches/91/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:29:17] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:29:21] "POST /api/batches HTTP/1.1" 201 -
+[weather_service] Open-Meteo request failed, falling back to synthetic: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=6)
+[weather_service] Open-Meteo request failed, falling back to synthetic: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=6)
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:29:30] "GET /api/batches/92/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:29:32] "GET /api/batches/92/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo request failed, falling back to synthetic: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=6)
+127.0.0.1 - - [23/Aug/2026 00:29:36] "GET /api/batches/92/risk-forecast?days=6 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:29:42] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:29:48] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:29:57] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:29:57] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:29:58] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:29:58] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:29:59] "GET /api/batches/92/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:29:59] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+[weather_service] Open-Meteo request failed, falling back to synthetic: 503 Server Error: Service Unavailable for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&current=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&timezone=auto
+[weather_service] Open-Meteo request failed, falling back to synthetic: 503 Server Error: Service Unavailable for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&current=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 503 Server Error: Service Unavailable for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:30:02] "GET /api/batches/92/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:30:03] "GET /api/batches/92/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:30:05] "GET /api/batches/89/risk HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:30:07] "GET /api/batches/91/risk HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:30:07] "GET /api/batches/89/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:30:08] "GET /api/batches/90/risk HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:30:09] "GET /api/batches/88/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:30:09] "GET /api/batches/91/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:30:09] "GET /api/batches/90/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=17&timezone=auto
+127.0.0.1 - - [23/Aug/2026 00:30:12] "GET /api/batches/88/destinations HTTP/1.1" 200 -
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\config.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\destination_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\destination_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\destination_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\destination_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\models.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\batch_history_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\batch_history_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\routes.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\batch_history_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\weather_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\weather_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+127.0.0.1 - - [23/Aug/2026 00:48:27] "GET / HTTP/1.1" 200 -
+[mandi_price_service] Agmarknet request failed for state=Maharashtra: HTTPSConnectionPool(host='api.data.gov.in', port=443): Read timed out. (read timeout=8)
+127.0.0.1 - - [23/Aug/2026 00:48:47] "GET /api/batches/92/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:17] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:17] "GET /assets/index-C8ybspGI.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:17] "GET /assets/index-itRUcFj5.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:20] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:21] "GET /batch-analysis HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:21] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:21] "GET /assets/index-C8ybspGI.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:49:21] "GET /assets/index-itRUcFj5.js HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:49:21] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:21] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:21] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:21] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:21] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:22] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:24] "POST /api/batches HTTP/1.1" 201 -
+127.0.0.1 - - [23/Aug/2026 00:49:26] "GET /api/batches/93/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:27] "GET /api/batches/93/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:30] "GET /api/batches/93/risk-forecast?days=6 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:30] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:31] "GET /assets/index-C8ybspGI.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:49:31] "GET /assets/index-itRUcFj5.js HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:49:31] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:31] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:31] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:31] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:31] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:31] "GET /api/batches/93/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:34] "GET /api/batches/93/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:35] "GET /api/batches/93/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:36] "GET /api/batches/89/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:37] "GET /api/batches/89/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:42] "POST /api/batches/93/sold HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:42] "GET /api/batches/93/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:42] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:43] "GET /api/batches/93/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:45] "GET /api/batches/93/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:46] "GET /api/batches/93/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:46] "GET /api/batches/89/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:49:48] "GET /api/batches/89/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:51:30] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:51:30] "GET /assets/index-C8ybspGI.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:51:30] "GET /assets/index-itRUcFj5.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:51:31] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:51:31] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:51:32] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:51:32] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:51:32] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:51:32] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:51:32] "GET /api/batches/93/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:51:34] "GET /api/batches/93/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:51:35] "GET /api/batches/93/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:51:36] "GET /api/batches/89/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:51:37] "GET /api/batches/89/destinations HTTP/1.1" 200 -
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\mandi_price_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+127.0.0.1 - - [23/Aug/2026 00:52:38] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:52:39] "GET /assets/index-itRUcFj5.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:52:39] "GET /assets/index-C8ybspGI.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:52:39] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:52:39] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:52:39] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:52:40] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:52:40] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:52:40] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:52:40] "GET /api/batches/93/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:52:45] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:52:45] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:52:45] "GET /api/batches/93/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:52:46] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:52:49] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:52:49] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:52:49] "GET /api/batches/93/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:52:52] "GET /api/batches/93/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:52:52] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:52:52] "GET /favicon.ico HTTP/1.1" 304 -
+[mandi_price_service] Agmarknet request failed for state=Maharashtra: HTTPSConnectionPool(host='api.data.gov.in', port=443): Read timed out. (read timeout=5)
+127.0.0.1 - - [23/Aug/2026 00:52:52] "GET /api/batches/93/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:52:53] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:52:54] "POST /api/batches HTTP/1.1" 201 -
+127.0.0.1 - - [23/Aug/2026 00:52:57] "GET /api/batches/93/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:52:58] "GET /api/batches/94/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:52:59] "GET /api/batches/94/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:53:03] "GET /api/batches/94/risk-forecast?days=6 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:59:52] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:59:52] "GET /assets/index-C8ybspGI.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:59:52] "GET /assets/index-CJhHgoJQ.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:59:53] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:59:54] "GET /batch-analysis HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:59:54] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:59:54] "GET /assets/index-C8ybspGI.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:59:54] "GET /assets/index-CJhHgoJQ.js HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 00:59:54] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:59:54] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:59:54] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:59:54] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:59:54] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:59:55] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 00:59:57] "POST /api/batches HTTP/1.1" 201 -
+127.0.0.1 - - [23/Aug/2026 00:59:59] "GET /api/batches/95/risk HTTP/1.1" 200 -
+[weather_service] Open-Meteo request failed, falling back to synthetic: 503 Server Error: Service Unavailable for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&current=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&timezone=auto
+[weather_service] Open-Meteo request failed, falling back to synthetic: 503 Server Error: Service Unavailable for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=3&timezone=auto
+127.0.0.1 - - [23/Aug/2026 01:00:00] "GET /api/batches/95/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:00:04] "GET /api/batches/95/risk-forecast?days=6 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:00:05] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:00:05] "GET /assets/index-C8ybspGI.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 01:00:05] "GET /assets/index-CJhHgoJQ.js HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 01:00:05] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:00:06] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:00:06] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:00:06] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:00:06] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:00:06] "GET /api/batches/95/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:00:08] "GET /api/batches/95/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:00:09] "GET /api/batches/95/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:00:12] "GET /api/batches/94/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:00:12] "GET /api/batches/94/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:00:56] "GET /batch-analysis HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:00:56] "GET /assets/index-CJhHgoJQ.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:00:57] "GET /assets/index-C8ybspGI.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:00:57] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:00:57] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:00:57] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:00:57] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:00:57] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:00:57] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:00:59] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:01:00] "POST /api/batches HTTP/1.1" 201 -
+127.0.0.1 - - [23/Aug/2026 01:01:03] "GET /api/batches/96/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:01:05] "GET /api/batches/96/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:01:09] "GET /api/batches/96/risk-forecast?days=6 HTTP/1.1" 200 -
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\ml\\predict.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\destination_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\destination_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\ml\\predict.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\ml\\decay_constants.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+127.0.0.1 - - [23/Aug/2026 01:09:44] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:09:44] "GET /assets/index-C8ybspGI.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:09:45] "GET /assets/index-CJhHgoJQ.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:09:48] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:09:49] "GET /batch-analysis HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:09:49] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:09:49] "GET /assets/index-C8ybspGI.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 01:09:49] "GET /assets/index-CJhHgoJQ.js HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 01:09:49] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:09:49] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:09:49] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:09:49] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:09:49] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:09:51] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:09:52] "POST /api/batches HTTP/1.1" 201 -
+127.0.0.1 - - [23/Aug/2026 01:09:54] "GET /api/batches/97/risk HTTP/1.1" 200 -
+[weather_service] Open-Meteo request failed, falling back to synthetic: 503 Server Error: Service Unavailable for url: https://api.open-meteo.com/v1/forecast?latitude=20.0787&longitude=74.1102&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m&forecast_days=7&timezone=auto
+127.0.0.1 - - [23/Aug/2026 01:10:00] "GET /api/batches/97/risk-forecast?days=6 HTTP/1.1" 200 -
+[mandi_price_service] Agmarknet request failed for state=Maharashtra: HTTPSConnectionPool(host='api.data.gov.in', port=443): Read timed out. (read timeout=5)
+127.0.0.1 - - [23/Aug/2026 01:10:01] "GET /api/batches/97/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:10:02] "GET /destination-optimizer HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:10:02] "GET /assets/index-C8ybspGI.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 01:10:02] "GET /assets/index-CJhHgoJQ.js HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 01:10:02] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:10:03] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:10:03] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:10:03] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:10:03] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:10:05] "GET /api/batches/97/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:12:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:12:51] "GET /assets/index-C8ybspGI.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:12:51] "GET /assets/index-DN_zleg5.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:12:52] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:12:52] "GET /batch-analysis HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:12:52] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:12:52] "GET /assets/index-C8ybspGI.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 01:12:52] "GET /assets/index-DN_zleg5.js HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 01:12:52] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:12:53] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:12:53] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:12:53] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:12:53] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:12:54] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:12:55] "POST /api/batches HTTP/1.1" 201 -
+127.0.0.1 - - [23/Aug/2026 01:12:57] "GET /api/batches/98/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:12:58] "GET /api/batches/98/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:13:01] "GET /api/batches/98/risk-forecast?days=6 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:13:02] "GET /destination-optimizer HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:13:02] "GET /assets/index-C8ybspGI.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 01:13:02] "GET /assets/index-DN_zleg5.js HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 01:13:03] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:13:03] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:13:03] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:13:03] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:13:03] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:13:06] "GET /api/batches/98/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:14:41] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:14:41] "GET /assets/index-C8ybspGI.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:14:41] "GET /assets/index-6F8Lnbk7.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:14:42] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:14:43] "GET /batch-analysis HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:14:43] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:14:43] "GET /assets/index-C8ybspGI.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 01:14:43] "GET /assets/index-6F8Lnbk7.js HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 01:14:43] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:14:43] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:14:43] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:14:43] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:14:43] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:14:44] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:14:46] "POST /api/batches HTTP/1.1" 201 -
+127.0.0.1 - - [23/Aug/2026 01:14:48] "GET /api/batches/99/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:14:49] "GET /api/batches/99/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:14:52] "GET /api/batches/99/risk-forecast?days=6 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:14:53] "GET /destination-optimizer HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:14:53] "GET /assets/index-C8ybspGI.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 01:14:53] "GET /assets/index-6F8Lnbk7.js HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 01:14:53] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:14:54] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:14:54] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:14:54] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:14:54] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:14:58] "GET /api/batches/99/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:16:28] "GET /batch-analysis HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:16:28] "GET /assets/index-6F8Lnbk7.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:16:28] "GET /assets/index-C8ybspGI.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:16:28] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:16:28] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:16:29] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:16:29] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:16:29] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:16:29] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:16:30] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:16:32] "POST /api/batches HTTP/1.1" 201 -
+127.0.0.1 - - [23/Aug/2026 01:16:35] "GET /api/batches/100/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:16:36] "GET /api/batches/100/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:16:41] "GET /api/batches/100/risk-forecast?days=6 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:16:57] "POST /api/batches HTTP/1.1" 400 -
+127.0.0.1 - - [23/Aug/2026 01:17:01] "POST /api/batches HTTP/1.1" 400 -
+127.0.0.1 - - [23/Aug/2026 01:17:02] "POST /api/batches HTTP/1.1" 400 -
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\ml\\decay_constants.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+127.0.0.1 - - [23/Aug/2026 01:29:00] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:29:01] "GET /assets/index-C8ybspGI.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:29:01] "GET /assets/index-CW9q6D5k.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:29:04] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:29:04] "GET /batch-analysis HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:29:04] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:29:05] "GET /assets/index-C8ybspGI.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 01:29:05] "GET /assets/index-CW9q6D5k.js HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 01:29:05] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:29:05] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:29:05] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:29:05] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:29:05] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:29:06] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:29:08] "POST /api/batches HTTP/1.1" 201 -
+127.0.0.1 - - [23/Aug/2026 01:29:10] "GET /api/batches/101/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:29:15] "GET /api/batches/101/risk-forecast?days=6 HTTP/1.1" 200 -
+[mandi_price_service] Agmarknet request failed for state=Maharashtra: HTTPSConnectionPool(host='api.data.gov.in', port=443): Read timed out. (read timeout=5)
+127.0.0.1 - - [23/Aug/2026 01:29:17] "GET /api/batches/101/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:29:58] "GET /batch-analysis HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:29:58] "GET /assets/index-CW9q6D5k.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:29:58] "GET /assets/index-C8ybspGI.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:29:59] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:29:59] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:29:59] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:29:59] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:29:59] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:29:59] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:30:01] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:30:06] "POST /api/batches HTTP/1.1" 201 -
+127.0.0.1 - - [23/Aug/2026 01:30:10] "GET /api/batches/102/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:30:16] "GET /api/batches/102/risk-forecast?days=6 HTTP/1.1" 200 -
+[weather_service] Open-Meteo request failed, falling back to synthetic: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=6)
+127.0.0.1 - - [23/Aug/2026 01:30:17] "GET /api/batches/102/destinations HTTP/1.1" 200 -
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\ml\\predict.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\ml\\predict.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\ml\\predict.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\ml\\predict.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\model_info_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+127.0.0.1 - - [23/Aug/2026 01:37:04] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:37:04] "GET /assets/index-C8ybspGI.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:37:05] "GET /assets/index-AV8UVaMb.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:37:06] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:37:06] "GET /batch-analysis HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:37:06] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:37:06] "GET /assets/index-C8ybspGI.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 01:37:06] "GET /assets/index-AV8UVaMb.js HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 01:37:06] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:37:07] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:37:07] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:37:07] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:37:07] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:37:08] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:37:09] "POST /api/batches HTTP/1.1" 201 -
+127.0.0.1 - - [23/Aug/2026 01:37:11] "GET /api/batches/104/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:37:16] "GET /api/batches/104/risk-forecast?days=6 HTTP/1.1" 200 -
+[mandi_price_service] Agmarknet request failed for state=Maharashtra: HTTPSConnectionPool(host='api.data.gov.in', port=443): Read timed out. (read timeout=5)
+127.0.0.1 - - [23/Aug/2026 01:37:18] "GET /api/batches/104/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:37:19] "GET /model-performance HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:37:19] "GET /assets/index-C8ybspGI.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 01:37:19] "GET /assets/index-AV8UVaMb.js HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 01:37:19] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:37:19] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:37:20] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:37:20] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:37:20] "GET /api/model-info HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:37:20] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:37:20] "GET /api/batches/93/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:37:20] "GET /api/batches/92/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:37:20] "GET /api/batches/90/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:37:20] "GET /api/batches/86/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:37:20] "GET /api/batches/91/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:38:27] "GET /batch-analysis HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:38:27] "GET /assets/index-AV8UVaMb.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:38:27] "GET /assets/index-C8ybspGI.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:38:28] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:38:28] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:38:28] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:38:28] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:38:28] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:38:28] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:38:29] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:38:32] "POST /api/batches HTTP/1.1" 201 -
+127.0.0.1 - - [23/Aug/2026 01:38:35] "GET /api/batches/105/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:38:37] "GET /api/batches/105/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:38:42] "GET /api/batches/105/risk-forecast?days=6 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:38:53] "POST /api/batches HTTP/1.1" 201 -
+127.0.0.1 - - [23/Aug/2026 01:38:56] "GET /api/batches/106/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:38:57] "GET /api/batches/106/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:39:02] "GET /api/batches/106/risk-forecast?days=6 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:39:11] "POST /api/batches HTTP/1.1" 201 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=6)
+[weather_service] Open-Meteo range request failed, falling back to synthetic: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=6)
+127.0.0.1 - - [23/Aug/2026 01:39:20] "GET /api/batches/107/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:39:20] "GET /api/batches/107/risk-forecast?days=6 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:39:21] "GET /api/batches/107/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:39:34] "POST /api/batches HTTP/1.1" 201 -
+127.0.0.1 - - [23/Aug/2026 01:39:37] "GET /api/batches/108/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:39:39] "GET /api/batches/108/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:39:44] "GET /api/batches/108/risk-forecast?days=6 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:39:50] "POST /api/batches HTTP/1.1" 201 -
+127.0.0.1 - - [23/Aug/2026 01:39:53] "GET /api/batches/109/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:39:54] "GET /api/batches/109/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:39:59] "GET /api/batches/109/risk-forecast?days=6 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:40:06] "POST /api/batches HTTP/1.1" 201 -
+127.0.0.1 - - [23/Aug/2026 01:40:09] "GET /api/batches/110/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:40:11] "GET /api/batches/110/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo request failed, falling back to synthetic: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=6)
+[weather_service] Open-Meteo request failed, falling back to synthetic: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=6)
+127.0.0.1 - - [23/Aug/2026 01:40:27] "GET /api/batches/110/risk-forecast?days=6 HTTP/1.1" 200 -
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\risk_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\services\\risk_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+127.0.0.1 - - [23/Aug/2026 01:47:49] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:47:49] "GET /assets/index-C8ybspGI.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:47:50] "GET /assets/index-nlcBCx9X.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:47:53] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:47:53] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:47:54] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:47:54] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:47:54] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:47:54] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:47:54] "GET /api/batches/110/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:47:56] "GET /api/batches/110/risk HTTP/1.1" 200 -
+[mandi_price_service] Agmarknet request failed for state=Maharashtra: HTTPSConnectionPool(host='api.data.gov.in', port=443): Read timed out. (read timeout=5)
+127.0.0.1 - - [23/Aug/2026 01:48:02] "GET /api/batches/110/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:48:11] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:48:11] "GET /assets/index-C8ybspGI.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:48:11] "GET /assets/index-nlcBCx9X.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:48:12] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:48:12] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:48:12] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:48:12] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:48:12] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:48:12] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:48:12] "GET /api/batches/110/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:48:14] "GET /api/batches/110/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:48:15] "GET /api/batches/110/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:48:17] "GET /api/batches/109/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:48:17] "GET /api/batches/108/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:48:17] "GET /api/batches/107/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:48:18] "GET /api/batches/108/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:48:18] "GET /api/batches/109/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:48:18] "GET /api/batches/107/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:49:32] "GET /batch-analysis HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:49:32] "GET /assets/index-nlcBCx9X.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:49:32] "GET /assets/index-C8ybspGI.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:49:32] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:49:32] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:49:33] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:49:33] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:49:33] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:49:33] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:49:34] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:49:38] "POST /api/batches HTTP/1.1" 201 -
+127.0.0.1 - - [23/Aug/2026 01:49:40] "GET /api/batches/111/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:49:42] "GET /api/batches/111/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:49:48] "GET /api/batches/111/risk-forecast?days=6 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:50:14] "POST /api/batches HTTP/1.1" 201 -
+127.0.0.1 - - [23/Aug/2026 01:50:16] "GET /api/batches/112/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:50:17] "GET /api/batches/112/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:50:24] "GET /api/batches/112/risk-forecast?days=6 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:50:29] "POST /api/batches HTTP/1.1" 201 -
+127.0.0.1 - - [23/Aug/2026 01:50:33] "GET /api/batches/113/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:50:34] "GET /api/batches/113/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:50:39] "GET /api/batches/113/risk-forecast?days=6 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:50:45] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 01:50:51] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 01:51:03] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 01:51:05] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 01:51:06] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:51:06] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 01:51:07] "GET /api/batches/113/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:51:09] "GET /api/batches/113/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:51:10] "GET /api/batches/113/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:51:12] "GET /api/batches/112/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:51:12] "GET /api/batches/110/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:51:12] "GET /api/batches/111/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:51:14] "GET /api/batches/112/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:51:14] "GET /api/batches/110/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:51:14] "GET /api/batches/111/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 01:51:17] "GET /api/batches/109/destinations HTTP/1.1" 200 -
+[weather_service] Open-Meteo range request failed, falling back to synthetic: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=6)
+127.0.0.1 - - [23/Aug/2026 01:51:21] "GET /api/batches/109/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:00:43] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 02:01:22] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 02:01:31] "POST /api/assistant/ask HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:01:50] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 02:01:52] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 02:01:54] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 02:02:09] "POST /api/photo/analyze HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:03:52] "POST /api/photo/analyze HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:04:43] "POST /api/photo/analyze HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:07:59] "POST /api/photo/analyze HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:08:24] "POST /api/photo/analyze HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:16] "POST /api/photo/analyze HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:30] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:30] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 02:09:30] "GET /api/batches/113/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:33] "GET /api/batches/113/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:34] "GET /api/batches/113/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:36] "GET /api/batches/110/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:36] "GET /api/batches/112/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:36] "GET /api/batches/111/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:36] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:36] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 02:09:37] "GET /api/batches/111/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:37] "GET /api/batches/112/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:37] "GET /api/batches/110/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:37] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 02:09:38] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:39] "GET /api/batches/109/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:39] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 02:09:40] "GET /api/batches/109/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:41] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 02:09:42] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 02:09:43] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 02:09:43] "GET /api/batches HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:44] "GET /api/batches/113/predicted-vs-actual HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:46] "GET /api/batches/113/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:48] "GET /api/batches/113/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:49] "GET /api/batches/112/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:49] "GET /api/batches/111/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:49] "GET /api/batches/110/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:51] "GET /api/batches/111/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:51] "GET /api/batches/112/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:51] "GET /api/batches/110/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:52] "GET /api/batches/109/risk HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:09:54] "GET /api/batches/109/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:13:22] "GET /api/farm-locations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:13:22] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 02:13:24] "GET /api/weather?lat=20.0787&lon=74.1102 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 02:13:45] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 02:14:14] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 02:14:32] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 02:14:56] "GET /favicon.ico HTTP/1.1" 304 -
+ * Detected change in 'C:\\SIH\\Crop_Spoilage_router\\backend\\seed\\destinations_data.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 932-453-076
+127.0.0.1 - - [23/Aug/2026 03:03:00] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 03:03:00] "GET /assets/index-fQI2WQco.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 03:03:00] "GET /assets/index-BH5byMOh.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 03:03:05] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 03:03:05] "GET /data-sources HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 03:03:05] "GET /assets/index-BH5byMOh.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 03:03:05] "GET /assets/index-fQI2WQco.js HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2026 03:03:05] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 03:03:06] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 03:03:06] "GET /api/notifications HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 03:03:06] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 03:03:06] "GET /api/destinations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2026 03:03:09] "GET /api/model-info HTTP/1.1" 200 -

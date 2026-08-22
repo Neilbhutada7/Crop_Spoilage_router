@@ -1,0 +1,65 @@
+{
+  "status": "validated",
+  "target_variable": "wastage_percent (percentage of batch quantity lost to spoilage before sale)",
+  "model_type": "XGBoost gradient-boosted trees (XGBRegressor)",
+  "features": [
+    "is_tomato",
+    "is_onion",
+    "is_banana",
+    "is_potato",
+    "is_lemon",
+    "is_mango",
+    "is_leafy_greens",
+    "is_pineapple",
+    "is_orange",
+    "is_strawberry",
+    "temperature_c",
+    "days_since_harvest",
+    "decay_constant"
+  ],
+  "feature_selection_notes": "humidity_pct was tested as a feature and dropped: r=-0.01 with the target (essentially no linear relationship), and a held-out comparison showed a model WITHOUT it outperforming one with it (R2 0.32 vs 0.30) as well as one using a derived dew-point feature in its place (R2 0.30, no improvement -- 88% correlated with temperature_c). Dropping it also let 248 rows with missing humidity_percent (previously excluded) re-enter training.",
+  "crop_encoding": "one-hot (one binary is_<crop> column per crop) -- not an ordinal integer, since crop categories have no numeric order",
+  "crop_types": [
+    "banana",
+    "leafy greens",
+    "lemon",
+    "mango",
+    "onion",
+    "orange",
+    "pineapple",
+    "potato",
+    "strawberry",
+    "tomato"
+  ],
+  "dataset_source": "fresh_produce_wastage_dataset.csv (public benchmark dataset bundled with this repo; provenance as real-world observed farm/warehouse outcomes has not been independently verified by this team)",
+  "dataset_size_total_rows": 3000,
+  "dataset_size_after_cleaning": 2756,
+  "train_rows": 2204,
+  "test_rows": 552,
+  "split_method": "random 80/20 holdout, random_state=42 (one row = one independent batch, no repeated batch_id in source data)",
+  "metrics": {
+    "mae_risk_points": 2.915,
+    "rmse_risk_points": 3.608,
+    "r2": 0.3186
+  },
+  "classification_view": {
+    "risk_index_threshold": 50.0,
+    "positive_class": "Risk Score Index >= 50 (High risk)",
+    "negative_class": "Risk Score Index < 50",
+    "n_test_positive": 141,
+    "n_test_negative": 411,
+    "accuracy": 0.7717,
+    "precision": 0.5701,
+    "recall": 0.4326,
+    "f1": 0.4919,
+    "roc_auc": 0.7684
+  },
+  "limitations": [
+    "Source dataset covers storage_duration_hours up to 96 hours (4 days) only; risk scores beyond that are extrapolated in the API using a linear scaling heuristic, not learned by the model.",
+    "Dataset provenance is not independently verified as real-world observed spoilage outcomes; treat as a benchmark/demonstration dataset until confirmed.",
+    "No pilot (real farmer) outcome data has been incorporated yet.",
+    "Model is retrained on the full dataset after metrics capture, so served predictions come from a model that has seen all rows; only the metrics above come from a held-out split.",
+    "The classification view is a threshold applied to this same regressor's held-out predictions, not a separately trained/validated classifier."
+  ],
+  "trained_at": "2026-08-22T04:57:05.852530+00:00"
+}
