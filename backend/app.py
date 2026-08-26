@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, jsonify, send_from_directory
+from flask import Flask, jsonify, send_from_directory, request
 from flask_cors import CORS
 
 from config import Config
@@ -56,14 +56,9 @@ def create_app():
     def not_found(e):
         return jsonify({"error": "Not found"}), 404
 
-    @app.errorhandler(Exception)
+    @app.errorhandler(500)
     def server_error(e):
-        import traceback
-        try:
-            err_msg = traceback.format_exc()
-        except:
-            err_msg = str(e)
-        return jsonify({"error": "Internal server error", "traceback": err_msg}), 500
+        return jsonify({"error": "Internal server error"}), 500
 
     # Single-origin serving: the built React app (frontend/dist, from
     # `npm run build`) is served directly by Flask so the whole product is
