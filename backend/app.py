@@ -58,7 +58,12 @@ def create_app():
 
     @app.errorhandler(500)
     def server_error(e):
-        return jsonify({"error": "Internal server error"}), 500
+        import traceback
+        try:
+            err_msg = traceback.format_exc()
+        except:
+            err_msg = str(e)
+        return jsonify({"error": "Internal server error", "traceback": err_msg}), 500
 
     # Single-origin serving: the built React app (frontend/dist, from
     # `npm run build`) is served directly by Flask so the whole product is
