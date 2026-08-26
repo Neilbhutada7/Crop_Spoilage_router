@@ -367,7 +367,7 @@ export default function BatchAnalysis() {
           </section>
 
           {/* ADVANCED */}
-          {showTechnical && !simple && (
+          {showTechnical && (
             <section className="bg-gray-900 border border-gray-800 rounded-md p-6 shadow-sm text-gray-300 text-sm animate-enter">
               <h3 className="text-lg font-bold text-white mb-4">{t("photo.howCalculated")}</h3>
               <div className="grid grid-cols-2 gap-4">
