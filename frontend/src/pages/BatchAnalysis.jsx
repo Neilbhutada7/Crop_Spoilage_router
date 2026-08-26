@@ -47,6 +47,7 @@ export default function BatchAnalysis() {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState(null);
   const [showTechnical, setShowTechnical] = useState(false);
+  const [forecastDay, setForecastDay] = useState(1);
 
   useEffect(() => {
     api.getFarmLocations().then(setFarmLocations).catch(() => setError(t("common.genericError")));
@@ -253,27 +254,42 @@ export default function BatchAnalysis() {
               {risk.forecast_7_days && (
                 <div className="mt-6 border-t border-brand-100 pt-5">
                   <h3 className="font-bold text-gray-900 mb-3">7-Day Spoilage Forecast</h3>
-                  <div className="flex items-end justify-between gap-1 h-32 pt-6">
-                    {risk.forecast_7_days.map((f, i) => (
-                      <div key={i} className="flex flex-col items-center flex-1 group">
-                        <div className="relative w-full flex justify-center h-full items-end">
-                          <div 
-                            className="w-full max-w-[24px] rounded-t-sm transition-all relative"
-                            style={{ 
-                              height: `${f.risk_score}%`, 
-                              backgroundColor: riskColor(f.risk_label),
-                              opacity: 0.8
-                            }}
-                          >
-                            <span className="absolute -top-6 left-1/2 -translate-x-1/2 text-[10px] font-bold text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity">
-                              {Math.round(f.risk_score)}%
-                            </span>
+                  <div className="pt-4 pb-2">
+                    <input 
+                      type="range" 
+                      min="1" 
+                      max="7" 
+                      step="1"
+                      value={forecastDay}
+                      onChange={(e) => setForecastDay(Number(e.target.value))}
+                      className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-brand-600"
+                    />
+                    <div className="flex justify-between text-xs text-gray-400 mt-2 font-semibold">
+                      <span>Day 1</span>
+                      <span>Day 4</span>
+                      <span>Day 7</span>
+                    </div>
+                  </div>
+                  
+                  {(() => {
+                    const selectedForecast = risk.forecast_7_days.find(f => f.days_offset === forecastDay) || risk.forecast_7_days[0];
+                    return (
+                      <div className="mt-4 flex items-center justify-between bg-surface-light border border-gray-200 p-4 rounded-md">
+                        <div>
+                          <div className="text-[11px] font-bold text-gray-500 uppercase tracking-wide">Forecast for Day {selectedForecast.days_offset}</div>
+                          <div className="text-sm font-semibold text-gray-700">{selectedForecast.temperature_c}°C, {selectedForecast.humidity_pct}% Humidity</div>
+                        </div>
+                        <div className="text-right">
+                          <div className="text-2xl font-bold" style={{ color: riskColor(selectedForecast.risk_label) }}>
+                            {Math.round(selectedForecast.risk_score)}%
+                          </div>
+                          <div className="text-xs font-bold uppercase" style={{ color: riskColor(selectedForecast.risk_label) }}>
+                            {selectedForecast.risk_label} Risk
                           </div>
                         </div>
-                        <span className="text-[10px] font-semibold text-gray-500 mt-2 uppercase">Day {f.days_offset}</span>
                       </div>
-                    ))}
-                  </div>
+                    );
+                  })()}
                 </div>
               )}
             </div>
@@ -340,7 +356,8 @@ export default function BatchAnalysis() {
             <div className="mt-8 pt-6 border-t border-gray-200">
               <h4 className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Data Transparency</h4>
               <p className="text-xs text-gray-500 leading-relaxed">
-                <span className="font-semibold text-gray-700">Weather Source:</span> {risk.weather_source === "open-meteo" ? "Live data from Open-Meteo" : risk.weather_source} {risk.weather_is_synthetic ? "(Synthetic fallback)" : ""}. 
+                <span className="font-semibold text-gray-700">Weather Source:</span> {risk.weather_source === "open-meteo" ? "Live data from Open-Meteo API" : risk.weather_source} 
+                {risk.weather_is_synthetic && " (Fallback synthetic model used because Open-Meteo API was unreachable or the date requested is outside its archive range)." }
                 <br/>
                 <span className="font-semibold text-gray-700">Pricing Data:</span> Mandi (Agmarknet) historical & projected prices.
                 <br/>
