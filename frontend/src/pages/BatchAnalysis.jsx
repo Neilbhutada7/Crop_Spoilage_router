@@ -60,6 +60,47 @@ export default function BatchAnalysis() {
 
   const harvestAgeDays = Math.max(0, Math.round((Date.now() - new Date(harvestDate).getTime()) / 86400000));
 
+  async function handleUseCurrentLocation(e) {
+    e.preventDefault();
+    if (!navigator.geolocation) {
+      alert("Geolocation is not supported by your browser");
+      return;
+    }
+    
+    const loadingName = "Locating...";
+    setFarmLocations(prev => {
+      const next = [...prev, { name: loadingName, latitude: 0, longitude: 0 }];
+      setFarmIndex(next.length - 1);
+      return next;
+    });
+
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        const { latitude, longitude } = pos.coords;
+        const currentName = "📍 Current Location";
+        setFarmLocations((prev) => {
+          const cleaned = prev.filter(l => l.name !== loadingName);
+          const existingIdx = cleaned.findIndex(l => l.name === currentName);
+          if (existingIdx !== -1) {
+            setFarmIndex(existingIdx);
+            return cleaned;
+          }
+          const next = [...cleaned, { name: currentName, latitude, longitude }];
+          setFarmIndex(next.length - 1);
+          return next;
+        });
+      },
+      (err) => {
+        setFarmLocations(prev => {
+          const cleaned = prev.filter(l => l.name !== loadingName);
+          setFarmIndex(0);
+          return cleaned;
+        });
+        alert("Could not get your location. Please check your browser permissions.");
+      }
+    );
+  }
+
   async function handlePredict(e) {
     e.preventDefault();
     setError(null);
@@ -119,13 +160,23 @@ export default function BatchAnalysis() {
                 className="mt-1.5 w-full px-4 py-3 border border-gray-300 rounded-md text-base outline-none focus:border-brand-600 focus:ring-2 focus:ring-brand-100" />
             </label>
 
-            <label className="block text-sm font-semibold text-gray-700">
-              {t("batch.farmLocationLabel")}
+            <div className="block text-sm font-semibold text-gray-700">
+              <div className="flex justify-between items-center">
+                {t("batch.farmLocationLabel")}
+                <button type="button" onClick={handleUseCurrentLocation} className="text-brand-600 hover:text-brand-700 text-xs font-bold">
+                  📍 Use Current Location
+                </button>
+              </div>
               <select value={farmIndex} onChange={(e) => setFarmIndex(Number(e.target.value))}
-                className="mt-1.5 w-full px-4 py-3 border border-gray-300 rounded-md text-base outline-none focus:border-brand-600 focus:ring-2 focus:ring-brand-100">
-                {farmLocations.map((f, i) => <option key={f.name} value={i}>{f.name}</option>)}
+                disabled={farmLocations.length === 0}
+                className="mt-1.5 w-full px-4 py-3 border border-gray-300 rounded-md text-base outline-none focus:border-brand-600 focus:ring-2 focus:ring-brand-100 disabled:bg-gray-50 disabled:text-gray-500">
+                {farmLocations.length === 0 ? (
+                  <option>Loading locations...</option>
+                ) : (
+                  farmLocations.map((f, i) => <option key={f.name} value={i}>{f.name}</option>)
+                )}
               </select>
-            </label>
+            </div>
           </div>
 
           <div className="bg-surface-light border border-earth-100 rounded-md p-4 flex items-center justify-between">
