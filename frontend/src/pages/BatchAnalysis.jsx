@@ -83,7 +83,17 @@ export default function BatchAnalysis() {
           const res = await fetch(`https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json`);
           const data = await res.json();
           if (data && data.address) {
-            currentName = data.address.city || data.address.town || data.address.village || data.address.county || currentName;
+            const ad = data.address;
+            const local = ad.neighbourhood || ad.suburb || ad.village || ad.road;
+            const city = ad.city || ad.town || ad.county || ad.state_district;
+            
+            if (local && city && local !== city) {
+              currentName = `${local}, ${city}`;
+            } else if (city) {
+              currentName = city;
+            } else if (local) {
+              currentName = local;
+            }
           }
         } catch (e) {
           console.warn("Reverse geocoding failed", e);
