@@ -104,27 +104,25 @@ export default function DestinationOptimizer() {
         </div>
         
         {/* Risk Appetite Selector */}
-        {!simple && (
-          <div className="bg-white border border-gray-200 rounded-lg p-1 flex shadow-sm shrink-0">
-            {[
-              { id: "conservative", label: "🛡️ Safe Bets" },
-              { id: "balanced", label: "⚖️ Balanced" },
-              { id: "aggressive", label: "🚀 High Reward" },
-            ].map(opt => (
-              <button
-                key={opt.id}
-                onClick={() => setRiskAppetite(opt.id)}
-                className={`px-3 py-1.5 text-xs sm:text-sm font-bold rounded-md transition-colors ${
-                  riskAppetite === opt.id 
-                    ? "bg-brand-50 text-brand-700 shadow-sm border border-brand-200" 
-                    : "text-gray-500 hover:text-gray-700 hover:bg-gray-50 border border-transparent"
-                }`}
-              >
-                {t(`riskAppetite.${opt.id}`, opt.label)}
-              </button>
-            ))}
-          </div>
-        )}
+        <div className="bg-white border border-gray-200 rounded-lg p-1 flex shadow-sm shrink-0">
+          {[
+            { id: "conservative", label: "🛡️ Safe Bets" },
+            { id: "balanced", label: "⚖️ Balanced" },
+            { id: "aggressive", label: "🚀 High Reward" },
+          ].map(opt => (
+            <button
+              key={opt.id}
+              onClick={() => setRiskAppetite(opt.id)}
+              className={`px-3 py-1.5 text-xs sm:text-sm font-bold rounded-md transition-colors ${
+                riskAppetite === opt.id 
+                  ? "bg-brand-50 text-brand-700 shadow-sm border border-brand-200" 
+                  : "text-gray-500 hover:text-gray-700 hover:bg-gray-50 border border-transparent"
+              }`}
+            >
+              {t(`riskAppetite.${opt.id}`, opt.label)}
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* TOP CHOICE CARD */}

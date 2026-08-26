@@ -6,5 +6,12 @@ export default defineConfig({
   server: {
     host: true,
     port: 5173,
+    proxy: {
+      "/api": {
+        target: "https://crop-spoilage-router-1.onrender.com",
+        changeOrigin: true,
+        secure: true,
+      },
+    },
   },
 });
