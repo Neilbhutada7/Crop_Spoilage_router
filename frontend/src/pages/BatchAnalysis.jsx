@@ -233,17 +233,49 @@ export default function BatchAnalysis() {
                 aboutWord={t("common.about")}
               />
               
-              <div className="mt-4">
-                <details className="text-sm text-gray-600 cursor-pointer">
-                  <summary className="font-semibold text-brand-700 hover:underline outline-none">{t("batch.whyThisRisk")}</summary>
-                  <div className="mt-3 pl-4 border-l-2 border-brand-200 space-y-2">
-                    {risk.explanation?.reasons?.map((r, i) => (
-                      <p key={i}>{r.text}</p>
-                    ))}
-                    <p className="text-xs text-gray-400 italic mt-2">{t("batch.whyThisRiskSubtitle")}</p>
-                  </div>
-                </details>
+              
+              <div className="mt-6 border-t border-brand-100 pt-5">
+                <h3 className="font-bold text-gray-900 mb-3">{t("batch.whyThisRisk")}</h3>
+                <div className="space-y-3">
+                  {risk.explanation?.reasons?.map((r, i) => (
+                    <div key={i} className="flex items-start gap-3 bg-white border border-brand-50 p-3 rounded-md shadow-sm">
+                      <div className="mt-0.5 shrink-0">
+                        {r.factor === "temperature" ? <IconThermometer width={16} height={16} className="text-earth-600" /> : 
+                         r.factor === "humidity" ? <IconDroplet width={16} height={16} className="text-brand-600" /> :
+                         <IconCalendar width={16} height={16} className="text-gray-500" />}
+                      </div>
+                      <p className="text-sm text-gray-700">{r.text}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
+              
+              {risk.forecast_7_days && (
+                <div className="mt-6 border-t border-brand-100 pt-5">
+                  <h3 className="font-bold text-gray-900 mb-3">7-Day Spoilage Forecast</h3>
+                  <div className="flex items-end justify-between gap-1 h-32 pt-6">
+                    {risk.forecast_7_days.map((f, i) => (
+                      <div key={i} className="flex flex-col items-center flex-1 group">
+                        <div className="relative w-full flex justify-center h-full items-end">
+                          <div 
+                            className="w-full max-w-[24px] rounded-t-sm transition-all relative"
+                            style={{ 
+                              height: `${f.risk_score}%`, 
+                              backgroundColor: riskColor(f.risk_label),
+                              opacity: 0.8
+                            }}
+                          >
+                            <span className="absolute -top-6 left-1/2 -translate-x-1/2 text-[10px] font-bold text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity">
+                              {Math.round(f.risk_score)}%
+                            </span>
+                          </div>
+                        </div>
+                        <span className="text-[10px] font-semibold text-gray-500 mt-2 uppercase">Day {f.days_offset}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
 
             <div className="grid grid-cols-3 gap-3">
@@ -303,6 +335,17 @@ export default function BatchAnalysis() {
               <button onClick={() => setShowTechnical(!showTechnical)} className="py-4 px-6 bg-white text-gray-700 border border-gray-300 text-sm font-bold rounded-md hover:bg-gray-50 transition-colors shadow-sm">
                 {t("batch.technicalDetails")}
               </button>
+            </div>
+
+            <div className="mt-8 pt-6 border-t border-gray-200">
+              <h4 className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Data Transparency</h4>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                <span className="font-semibold text-gray-700">Weather Source:</span> {risk.weather_source === "open-meteo" ? "Live data from Open-Meteo" : risk.weather_source} {risk.weather_is_synthetic ? "(Synthetic fallback)" : ""}. 
+                <br/>
+                <span className="font-semibold text-gray-700">Pricing Data:</span> Mandi (Agmarknet) historical & projected prices.
+                <br/>
+                <span className="font-semibold text-gray-700">Risk Model:</span> Machine learning model trained on the <em>Sri Lankan Onion Post-Harvest Loss Transport Dataset</em>.
+              </p>
             </div>
           </section>
 

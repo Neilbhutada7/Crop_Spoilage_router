@@ -142,6 +142,27 @@ def assess_risk(batch_id: int) -> dict:
         # unrelated formula.
         remaining_days, capped = _model_projected_remaining_days(batch, score, days_since_harvest)
 
+        # 7-day forecast for the new transparency section
+        forecast_7_days = []
+        forecast_weather = get_weather_series(float(batch.farm_latitude), float(batch.farm_longitude), today + datetime.timedelta(days=1), 7)
+        for offset in range(1, 8):
+            target_date = today + datetime.timedelta(days=offset)
+            w = forecast_weather[target_date.isoformat()]
+            f_score = predict_risk(
+                crop_type=batch.crop_type,
+                temperature_c=w["temperature_c"],
+                humidity_pct=w["humidity_pct"],
+                days_since_harvest=days_since_harvest + offset,
+            )
+            forecast_7_days.append({
+                "date": target_date.isoformat(),
+                "days_offset": offset,
+                "risk_score": round(f_score, 1),
+                "risk_label": risk_label(f_score),
+                "temperature_c": w["temperature_c"],
+                "humidity_pct": w["humidity_pct"]
+            })
+
         return {
             "batch_id": batch.id,
             "risk_score": float(assessment.risk_score),
@@ -159,6 +180,7 @@ def assess_risk(batch_id: int) -> dict:
             "estimated_remaining_shelf_life_days": round(remaining_days, 1),
             "estimated_remaining_shelf_life_hours": round(remaining_days * 24, 1),
             "shelf_life_estimate_type": "MODEL_PROJECTION",
+            "forecast_7_days": forecast_7_days,
         }
     finally:
         session.close()
