@@ -68,328 +68,75 @@ function CurrentHarvestRow({ t, batch, isDemoBatch }) {
   );
 }
 
-// ---- Risk + remaining time, one connected panel --------------------------
-function CropRightNowPanel({ t, risk }) {
+// ---- Summary Cards ------------------------------------------------------
+function CropHealthCard({ t, risk, navigate }) {
+  if (!risk) return <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 sm:p-7 text-sm text-gray-400 h-full">{t("common.loading")}</div>;
   const color = riskColor(risk.risk_label);
-  const topFactor = risk.explanation?.reasons?.[0];
-  const topFactorLabel = topFactor
-    ? { temperature: t("batch.temperature"), humidity: t("batch.humidity"), days_since_harvest: t("dashboard.timeSinceHarvest") }[topFactor.factor]
-    : null;
   const days = Math.max(0, Math.round(risk.estimated_remaining_shelf_life_days));
-
   return (
-    <div>
-      <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-3">{t("dashboard.cropHealthTitle")}</div>
-
-      <div className="flex items-baseline gap-3">
-        <span className="text-5xl font-bold tabular-nums" style={{ color }}>{Math.round(risk.risk_score)}%</span>
-        <span className="text-lg font-semibold" style={{ color }}>{riskLabelText(t, risk.risk_label)}</span>
+    <div onClick={() => navigate("/batch-analysis")} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 sm:p-7 cursor-pointer hover:shadow-md transition-shadow group relative h-full flex flex-col">
+      <div className="absolute top-6 right-6 text-brand-700 opacity-0 group-hover:opacity-100 transition-opacity">
+        <IconChevronRight width={20} height={20} />
       </div>
-
-      <div className="mt-4 max-w-md">
-        <div className="relative h-1.5 bg-gray-200 rounded-full">
-          <div className="absolute -top-1 h-3.5 w-3.5 rounded-full border-2 border-white shadow-sm" style={{ left: `calc(${Math.min(100, risk.risk_score)}% - 7px)`, background: color }} />
-        </div>
-        <div className="flex justify-between text-[11px] font-semibold text-gray-400 mt-1.5">
-          <span>{t("risk.low")}</span>
-          <span>{t("risk.high")}</span>
-        </div>
+      <div className="flex items-center gap-2 text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-4">
+        <IconAlertTriangle width={14} height={14} /> {t("dashboard.cropHealthTitle")}
       </div>
-
-      <div className="flex flex-wrap gap-x-10 gap-y-3 mt-6 text-sm">
-        <div>
-          <div className="text-gray-400">{t("batch.temperature")}</div>
-          <div className="font-semibold text-gray-900 mt-0.5">{risk.temperature_c}&deg;C</div>
-        </div>
-        <div>
-          <div className="text-gray-400">{t("batch.humidity")}</div>
-          <div className="font-semibold text-gray-900 mt-0.5">{risk.humidity_pct}%</div>
-        </div>
-        <div>
-          <div className="text-gray-400">{t("batch.age")}</div>
-          <div className="font-semibold text-gray-900 mt-0.5">{risk.days_since_harvest === 0 ? t("common.today") : t("common.dayCount", { count: risk.days_since_harvest })}</div>
-        </div>
+      <div className="flex items-baseline gap-2 mb-2">
+        <span className="text-3xl font-bold tabular-nums" style={{ color }}>{Math.round(risk.risk_score)}%</span>
+        <span className="text-base font-semibold" style={{ color }}>{riskLabelText(t, risk.risk_label)}</span>
       </div>
-
-      {topFactorLabel && (
-        <p className="text-sm text-gray-500 mt-4">{t("dashboard.biggestFactor", { factor: topFactorLabel })}</p>
-      )}
-
-      <div className="mt-7 pt-6 border-t border-gray-100">
-        {risk.shelf_life_estimate_capped && risk.risk_label !== "Low" ? (
-          // capped means the model's OWN risk score plateaus below the High
-          // threshold rather than actually improving -- at Medium/High risk
-          // that's a flat, still-elevated number, not "days of good time
-          // left". Framing it as a day-count here would contradict the risk
-          // gauge shown just above.
-          <>
-            <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-2">{t("dashboard.riskStaysElevatedTitle")}</div>
-            <div className="text-2xl font-bold text-gray-900">{t("dashboard.riskStaysElevated", { score: Math.round(risk.risk_score) })}</div>
-            <p className="text-sm text-gray-500 mt-1">{t("dashboard.riskStaysElevatedSubtitle")}</p>
-          </>
-        ) : (
-          <>
-            <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-2">{t("dashboard.remainingTimeTitle")}</div>
-            <div className="text-2xl font-bold text-gray-900">{t(risk.shelf_life_estimate_capped ? "dashboard.moreThanDays" : "dashboard.aboutDays", { days, count: days })}</div>
-            <p className="text-sm text-gray-500 mt-1">{t("dashboard.remainingTimeSubtitle")}</p>
-            <div className="flex items-center gap-2 mt-3 max-w-xs">
-              <span className="text-[11px] font-semibold text-gray-400 shrink-0">{t("common.today")}</span>
-              <div className="flex-1 h-px bg-gray-300 relative">
-                <div className="absolute -top-[3px] right-0 w-2 h-2 rounded-full bg-brand-700" />
-              </div>
-              <span className="text-[11px] font-semibold text-gray-400 shrink-0">~{days}{t("common.days")[0]}</span>
-            </div>
-          </>
-        )}
-        <p className="text-[11px] text-gray-400 mt-2">{t("dashboard.benchmarkEstimateNote")}</p>
-      </div>
-    </div>
-  );
-}
-
-// ---- Hero recommendation --------------------------------------------------
-function RecommendationHero({ t, navigate, risk, recommended, emergency, saferOption, destinations }) {
-  const [showWhy, setShowWhy] = useState(false);
-  const label = risk.risk_label;
-  const stateInfo = emergency
-    ? { color: "#dc2626", tint: "#fef2f2", Icon: IconZap, title: t("dashboard.actSoonTitle"), body: t("dashboard.emergencyBody") }
-    : label === "High"
-    ? { color: "#dc2626", tint: "#fef2f2", Icon: IconZap, title: t("dashboard.actSoonTitle"), body: t("dashboard.actSoonBody") }
-    : label === "Medium"
-    ? { color: "#c9711a", tint: "#fdf5ec", Icon: IconClock, title: t("dashboard.attentionTitle"), body: t("dashboard.attentionBody") }
-    : { color: "#1a4f31", tint: "#eef7f0", Icon: IconCheck, title: t("dashboard.sellSoonTitle"), body: t("dashboard.sellSoonBody") };
-
-  const market = emergency && saferOption ? saferOption : recommended;
-
-  const whyReasons = useMemo(() => {
-    if (!market || !destinations?.length) return [];
-    const others = destinations.filter((d) => d.destination_id !== market.destination_id);
-    const reasons = [];
-    if (others.length === 0 || market.travel_time_hours <= Math.min(...others.map((o) => o.travel_time_hours)))
-      reasons.push(t("dashboard.whyLowerTravel"));
-    if (others.length === 0 || market.expected_spoilage_loss <= Math.min(...others.map((o) => o.expected_spoilage_loss)))
-      reasons.push(t("dashboard.whyLowerSpoilage"));
-    if (risk.estimated_remaining_shelf_life_hours != null && market.travel_time_hours <= risk.estimated_remaining_shelf_life_hours)
-      reasons.push(t("dashboard.whySuitableTime"));
-    reasons.push(t("dashboard.whyBetterMoney"));
-    return reasons;
-  }, [market, destinations, risk, t]);
-
-  return (
-    <div className="rounded-2xl border-l-[5px] shadow-sm px-6 sm:px-7 py-7" style={{ background: stateInfo.tint, borderColor: stateInfo.color, borderTop: `1px solid ${stateInfo.color}22`, borderRight: `1px solid ${stateInfo.color}22`, borderBottom: `1px solid ${stateInfo.color}22` }}>
-      <div className="text-[11px] font-bold uppercase tracking-wider mb-2" style={{ color: stateInfo.color }}>{t("dashboard.whatShouldYouDoNow")}</div>
-      <h2 className="text-[26px] font-bold mb-2" style={{ color: stateInfo.color }}>{stateInfo.title}</h2>
-      <p className="text-[15px] text-gray-700 mb-6 max-w-xl">{stateInfo.body}</p>
-
-      {market && (
-        <>
-          <div className="text-[11px] font-bold text-gray-500 uppercase tracking-wider mb-1.5">
-            {emergency ? t("dashboard.betterOptionLabel") : t("dashboard.recommendedMarketLabel")}
-          </div>
-          <div className="text-xl font-bold text-gray-900 mb-1.5">{market.name}</div>
-          <p className="text-sm text-gray-600">
-            {Math.round(market.travel_time_hours)} {t("common.hours")}
-            {" · "}{money(market.transport_cost_total)} {t("dashboard.travelWord")}
-            {" · "}{Math.round(market.arrival_risk_score)}% {t("dashboard.riskOnArrival")}
-          </p>
-
-          <div className="mt-5">
-            <div className="text-[11px] font-semibold text-gray-500 uppercase tracking-wider">{t("dashboard.moneyAfterCosts")}</div>
-            <div className="text-3xl font-bold text-gray-900 mt-0.5">{money(market.expected_realised_value)}</div>
-          </div>
-
-          <div className="flex flex-wrap items-center gap-5 mt-6">
-            <button
-              onClick={() => navigate("/route-planner")}
-              className="flex items-center gap-1.5 px-5 py-2.5 bg-brand-700 text-white text-sm font-bold rounded-xl hover:bg-brand-800 transition-colors"
-            >
-              {emergency ? t("dashboard.findSaferOption") : t("dashboard.viewBestRoute")} <IconChevronRight width={16} height={16} />
-            </button>
-            <button
-              onClick={() => navigate("/destination-optimizer")}
-              className="text-sm font-semibold text-gray-600 hover:text-gray-900 hover:underline underline-offset-4"
-            >
-              {t("dashboard.seeOtherMarkets")}
-            </button>
-          </div>
-
-          {whyReasons.length > 0 && (
-            <div className="mt-5 pt-5 border-t" style={{ borderColor: `${stateInfo.color}22` }}>
-              <button onClick={() => setShowWhy((v) => !v)} className="text-sm font-semibold text-gray-600 hover:text-gray-900">
-                {t("dashboard.whyThisOption")} {showWhy ? "−" : "+"}
-              </button>
-              {showWhy && (
-                <ul className="mt-3 space-y-1.5">
-                  {whyReasons.map((r, i) => (
-                    <li key={i} className="text-sm text-gray-700 flex items-start gap-2">
-                      <IconCheck width={14} height={14} className="mt-1 shrink-0 text-brand-600" /> {r}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          )}
-        </>
-      )}
-    </div>
-  );
-}
-
-// ---- Sell vs Store ---------------------------------------------------------
-function SellVsStore({ t, navigate, destinations, risk }) {
-  const data = useMemo(() => {
-    if (!destinations?.length) return null;
-    const mandis = destinations.filter((d) => d.type === "mandi");
-    const storages = destinations.filter((d) => d.type === "storage_facility");
-    const bestMandi = mandis.length ? [...mandis].sort((a, b) => b.expected_realised_value - a.expected_realised_value)[0] : null;
-    const bestStorage = storages.length ? [...storages].sort((a, b) => b.expected_realised_value - a.expected_realised_value)[0] : null;
-    if (!bestMandi && !bestStorage) return null;
-    const sellWins = bestMandi && (!bestStorage || bestMandi.expected_realised_value >= bestStorage.expected_realised_value);
-    return { bestMandi, bestStorage, sellWins };
-  }, [destinations]);
-
-  if (!data) return null;
-  const { bestMandi, bestStorage, sellWins } = data;
-  const storeDays = Math.max(0, Math.round(risk.estimated_remaining_shelf_life_days));
-
-  return (
-    <div>
-      <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-4">{t("dashboard.sellVsStoreTitle")}</div>
-      <div className="grid sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-gray-100">
-        <div className="sm:pr-8 pb-5 sm:pb-0">
-          <div className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">{t("dashboard.sellNowLabel")}</div>
-          {bestMandi ? (
-            <>
-              <div className="text-2xl font-bold text-gray-900">{money(bestMandi.expected_realised_value)}</div>
-              <p className="text-sm text-gray-500 mt-1">{bestMandi.name} · {Math.round(bestMandi.travel_time_hours)} {t("common.hours")} · {Math.round(bestMandi.arrival_risk_score)}% {t("dashboard.riskOnArrival")}</p>
-            </>
-          ) : (
-            <p className="text-sm text-gray-400">{t("dashboard.noMandiNearby")}</p>
-          )}
-        </div>
-        <div className="sm:pl-8 pt-5 sm:pt-0">
-          <div className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">{t("dashboard.storeLabel")}</div>
-          {bestStorage ? (
-            <>
-              <div className="text-2xl font-bold text-gray-900">{money(bestStorage.expected_realised_value)}</div>
-              <p className="text-sm text-gray-500 mt-1">{bestStorage.name} · {t(risk.shelf_life_estimate_capped ? "dashboard.moreThanDays" : "dashboard.aboutDays", { days: storeDays, count: storeDays })} · {Math.round(bestStorage.arrival_risk_score)}% {t("dashboard.riskOnArrival")}</p>
-            </>
-          ) : (
-            <p className="text-sm text-gray-400">{t("dashboard.noStorageNearby")}</p>
-          )}
-        </div>
-      </div>
-      <p className="text-sm mt-5">
-        <span className="font-bold text-gray-900">{t("dashboard.recommendedColon")}</span>{" "}
-        <span className="text-brand-700 font-semibold">
-          {sellWins
-            ? t("dashboard.sellNowLabel")
-            : risk.shelf_life_estimate_capped && risk.risk_label !== "Low"
-            ? t("dashboard.storeWhileElevated")
-            : t(risk.shelf_life_estimate_capped ? "dashboard.storeForDaysCapped" : "dashboard.storeForDays", { days: storeDays, count: storeDays })}
-        </span>
+      <p className="text-sm text-gray-500 flex-1">
+        {risk.shelf_life_estimate_capped && risk.risk_label !== "Low" 
+          ? t("dashboard.riskStaysElevated", { score: Math.round(risk.risk_score) })
+          : t(risk.shelf_life_estimate_capped ? "dashboard.moreThanDays" : "dashboard.aboutDays", { days, count: days })
+        }
       </p>
     </div>
   );
 }
 
-// ---- Crop journey, minimal timeline ---------------------------------------
-function CropJourney({ t, stages, predictedVsActual }) {
-  const currentStage = stages.find((s) => s.current);
-  const soldStage = stages.find((s) => s.key === "sale" && s.done);
-
-  // Real recorded outcome, not a prediction: quantity the farmer actually
-  // reported as spoiled x the actual price they got. If they recorded zero
-  // spoiled, this is honestly ₹0 -- never forced to zero, just what
-  // happened when no spoilage occurred.
-  const actualLoss = soldStage && predictedVsActual?.has_actual_outcome
-    && predictedVsActual.actual_quantity_spoiled_kg != null && predictedVsActual.actual_price_per_kg != null
-    ? predictedVsActual.actual_quantity_spoiled_kg * predictedVsActual.actual_price_per_kg
-    : null;
+function MarketStrategyCard({ t, navigate, destinations, recommended }) {
+  if (!destinations || !recommended) return <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 sm:p-7 text-sm text-gray-400 h-full">{t("common.loading")}</div>;
+  
+  const mandis = destinations.filter((d) => d.type === "mandi");
+  const storages = destinations.filter((d) => d.type === "storage_facility");
+  const bestMandi = mandis.length ? [...mandis].sort((a, b) => b.expected_realised_value - a.expected_realised_value)[0] : null;
+  const bestStorage = storages.length ? [...storages].sort((a, b) => b.expected_realised_value - a.expected_realised_value)[0] : null;
+  const sellWins = bestMandi && (!bestStorage || bestMandi.expected_realised_value >= bestStorage.expected_realised_value);
 
   return (
-    <div>
-      <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-5">{t("dashboard.journeyTitle")}</div>
-      <div className="flex items-start overflow-x-auto pb-1">
-        {stages.map((s, i) => {
-          const StageIcon = s.Icon;
-          const clickable = s.current && s.onAction;
-          return (
-            <div key={s.key} className={`flex items-center ${i < stages.length - 1 ? "flex-1" : "shrink-0"}`}>
-              <button
-                type="button"
-                onClick={clickable ? s.onAction : undefined}
-                disabled={!clickable}
-                className={`flex flex-col items-center gap-1.5 w-16 sm:w-20 shrink-0 ${clickable ? "cursor-pointer group" : "cursor-default"}`}
-              >
-                <div
-                  className={`w-7 h-7 rounded-full flex items-center justify-center transition-colors ${
-                    s.done
-                      ? "bg-brand-700 text-white"
-                      : s.current
-                      ? "border-2 border-brand-700 text-brand-700 bg-white group-hover:bg-brand-50"
-                      : "border border-gray-200 text-gray-300 bg-white"
-                  }`}
-                >
-                  {s.done ? <IconCheck width={13} height={13} /> : <StageIcon width={13} height={13} />}
-                </div>
-                <span className={`text-[10px] font-semibold text-center leading-tight ${s.done ? "text-gray-600" : s.current ? "text-brand-700" : "text-gray-300"}`}>{s.label}</span>
-              </button>
-              {i < stages.length - 1 && <div className={`flex-1 min-w-[16px] h-px mb-5 ${s.done ? "bg-brand-700" : "bg-gray-200"}`} />}
-            </div>
-          );
-        })}
+    <div onClick={() => navigate("/destination-optimizer")} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 sm:p-7 cursor-pointer hover:shadow-md transition-shadow group relative h-full flex flex-col">
+      <div className="absolute top-6 right-6 text-brand-700 opacity-0 group-hover:opacity-100 transition-opacity">
+        <IconChevronRight width={20} height={20} />
       </div>
-
-      {currentStage?.suggestion && (
-        <div className="mt-5 pt-4 border-t border-gray-100 flex flex-wrap items-center justify-between gap-3">
-          <p className="text-sm text-gray-600">{currentStage.suggestion}</p>
-          {currentStage.onAction && (
-            <button onClick={currentStage.onAction} className="text-sm font-semibold text-brand-700 hover:underline underline-offset-4 shrink-0">
-              {currentStage.actionLabel} →
-            </button>
-          )}
-        </div>
-      )}
-
-      {actualLoss != null && (
-        <div className="mt-5 pt-4 border-t border-gray-100">
-          <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-1">{t("dashboard.actualLossTitle")}</div>
-          <div className={`text-xl font-bold ${actualLoss > 0 ? "text-red-600" : "text-brand-700"}`}>{money(actualLoss)}</div>
-          <p className="text-sm text-gray-500 mt-1">
-            {actualLoss > 0 ? t("dashboard.actualLossBody", { kg: predictedVsActual.actual_quantity_spoiled_kg }) : t("dashboard.actualLossZeroBody")}
-          </p>
-        </div>
-      )}
+      <div className="flex items-center gap-2 text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-4">
+        <IconTag width={14} height={14} /> {t("dashboard.recommendedMarketLabel")}
+      </div>
+      <div className="text-xl font-bold text-gray-900 mb-1">{recommended.name}</div>
+      <div className="text-lg font-bold text-brand-700 mb-2">{money(recommended.expected_realised_value)}</div>
+      <p className="text-sm font-semibold text-gray-600 flex-1">
+        {sellWins ? t("dashboard.sellNowLabel") : t("dashboard.storeLabel")}
+      </p>
     </div>
   );
 }
 
-// ---- Value at risk + Weather, paired typography row -----------------------
-function ValueAtRiskAndWeather({ t, market, risk }) {
+function TransportRouteCard({ t, navigate, recommended }) {
+  if (!recommended) return <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 sm:p-7 text-sm text-gray-400 h-full">{t("common.loading")}</div>;
+  
   return (
-    <div className="grid sm:grid-cols-2 gap-8">
-      <div>
-        <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-2">{t("dashboard.valueAtRiskTitle")}</div>
-        <div className="text-2xl font-bold text-red-600">{money(market.expected_spoilage_loss)}</div>
-        <p className="text-sm text-gray-500 mt-1">{t("dashboard.valueAtRiskCaption")}</p>
-        <div className="text-sm text-gray-500 mt-3 space-y-1">
-          <div>{t("market.travelCost")}: <span className="text-gray-700 font-medium">{money(market.transport_cost_total)}</span></div>
-          <div>{t("dashboard.moneyAfterCosts")}: <span className="text-gray-700 font-medium">{money(market.expected_realised_value)}</span></div>
-        </div>
+    <div onClick={() => navigate("/route-planner")} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 sm:p-7 cursor-pointer hover:shadow-md transition-shadow group relative h-full flex flex-col">
+      <div className="absolute top-6 right-6 text-brand-700 opacity-0 group-hover:opacity-100 transition-opacity">
+        <IconChevronRight width={20} height={20} />
       </div>
-      <div>
-        <div className="flex items-center gap-2 mb-2">
-          <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wider">{t("dashboard.weatherTitle")}</div>
-          <span className={`text-[10px] font-bold uppercase tracking-wide ${risk.weather_is_synthetic ? "text-gray-400" : "text-brand-700"}`}>
-            {risk.weather_is_synthetic ? t("dashboard.demoWeatherLabel") : t("dashboard.liveWeatherLabel")}
-          </span>
-        </div>
-        <div className="text-2xl font-bold text-gray-900">{risk.temperature_c}&deg;C · {risk.humidity_pct}%</div>
-        <p className="text-sm text-gray-500 mt-1">
-          {risk.temperature_c >= 28 ? t("dashboard.weatherWarmNote") : t("dashboard.weatherNormalNote")}
-        </p>
+      <div className="flex items-center gap-2 text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-4">
+        <IconTruck width={14} height={14} /> {t("dashboard.stageRoute")}
       </div>
+      <div className="text-xl font-bold text-gray-900 mb-1">{Math.round(recommended.travel_time_hours)} {t("common.hours")}</div>
+      <div className="text-sm text-gray-600 mb-2">{t("dashboard.travelWord")} {money(recommended.transport_cost_total)}</div>
+      <p className="text-sm font-semibold text-brand-700 mt-1 flex-1">
+        {t("dashboard.viewBestRoute")}
+      </p>
     </div>
   );
 }
@@ -843,33 +590,11 @@ export default function Dashboard() {
             <CurrentHarvestRow t={t} batch={alertBatch} isDemoBatch={isDemoBatch} />
           </div>
 
-          {risk ? (
-            <div className={card}>
-              <CropRightNowPanel t={t} risk={risk} />
-            </div>
-          ) : (
-            <div className={`${card} text-sm text-gray-400`}>{t("common.loading")}</div>
-          )}
-
-          {risk && recommended && (
-            <RecommendationHero t={t} navigate={navigate} risk={risk} recommended={recommended} emergency={emergency} saferOption={saferOption} destinations={destResult?.destinations} />
-          )}
-
-          {risk && destResult?.destinations?.length > 0 && (
-            <div className={card}>
-              <SellVsStore t={t} navigate={navigate} destinations={destResult.destinations} risk={risk} />
-            </div>
-          )}
-
-          <div className={card}>
-            <CropJourney t={t} stages={journeyStages} predictedVsActual={predictedVsActual} />
+          <div className="grid md:grid-cols-3 gap-6 items-stretch">
+            <CropHealthCard t={t} risk={risk} navigate={navigate} />
+            <MarketStrategyCard t={t} navigate={navigate} destinations={destResult?.destinations} recommended={recommended} />
+            <TransportRouteCard t={t} navigate={navigate} recommended={recommended} />
           </div>
-
-          {risk && marketForValueSections && (
-            <div className={card}>
-              <ValueAtRiskAndWeather t={t} market={marketForValueSections} risk={risk} />
-            </div>
-          )}
 
           {alerts.length > 0 && (
             <div className={card}>
