@@ -75,9 +75,20 @@ export default function BatchAnalysis() {
     });
 
     navigator.geolocation.getCurrentPosition(
-      (pos) => {
+      async (pos) => {
         const { latitude, longitude } = pos.coords;
-        const currentName = "📍 Current Location";
+        let currentName = "Current Location";
+        
+        try {
+          const res = await fetch(`https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json`);
+          const data = await res.json();
+          if (data && data.address) {
+            currentName = data.address.city || data.address.town || data.address.village || data.address.county || currentName;
+          }
+        } catch (e) {
+          console.warn("Reverse geocoding failed", e);
+        }
+
         setFarmLocations((prev) => {
           const cleaned = prev.filter(l => l.name !== loadingName);
           const existingIdx = cleaned.findIndex(l => l.name === currentName);
@@ -164,7 +175,7 @@ export default function BatchAnalysis() {
               <div className="flex justify-between items-center">
                 {t("batch.farmLocationLabel")}
                 <button type="button" onClick={handleUseCurrentLocation} className="text-brand-600 hover:text-brand-700 text-xs font-bold">
-                  📍 Use Current Location
+                  Use Current Location
                 </button>
               </div>
               <select value={farmIndex} onChange={(e) => setFarmIndex(Number(e.target.value))}

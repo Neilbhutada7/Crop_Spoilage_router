@@ -106,9 +106,9 @@ export default function DestinationOptimizer() {
         {/* Risk Appetite Selector */}
         <div className="bg-white border border-gray-200 rounded-lg p-1 flex shadow-sm shrink-0">
           {[
-            { id: "conservative", label: "🛡️ Safe Bets" },
-            { id: "balanced", label: "⚖️ Balanced" },
-            { id: "aggressive", label: "🚀 High Reward" },
+            { id: "conservative", label: "Safe Bets" },
+            { id: "balanced", label: "Balanced" },
+            { id: "aggressive", label: "High Reward" },
           ].map(opt => (
             <button
               key={opt.id}

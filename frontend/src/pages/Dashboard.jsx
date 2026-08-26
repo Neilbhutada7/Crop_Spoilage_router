@@ -24,7 +24,7 @@ function PageHeader({ t, onCheckCrop, onViewBatches, hasBatches }) {
   return (
     <div>
       <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-2">{t("dashboard.pageLabel")}</div>
-      <h1 className="text-[28px] leading-tight font-bold text-gray-900">{t(greetingKey)} 👋</h1>
+      <h1 className="text-[28px] leading-tight font-bold text-gray-900">{t(greetingKey)}</h1>
       <p className="text-base text-gray-500 mt-1.5 max-w-xl">{t("dashboard.heroTagline")}</p>
       <div className="flex flex-wrap items-center gap-5 mt-4">
         <button
@@ -400,7 +400,7 @@ function AlertsRow({ alerts }) {
     <div className="space-y-2">
       {alerts.map((a, i) => (
         <div key={i} className="flex items-start gap-2 text-sm">
-          <span className="mt-0.5">{a.emoji}</span>
+          {a.emoji && <span className="mt-0.5">{a.emoji}</span>}
           <span className="text-gray-700">{a.text}</span>
         </div>
       ))}
@@ -784,11 +784,11 @@ export default function Dashboard() {
     const list = [];
     if (!risk || !recommended) return list;
     if (emergency) {
-      list.push({ emoji: "🔴", text: t("dashboard.alertHighRiskArrival") });
+      list.push({ emoji: "", text: t("dashboard.alertHighRiskArrival") });
     } else if (risk.risk_label === "High" && risk.explanation?.reasons?.[0]?.factor === "temperature") {
-      list.push({ emoji: "🟠", text: t("dashboard.alertTempRisk") });
+      list.push({ emoji: "", text: t("dashboard.alertTempRisk") });
     } else {
-      list.push({ emoji: "🟢", text: t("dashboard.alertSafeWindow") });
+      list.push({ emoji: "", text: t("dashboard.alertSafeWindow") });
     }
     return list;
   }, [risk, recommended, emergency, t]);

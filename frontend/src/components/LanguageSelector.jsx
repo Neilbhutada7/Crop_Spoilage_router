@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { SUPPORTED_LANGUAGES } from "../i18n";
 import { IconChevronRight } from "./Icons";
 
-const FLAGS = { en: "🇬🇧", hi: "🇮🇳", mr: "🇮🇳" };
+// Flags removed
 
 // The highly-visible language switcher the spec asks for: flag + native
 // name for each option (not bare "EN / HI / MR"), labeled "भाषा / Language"
@@ -33,7 +33,6 @@ export default function LanguageSelector({ compact = false }) {
           compact ? "px-2.5 py-1.5 text-xs" : "px-3.5 py-2.5 text-sm"
         }`}
       >
-        <span>{FLAGS[current]}</span>
         <span>{t(`languageSelector.${current}`)}</span>
         <IconChevronRight width={12} height={12} className={`text-gray-400 transition-transform ${open ? "rotate-90" : ""}`} />
       </button>
@@ -51,7 +50,6 @@ export default function LanguageSelector({ compact = false }) {
                 current === lng ? "bg-brand-50 text-brand-800 font-semibold" : "text-gray-700"
               }`}
             >
-              <span className="text-base">{FLAGS[lng]}</span>
               <span>{t(`languageSelector.${lng}`)}</span>
             </button>
           ))}

@@ -117,7 +117,6 @@ export default function AiAssistant() {
     <div className="space-y-4">
       <div>
         <div className="flex items-center gap-2">
-          <span className="text-2xl">🌾</span>
           <h1 className="text-2xl font-bold text-gray-900">{t("assistant.title")}</h1>
           <span className="text-[10px] font-bold uppercase tracking-wide px-2 py-0.5 rounded-full bg-brand-50 text-brand-700 border border-brand-200">
             {t("assistant.identityLabel")}
