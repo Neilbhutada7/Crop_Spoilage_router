@@ -16,9 +16,11 @@ class Config:
     TRANSPORT_COST_PER_KG_PER_KM = float(os.environ.get("TRANSPORT_COST_PER_KG_PER_KM", 0.012))
     # INR per kg flat storage handling cost applied to storage_facility destinations.
     STORAGE_HANDLING_COST_PER_KG = float(os.environ.get("STORAGE_HANDLING_COST_PER_KG", 0.5))
-    # Signs the session cookie used for login. Demo default is fine for local/hackathon
-    # use; set a real random value via env var for anything beyond that.
-    SECRET_KEY = os.environ.get("SECRET_KEY", "spoilage-router-dev-secret-change-me")
+    SECRET_KEY = os.environ.get("SECRET_KEY")
+    if not SECRET_KEY:
+        if os.environ.get("RENDER") or os.environ.get("FRONTEND_ORIGIN"):
+            raise ValueError("SECRET_KEY environment variable is required in production.")
+        SECRET_KEY = "spoilage-router-dev-secret-change-me"
     # Illustrative average road speed for a loaded small truck/tempo on Indian
     # state/district roads -- used only to estimate travel time from distance,
     # not a live traffic/routing service.

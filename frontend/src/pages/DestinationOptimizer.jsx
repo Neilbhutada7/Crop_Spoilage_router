@@ -32,31 +32,54 @@ function AvailabilityBadge({ t, market }) {
 export default function DestinationOptimizer() {
   const navigate = useNavigate();
   const { t } = useTranslation();
-  const { risk, destinations } = useAppData();
+  const { batch, destinations: initialDestinations } = useAppData();
   const { simple } = useDisplayMode();
 
-  // AppDataContext only holds data for a batch checked earlier in THIS
-  // session -- reaching this page via the sidebar (rather than clicking
-  // through right after "Check My Crop") leaves it empty even though the
-  // farmer has real batches on the server. Falls back to the most recent
-  // one, same pattern as PhotoAnalyzer/Dashboard, so navigation order never
-  // produces a false "you haven't checked anything yet".
-  const [fallbackDestinations, setFallbackDestinations] = useState(null);
-  const [fallbackLoading, setFallbackLoading] = useState(false);
-  useEffect(() => {
-    if (risk || destinations.length > 0) return;
-    setFallbackLoading(true);
-    api.getBatches()
-      .then((rows) => rows?.[0] && api.getBatchDestinations(rows[0].id))
-      .then((res) => setFallbackDestinations(res?.destinations || []))
-      .catch(() => setFallbackDestinations([]))
-      .finally(() => setFallbackLoading(false));
-  }, [risk, destinations]);
+  const [riskAppetite, setRiskAppetite] = useState("balanced");
+  const [localDestinations, setLocalDestinations] = useState(null);
+  const [loading, setLoading] = useState(false);
 
-  const effectiveDestinations = destinations.length > 0 ? destinations : (fallbackDestinations || []);
+  useEffect(() => {
+    // If riskAppetite is default and we have fresh context data, use it
+    if (riskAppetite === "balanced" && initialDestinations && initialDestinations.length > 0) {
+      setLocalDestinations(initialDestinations);
+      return;
+    }
+
+    let isMounted = true;
+    setLoading(true);
+
+    const fetchDests = async () => {
+      try {
+        let currentBatchId = batch?.id;
+        if (!currentBatchId) {
+          const rows = await api.getBatches();
+          if (rows && rows.length > 0) {
+            currentBatchId = rows[0].id;
+          }
+        }
+        
+        if (currentBatchId && isMounted) {
+          const res = await api.getBatchDestinations(currentBatchId, riskAppetite);
+          if (isMounted) setLocalDestinations(res?.destinations || []);
+        } else if (isMounted) {
+          setLocalDestinations([]);
+        }
+      } catch (err) {
+        if (isMounted) setLocalDestinations([]);
+      } finally {
+        if (isMounted) setLoading(false);
+      }
+    };
+
+    fetchDests();
+    return () => { isMounted = false; };
+  }, [batch, initialDestinations, riskAppetite]);
+
+  const effectiveDestinations = localDestinations || initialDestinations || [];
 
   if (effectiveDestinations.length === 0) {
-    if (fallbackLoading) return <div className="text-sm text-gray-400">{t("common.loading")}</div>;
+    if (loading || localDestinations === null) return <div className="text-sm text-gray-400">{t("common.loading")}</div>;
     return (
       <div className="bg-white border border-gray-200 rounded-md p-12 text-center">
         <p className="text-gray-500 mb-6">{t("market.summaryEmpty", "You need to check a crop first.")}</p>
@@ -74,9 +97,34 @@ export default function DestinationOptimizer() {
 
   return (
     <div className="max-w-4xl mx-auto space-y-8 pb-12">
-      <div>
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">{t("market.title")}</h1>
-        <p className="text-lg text-gray-600">{t("market.subtitle")}</p>
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
+        <div>
+          <h1 className="text-3xl font-bold text-gray-900 mb-2">{t("market.title")}</h1>
+          <p className="text-lg text-gray-600">{t("market.subtitle")}</p>
+        </div>
+        
+        {/* Risk Appetite Selector */}
+        {!simple && (
+          <div className="bg-white border border-gray-200 rounded-lg p-1 flex shadow-sm shrink-0">
+            {[
+              { id: "conservative", label: "🛡️ Safe Bets" },
+              { id: "balanced", label: "⚖️ Balanced" },
+              { id: "aggressive", label: "🚀 High Reward" },
+            ].map(opt => (
+              <button
+                key={opt.id}
+                onClick={() => setRiskAppetite(opt.id)}
+                className={`px-3 py-1.5 text-xs sm:text-sm font-bold rounded-md transition-colors ${
+                  riskAppetite === opt.id 
+                    ? "bg-brand-50 text-brand-700 shadow-sm border border-brand-200" 
+                    : "text-gray-500 hover:text-gray-700 hover:bg-gray-50 border border-transparent"
+                }`}
+              >
+                {t(`riskAppetite.${opt.id}`, opt.label)}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* TOP CHOICE CARD */}
@@ -93,6 +141,11 @@ export default function DestinationOptimizer() {
               <span>&middot;</span>
               <span>{best.distance_km} {t("mapLegend.away")}</span>
               <AvailabilityBadge t={t} market={best} />
+              {best.risk_appetite_badge && riskAppetite !== "balanced" && (
+                <span className="ml-1 inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wide px-2 py-0.5 rounded border bg-purple-50 text-purple-700 border-purple-200">
+                  {best.risk_appetite_badge}
+                </span>
+              )}
             </div>
 
             <div className="grid grid-cols-2 gap-x-8 gap-y-6">
@@ -137,9 +190,14 @@ export default function DestinationOptimizer() {
           <div className="grid md:grid-cols-2 gap-4">
             {others.map((market, idx) => (
               <div key={market.destination_id} className="bg-white border border-gray-200 rounded-md p-6 shadow-sm hover:border-gray-300 transition-colors">
-                <div className="flex items-center gap-2 mb-4">
+                <div className="flex items-center gap-2 mb-4 flex-wrap">
                   <h4 className="text-xl font-bold text-gray-900">{market.name}</h4>
                   <AvailabilityBadge t={t} market={market} />
+                  {market.risk_appetite_badge && riskAppetite !== "balanced" && (
+                    <span className="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wide px-2 py-0.5 rounded border bg-purple-50 text-purple-700 border-purple-200">
+                      {market.risk_appetite_badge}
+                    </span>
+                  )}
                 </div>
 
                 <div className="space-y-4 mb-6">

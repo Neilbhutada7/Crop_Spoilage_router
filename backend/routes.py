@@ -1,6 +1,8 @@
 import datetime
 
 from flask import Blueprint, jsonify, request, session
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
 
 from db import SessionLocal
 from models import Destination, HarvestBatch, Notification, PriceHistory
@@ -22,6 +24,7 @@ from services.weather_service import get_daily_forecast, get_weather
 
 api = Blueprint("api", __name__, url_prefix="/api")
 notification_service = NotificationService()
+limiter = Limiter(key_func=get_remote_address)
 
 
 @api.post("/auth/signup")
@@ -202,9 +205,10 @@ def batch_risk_route(batch_id):
 
 @api.get("/batches/<int:batch_id>/destinations")
 def batch_destinations_route(batch_id):
+    risk_appetite = request.args.get("risk_appetite", "balanced")
     try:
         risk_result = assess_risk(batch_id)
-        result = rank_destinations(batch_id)
+        result = rank_destinations(batch_id, risk_appetite=risk_appetite)
     except (RiskBatchNotFoundError, DestBatchNotFoundError) as exc:
         return jsonify({"error": str(exc)}), 404
 
@@ -320,6 +324,7 @@ def weather_forecast_route():
 
 
 @api.post("/assistant/ask")
+@limiter.limit("10 per minute")
 def assistant_ask_route():
     payload = request.get_json(silent=True) or {}
     question = payload.get("question")
@@ -359,6 +364,7 @@ def assistant_ask_route():
 
 
 @api.post("/photo/analyze")
+@limiter.limit("10 per minute")
 def photo_analyze_route():
     if "image" not in request.files:
         return jsonify({"error": "image file is required (multipart field 'image')"}), 400

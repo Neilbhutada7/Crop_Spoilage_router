@@ -243,11 +243,13 @@ def forecast_risk(batch_id: int, horizon_days: int = 6) -> list:
         lat, lon = float(batch.farm_latitude), float(batch.farm_longitude)
         version = model_version()
 
+        weather_by_date = get_weather_series(lat, lon, today, horizon_days + 1)
+
         points = []
         for offset in range(horizon_days + 1):
             target_date = today + datetime.timedelta(days=offset)
             days_since_harvest = max((target_date - batch.harvest_date).days, 0)
-            weather = get_weather(lat, lon, target_date)
+            weather = weather_by_date[target_date.isoformat()]
             score = predict_risk(
                 crop_type=batch.crop_type,
                 temperature_c=weather["temperature_c"],

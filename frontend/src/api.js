@@ -12,7 +12,10 @@ const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "/api";
 
 async function request(path, options = {}) {
   const res = await fetch(`${API_BASE_URL}${path}`, {
-    headers: { "Content-Type": "application/json" },
+    headers: { 
+      "Content-Type": "application/json",
+      "X-Requested-With": "XMLHttpRequest" 
+    },
     credentials: "include", // send/receive the session cookie for auth
     ...options,
   });
@@ -26,6 +29,9 @@ async function request(path, options = {}) {
 async function requestMultipart(path, formData) {
   const res = await fetch(`${API_BASE_URL}${path}`, {
     method: "POST",
+    headers: { 
+      "X-Requested-With": "XMLHttpRequest" 
+    },
     credentials: "include",
     body: formData, // no Content-Type header -- the browser sets the multipart boundary itself
   });
@@ -48,7 +54,7 @@ export const api = {
   createBatch: (payload) =>
     request("/batches", { method: "POST", body: JSON.stringify(payload) }),
   getBatchRisk: (batchId) => request(`/batches/${batchId}/risk`),
-  getBatchDestinations: (batchId) => request(`/batches/${batchId}/destinations`),
+  getBatchDestinations: (batchId, riskAppetite = "balanced") => request(`/batches/${batchId}/destinations?risk_appetite=${riskAppetite}`),
   getRiskForecast: (batchId, days = 6) => request(`/batches/${batchId}/risk-forecast?days=${days}`),
   getModelInfo: () => request("/model-info"),
   getPriceHistory: (destinationId, cropType) =>

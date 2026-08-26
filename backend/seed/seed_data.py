@@ -15,9 +15,11 @@ from geoalchemy2.elements import WKTElement
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+from werkzeug.security import generate_password_hash
+
 from db import SessionLocal, engine  # noqa: E402
 from destinations_data import CROP_BASE_PRICES, DESTINATIONS  # noqa: E402
-from models import Destination, PriceHistory  # noqa: E402
+from models import Destination, PriceHistory, User  # noqa: E402
 
 PRICE_HISTORY_DAYS = 30
 
@@ -79,6 +81,19 @@ def seed():
                     ))
 
         session.commit()
+        
+        # Create demo_judge user if it doesn't exist
+        demo_user = session.query(User).filter(User.username == "demo_judge").first()
+        if not demo_user:
+            demo_user = User(
+                username="demo_judge",
+                password_hash=generate_password_hash("sih2026demo"),
+                full_name="SIH Judge"
+            )
+            session.add(demo_user)
+            session.commit()
+            print("Seeded demo_judge user.")
+
         print(f"Seeded {len(destinations)} destinations and "
               f"{len(destinations) * len(CROP_BASE_PRICES) * PRICE_HISTORY_DAYS} price_history rows.")
     finally:

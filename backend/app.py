@@ -4,7 +4,7 @@ from flask import Flask, jsonify, send_from_directory
 from flask_cors import CORS
 
 from config import Config
-from routes import api
+from routes import api, limiter
 
 _FRONTEND_DIST = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "frontend", "dist")
 
@@ -40,6 +40,17 @@ def create_app():
         origins=allowed_origins,
     )
     app.register_blueprint(api)
+    limiter.init_app(app)
+
+    @app.before_request
+    def require_custom_header():
+        # Exempt GET/HEAD/OPTIONS and the login route
+        if request.method not in ("POST", "PUT", "PATCH", "DELETE"):
+            return
+        if request.path == "/api/auth/login":
+            return
+        if not request.headers.get("X-Requested-With") == "XMLHttpRequest":
+            return jsonify({"error": "CSRF verification failed: Missing X-Requested-With header."}), 403
 
     @app.errorhandler(404)
     def not_found(e):

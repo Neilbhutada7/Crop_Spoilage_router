@@ -81,7 +81,7 @@ def availability_status(available_capacity_kg, capacity_kg) -> str | None:
     return "OPEN"
 
 
-def _price_for_destination(session, dest: Destination, crop_type: str) -> dict:
+def _price_for_destination(dest: Destination, crop_type: str, price_history_map: dict) -> dict:
     """Resolves the price to use for this destination, honestly labeled by
     where it actually came from -- tried in order: (1) today's real
     Agmarknet modal price for this crop in this destination's state, (2)
@@ -96,12 +96,7 @@ def _price_for_destination(session, dest: Destination, crop_type: str) -> dict:
             "price_detail": live,
         }
 
-    row = (
-        session.query(PriceHistory)
-        .filter(PriceHistory.destination_id == dest.id, PriceHistory.crop_type == crop_type)
-        .order_by(PriceHistory.recorded_date.desc())
-        .first()
-    )
+    row = price_history_map.get(dest.id)
     if row is not None:
         return {
             "price_per_kg": float(row.price_per_kg),
@@ -171,7 +166,8 @@ def _rationale(candidate: dict, all_candidates: list, rank: int) -> str:
 
 
 def rank_destinations(batch_id: int, days_offset: int = 0, temperature_c: float | None = None,
-                       humidity_pct: float | None = None, visual_defect_score: float = 0.0) -> list:
+                       humidity_pct: float | None = None, visual_defect_score: float = 0.0,
+                       risk_appetite: str = "balanced") -> list:
     """days_offset/temperature_c/humidity_pct let a caller ask "what if" this
     batch were `days_offset` days older, or under different weather, without
     touching the database -- used by the AI Assistant's what_if tool
@@ -205,11 +201,23 @@ def rank_destinations(batch_id: int, days_offset: int = 0, temperature_c: float 
             .all()
         )
 
+        dest_ids = [dest.id for dest, _ in rows]
+        all_prices = (
+            session.query(PriceHistory)
+            .filter(PriceHistory.destination_id.in_(dest_ids), PriceHistory.crop_type == batch.crop_type)
+            .order_by(PriceHistory.recorded_date.desc())
+            .all()
+        )
+        price_history_map = {}
+        for p in all_prices:
+            if p.destination_id not in price_history_map:
+                price_history_map[p.destination_id] = p
+
         quantity_kg = float(batch.quantity_kg)
         candidates = []
         for dest, distance_m in rows:
             distance_km = distance_m / 1000.0
-            price_info = _price_for_destination(session, dest, batch.crop_type)
+            price_info = _price_for_destination(dest, batch.crop_type, price_history_map)
             expected_price = price_info["price_per_kg"]
 
             # Estimated from distance / an illustrative average road speed --
@@ -228,13 +236,28 @@ def rank_destinations(batch_id: int, days_offset: int = 0, temperature_c: float 
             storage_cost_per_kg = Config.STORAGE_HANDLING_COST_PER_KG if dest.type == "storage_facility" else 0.0
             storage_cost_total = storage_cost_per_kg * quantity_kg
 
-            # Value At Risk = full expected revenue at this destination --
-            # what spoilage-driven price erosion is actually applied against.
             value_at_risk = selling_revenue
             expected_spoilage_loss_total = spoilage_probability * value_at_risk  # always >= 0
 
             expected_realised_value = (
                 selling_revenue - transport_cost_total - storage_cost_total - expected_spoilage_loss_total
+            )
+
+            # Apply the risk appetite multiplier purely for sorting purposes.
+            # This ensures the UI displays honest, mathematically sound revenue
+            # estimates while respecting the farmer's personal risk tolerance.
+            if risk_appetite == "conservative":
+                risk_penalty_multiplier = 3.0
+                badge = "Safe Bet"
+            elif risk_appetite == "aggressive":
+                risk_penalty_multiplier = 0.33
+                badge = "High Reward"
+            else:
+                risk_penalty_multiplier = 1.0
+                badge = "Balanced"
+
+            ranking_score = (
+                selling_revenue - transport_cost_total - storage_cost_total - (expected_spoilage_loss_total * risk_penalty_multiplier)
             )
 
             candidates.append({
@@ -274,6 +297,8 @@ def rank_destinations(batch_id: int, days_offset: int = 0, temperature_c: float 
                 "availability_updated_at": dest.availability_updated_at.isoformat() if dest.availability_updated_at else None,
                 "availability_source": dest.availability_source,
                 "fits_batch_quantity": dest.available_capacity_kg is None or float(dest.available_capacity_kg) >= quantity_kg,
+                "ranking_score": ranking_score,
+                "risk_appetite_badge": badge,
             })
 
         # Constraint: a storage facility without enough free space for this
@@ -287,7 +312,7 @@ def rank_destinations(batch_id: int, days_offset: int = 0, temperature_c: float 
         if feasible:
             candidates = feasible
 
-        candidates.sort(key=lambda c: c["expected_realised_value"], reverse=True)
+        candidates.sort(key=lambda c: c["ranking_score"], reverse=True)
         for rank, c in enumerate(candidates):
             c["rank"] = rank + 1
             c["one_line_rationale"] = _rationale(c, candidates, rank)
