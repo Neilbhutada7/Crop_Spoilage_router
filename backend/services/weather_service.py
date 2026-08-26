@@ -104,9 +104,8 @@ def _fetch_real_weather(lat: float, lon: float, target_date: datetime.date):
                     "latitude": lat,
                     "longitude": lon,
                     "hourly": HOURLY_FIELDS,
-                    # forecast_days=N covers today..today+(N-1); Open-Meteo caps
-                    # N at 16, so day offsets beyond 15 can't be requested this way.
-                    "forecast_days": days_diff + 1,
+                    "start_date": target_date.isoformat(),
+                    "end_date": target_date.isoformat(),
                     "timezone": "auto",
                 },
                 timeout=6,
@@ -127,7 +126,7 @@ def _fetch_real_weather(lat: float, lon: float, target_date: datetime.date):
 
         if -92 <= days_diff < 0:
             resp = requests.get(
-                ARCHIVE_URL,
+                FORECAST_URL,
                 params={
                     "latitude": lat,
                     "longitude": lon,
@@ -149,7 +148,7 @@ def _fetch_real_weather(lat: float, lon: float, target_date: datetime.date):
                 "wind_speed_kmh": round(hourly["wind_speed_10m"][idx], 1),
                 "source": "open-meteo",
                 "is_synthetic": False,
-                "note": "Open-Meteo historical archive (ERA5 reanalysis, midday reading).",
+                "note": "Open-Meteo historical (seamless ERA5/forecast, midday reading).",
             }
     except (requests.RequestException, KeyError, ValueError) as exc:
         print(f"[weather_service] Open-Meteo request failed, falling back to synthetic: {exc}", file=sys.stderr)
@@ -179,7 +178,10 @@ def get_weather_series(lat: float, lon: float, start_date: datetime.date, num_da
     last_real_day_offset = (end_date - today).days
 
     hourly = None
-    if last_real_day_offset >= 0:
+    first_real_day_offset = (start_date - today).days
+    if last_real_day_offset >= -92 and first_real_day_offset <= 15:
+        real_start_date = max(start_date, today - datetime.timedelta(days=92))
+        real_end_date = min(end_date, today + datetime.timedelta(days=15))
         try:
             resp = requests.get(
                 FORECAST_URL,
@@ -187,9 +189,8 @@ def get_weather_series(lat: float, lon: float, start_date: datetime.date, num_da
                     "latitude": lat,
                     "longitude": lon,
                     "hourly": HOURLY_FIELDS,
-                    # forecast_days=N covers today..today+(N-1); Open-Meteo caps
-                    # N at 16, so this can reach at most today+15.
-                    "forecast_days": min(last_real_day_offset, 15) + 1,
+                    "start_date": real_start_date.isoformat(),
+                    "end_date": real_end_date.isoformat(),
                     "timezone": "auto",
                 },
                 timeout=6,
@@ -204,7 +205,7 @@ def get_weather_series(lat: float, lon: float, start_date: datetime.date, num_da
         d = start_date + datetime.timedelta(days=offset)
         days_diff = (d - today).days
         real = None
-        if hourly is not None and 0 <= days_diff <= 15:
+        if hourly is not None and -92 <= days_diff <= 15:
             idx = _closest_to_midday(hourly, d)
             if idx is not None:
                 real = {
@@ -213,7 +214,7 @@ def get_weather_series(lat: float, lon: float, start_date: datetime.date, num_da
                     "wind_speed_kmh": round(hourly["wind_speed_10m"][idx], 1),
                     "source": "open-meteo",
                     "is_synthetic": False,
-                    "note": "Open-Meteo forecast (midday reading).",
+                    "note": "Open-Meteo (seamless ERA5/forecast, midday reading).",
                 }
         out[d.isoformat()] = real if real is not None else _seasonal_synthetic_weather(lat, lon, d)
     return out
