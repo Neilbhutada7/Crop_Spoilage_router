@@ -56,7 +56,7 @@ def create_app():
     def not_found(e):
         return jsonify({"error": "Not found"}), 404
 
-    @app.errorhandler(500)
+    @app.errorhandler(Exception)
     def server_error(e):
         import traceback
         try:
